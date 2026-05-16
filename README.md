@@ -1,24 +1,9 @@
-# 60 Days of Data Science 📊
+# 60 days data science challenge
 
-## Overview
-This repository serves as a comprehensive log for the **60 Days of Data Science Challenge**. It documents a progressive learning journey from core Python programming to advanced statistical modeling and machine learning.
+my journey to learn data science in 60 days. 
 
-## Project Structure
-The repository is organized by daily milestones, with each directory containing relevant scripts, data, and documentation.
-
-### Progress Milestones
-| Day | Topic | Status |
-| :--- | :--- | :--- |
-| **01-03** | Python Fundamentals (Variables, Control Flow, Data Structures) | ✅ Completed |
-| **04** | [Project Setup & Domain Selection](./day4/) | ✅ Completed |
-| **05+** | Data Analysis & Exploratory Data Analysis (EDA) | 📅 Scheduled |
-
-## Selected Project: Retail Sales Analysis
-As of Day 4, the primary focus of this repository is a deep-dive analysis of the **Superstore Sales** dataset. This project aims to extract actionable business intelligence from large-scale retail transactions.
-
-## Environment Setup
-Ensure you have the following libraries installed:
-*   `numpy`, `pandas`, `matplotlib`, `seaborn`
-
----
-*Maintained by Rajesh Yadav*
+## days:
+- [day 1](./day1/): python basics
+- [day 2](./day2/): loops and functions
+- [day 3](./day3/): dictionaries and file handling
+- [day 4](./day4/): dataset selection (sales project)
