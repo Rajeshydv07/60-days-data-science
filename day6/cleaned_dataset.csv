@@ -1,0 +1,11 @@
+Row ID,Order ID,Order Date,Ship Date,Customer Name,Category,Sales,Quantity,Profit,Processing Time,Sales per Item
+1,CA-2016-152156,2016-11-08,2016-11-11,Claire Gute,Furniture,261.96,2,41.91,3,130.98
+2,CA-2016-152156,2016-11-08,2016-11-11,Claire Gute,Furniture,731.94,3,219.58,3,243.98000000000002
+3,CA-2016-138688,2016-06-12,2016-06-16,Darrin Van Huff,Furniture,14.62,2,6.87,4,7.31
+4,US-2015-108966,2015-10-11,2015-10-18,Sean O'Donnell,Furniture,957.5775,5,-383.03,7,191.5155
+5,US-2015-108966,2015-10-11,2015-10-18,Sean O'Donnell,Office Supplies,22.368,2,2.51,7,11.184
+6,CA-2017-114412,2017-04-15,2017-04-20,Brosina Hoffman,Office Supplies,15.552,3,5.44,5,5.184
+7,CA-2017-114412,2017-04-15,2017-04-20,Brosina Hoffman,Office Supplies,,2,3.2,5,
+8,US-2016-118983,2016-11-22,2016-11-26,Zuschuss Donatelli,Office Supplies,68.81,5,-12.04,4,13.762
+9,US-2016-118983,2016-11-22,2016-11-26,Zuschuss Donatelli,Office Supplies,2.808,3,0.88,4,0.9359999999999999
+10,CA-2014-105893,2014-11-11,2014-11-18,Ruben Hope,Furniture,78.85,4,4.32,7,19.7125
