@@ -30,33 +30,33 @@ df.to_csv(os.path.join(day6_dir, 'messy_dataset.csv'), index=False)
 nb = nbf.v4.new_notebook()
 
 cells = [
-    nbf.v4.new_markdown_cell("# Day 6: Data Cleaning & Preprocessing\nIn this notebook, we will clean our messy dataset by handling missing values, removing duplicates, fixing data types, and creating new features."),
+    nbf.v4.new_markdown_cell("# day 6 data cleaning\ncleaning up the dataset"),
     
-    nbf.v4.new_code_cell("import pandas as pd\nimport numpy as np\n\n# Load the messy dataset\ndf = pd.read_csv('messy_dataset.csv')\ndf.head()"),
+    nbf.v4.new_code_cell("import pandas as pd\nimport numpy as np\n\ndf = pd.read_csv('messy_dataset.csv')\ndf.head()"),
     
-    nbf.v4.new_markdown_cell("### 1. Handling Missing Values\nLet's check for missing values and handle them."),
+    nbf.v4.new_markdown_cell("### 1. missing values\nchecking for missing values"),
     
-    nbf.v4.new_code_cell("# Check missing values\ndf.isnull().sum()"),
+    nbf.v4.new_code_cell("df.isnull().sum()"),
     
-    nbf.v4.new_code_cell("# We can fill missing numerical values with median and categorical with mode.\n# For 'Sales', since it is loaded as object due to nan or strings, we will handle its type first in the next section.\n# Let's fill 'Category' missing values with mode\ndf['Category'] = df['Category'].fillna(df['Category'].mode()[0])\n\n# Fill 'Profit' missing values with median\ndf['Profit'] = df['Profit'].fillna(df['Profit'].median())\n\ndf.isnull().sum()"),
+    nbf.v4.new_code_cell("df['Category'] = df['Category'].fillna(df['Category'].mode()[0])\ndf['Profit'] = df['Profit'].fillna(df['Profit'].median())\n\ndf.isnull().sum()"),
     
-    nbf.v4.new_markdown_cell("### 2. Removing Duplicates\nCheck and drop duplicate rows."),
+    nbf.v4.new_markdown_cell("### 2. remove duplicates"),
     
-    nbf.v4.new_code_cell("# Check duplicates\nprint('Duplicates:', df.duplicated().sum())\n\n# Drop duplicates\ndf = df.drop_duplicates()\nprint('Duplicates after dropping:', df.duplicated().sum())"),
+    nbf.v4.new_code_cell("df.duplicated().sum()\ndf = df.drop_duplicates()\ndf.duplicated().sum()"),
     
-    nbf.v4.new_markdown_cell("### 3. Fixing Data Types\nConvert columns to appropriate data types."),
+    nbf.v4.new_markdown_cell("### 3. fix data types"),
     
     nbf.v4.new_code_cell("df.info()"),
     
-    nbf.v4.new_code_cell("# Convert 'Sales' and 'Quantity' to numeric\ndf['Sales'] = pd.to_numeric(df['Sales'])\ndf['Quantity'] = pd.to_numeric(df['Quantity'])\n\n# Convert date columns to datetime\ndf['Order Date'] = pd.to_datetime(df['Order Date'])\ndf['Ship Date'] = pd.to_datetime(df['Ship Date'])\n\ndf.info()"),
+    nbf.v4.new_code_cell("df['Sales'] = pd.to_numeric(df['Sales'])\ndf['Quantity'] = pd.to_numeric(df['Quantity'])\n\ndf['Order Date'] = pd.to_datetime(df['Order Date'])\ndf['Ship Date'] = pd.to_datetime(df['Ship Date'])\n\ndf.info()"),
     
-    nbf.v4.new_markdown_cell("### 4. Creating New Features\nWe will create 2 new features:\n1. **Processing Time**: Ship Date - Order Date\n2. **Sales per Item**: Sales / Quantity"),
+    nbf.v4.new_markdown_cell("### 4. new features"),
     
-    nbf.v4.new_code_cell("# Feature 1: Processing Time (in days)\ndf['Processing Time'] = (df['Ship Date'] - df['Order Date']).dt.days\n\n# Feature 2: Sales per Item\ndf['Sales per Item'] = df['Sales'] / df['Quantity']\n\ndf.head()"),
+    nbf.v4.new_code_cell("df['Processing Time'] = (df['Ship Date'] - df['Order Date']).dt.days\ndf['Sales per Item'] = df['Sales'] / df['Quantity']\n\ndf.head()"),
     
-    nbf.v4.new_markdown_cell("### 5. Saving the Cleaned Dataset"),
+    nbf.v4.new_markdown_cell("### 5. save dataset"),
     
-    nbf.v4.new_code_cell("df.to_csv('cleaned_dataset.csv', index=False)\nprint('Cleaned dataset saved successfully!')")
+    nbf.v4.new_code_cell("df.to_csv('cleaned_dataset.csv', index=False)")
 ]
 
 nb['cells'] = cells
