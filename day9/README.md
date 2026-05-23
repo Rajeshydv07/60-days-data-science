@@ -5,7 +5,6 @@ Real-world datasets are rarely clean. They often contain missing values, duplica
 ## Project Files
 *   [day9_cleaning.ipynb](day9_cleaning.ipynb): The Jupyter notebook showing the full cleaning process.
 *   [cleaned_store_transactions.csv](cleaned_store_transactions.csv): The final, clean dataset ready for analysis.
-*   [linkedin_post.md](linkedin_post.md): Reflection draft for social media.
 
 ---
 

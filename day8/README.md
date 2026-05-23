@@ -9,7 +9,6 @@ To load the sales dataset, analyze its distribution and relationships, identify 
 *   [day8_eda.ipynb](day8_eda.ipynb): The Jupyter notebook containing the full EDA, visualizations, and annotations.
 *   [sales_data.csv](sales_data.csv): The retail sales dataset used for analysis (mimicking Superstore Sales schema).
 *   [generate_data.py](generate_data.py): The Python script used to generate the dataset.
-*   [linkedin_post.md](linkedin_post.md): Reflection draft for my social media update.
 
 ---
 
