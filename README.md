@@ -24,15 +24,15 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 
 | Day | Topic | Description & Key Focus | Core Files & Notebooks |
 | :---: | :--- | :--- | :--- |
-| **Day 1** | Python Basics | Setting up environment, basic variables, and syntax. | [day1/README.md](./day1/README.md) • [day1.py](./day1/day1.py) |
-| **Day 2** | Loops & Functions | Control flow, iteration, and modularizing code. | [day2/README.md](./day2/README.md) • [day2.py](./day2/day2.py) |
-| **Day 3** | Dictionaries & File Handling | Organizing structured data and reading/writing CSV files. | [day3/README.md](./day3/README.md) • [day3.py](./day3/day3.py) |
-| **Day 4** | Project Setup & Domain Selection | Choosing the retail sales domain & dataset selection. | [day4/README.md](./day4/README.md) • [day4.py](./day4/day4.py) |
-| **Day 5** | Data Ingestion & Preliminary EDA | Loading Kaggle Superstore Sales dataset, structural checks. | [day5/README.md](./day5/README.md) • [day5_data_analysis.ipynb](./day5/day5_data_analysis.ipynb) |
-| **Day 6** | Data Cleaning & Preprocessing | Handling missing data, logical duplicates, feature engineering. | [day6/README.md](./day6/README.md) • [day6_data_cleaning.ipynb](./day6/day6_data_cleaning.ipynb) |
-| **Day 7** | Visual EDA & Outlier Identification | Outlier detection via boxplots, histograms, and Sprint 1 summary. | [day7/README.md](./day7/README.md) • [day7_eda.ipynb](./day7/day7_eda.ipynb) |
-| **Day 8** | Finding Hidden Patterns (EDA) | Generating 5 key business insights & seasonality analysis. | [day8/README.md](./day8/README.md) • [day8_eda.ipynb](./day8/day8_eda.ipynb) |
-| **Day 9** | Cleaning Messy Real-World Data | Building a robust pipeline to clean dirty, inconsistent formats. | [day9/README.md](./day9/README.md) • [day9_cleaning.ipynb](./day9/day9_cleaning.ipynb) |
+| **Day 1** | Python Basics | Setting up environment, basic variables, and syntax. | [day01/README.md](./day01/README.md) • [day01.py](./day01/day01.py) |
+| **Day 2** | Loops & Functions | Control flow, iteration, and modularizing code. | [day02/README.md](./day02/README.md) • [day02.py](./day02/day02.py) |
+| **Day 3** | Dictionaries & File Handling | Organizing structured data and reading/writing CSV files. | [day03/README.md](./day03/README.md) • [day03.py](./day03/day03.py) |
+| **Day 4** | Project Setup & Domain Selection | Choosing the retail sales domain & dataset selection. | [day04/README.md](./day04/README.md) • [day04.py](./day04/day04.py) |
+| **Day 5** | Data Ingestion & Preliminary EDA | Loading Kaggle Superstore Sales dataset, structural checks. | [day05/README.md](./day05/README.md) • [day5_data_analysis.ipynb](./day05/day5_data_analysis.ipynb) |
+| **Day 6** | Data Cleaning & Preprocessing | Handling missing data, logical duplicates, feature engineering. | [day06/README.md](./day06/README.md) • [day6_data_cleaning.ipynb](./day06/day6_data_cleaning.ipynb) |
+| **Day 7** | Visual EDA & Outlier Identification | Outlier detection via boxplots, histograms, and Sprint 1 summary. | [day07/README.md](./day07/README.md) • [day7_eda.ipynb](./day07/day7_eda.ipynb) |
+| **Day 8** | Finding Hidden Patterns (EDA) | Generating 5 key business insights & seasonality analysis. | [day08/README.md](./day08/README.md) • [day8_eda.ipynb](./day08/day8_eda.ipynb) |
+| **Day 9** | Cleaning Messy Real-World Data | Building a robust pipeline to clean dirty, inconsistent formats. | [day09/README.md](./day09/README.md) • [day9_cleaning.ipynb](./day09/day9_cleaning.ipynb) |
 | **Day 10** | Feature Engineering | Categorical encoding, numerical scaling, ratio/date derived features, and model-readiness comparisons. | [day10/README.md](./day10/README.md) • [day10/day10_feature_engineering.ipynb](./day10/day10_feature_engineering.ipynb) |
 | **Day 11+** | *In Progress* 🔄 | Upcoming days will cover advanced analytics and ML modeling. | *Stay tuned!* |
 
