@@ -4,10 +4,7 @@ Real-world datasets are rarely clean. They often contain missing values, duplica
 
 ## Project Files
 *   [day9_cleaning.ipynb](day9_cleaning.ipynb): The Jupyter notebook showing the full cleaning process.
-*   [dirty_store_transactions.csv](dirty_store_transactions.csv): The raw, messy store data.
 *   [cleaned_store_transactions.csv](cleaned_store_transactions.csv): The final, clean dataset ready for analysis.
-*   [generate_dirty_data.py](generate_dirty_data.py): The Python script used to inject anomalies into the data.
-*   [setup_day9.py](setup_day9.py): The script that compiles and executes the notebook.
 *   [linkedin_post.md](linkedin_post.md): Reflection draft for social media.
 
 ---
@@ -57,11 +54,3 @@ Real-world datasets are rarely clean. They often contain missing values, duplica
 *   **Action:** Formatted all postal codes to 5-digit strings by removing decimal points and padding them with leading zeros. Set missing zip codes to `'Unknown'`.
 
 ---
-
-## How to Run
-To regenerate the messy dataset and execute the data cleaning pipeline:
-```bash
-python day9/generate_dirty_data.py
-python day9/setup_day9.py
-```
-This will recreate `dirty_store_transactions.csv`, run the Jupyter notebook `day9_cleaning.ipynb`, and export the cleaned dataset.
