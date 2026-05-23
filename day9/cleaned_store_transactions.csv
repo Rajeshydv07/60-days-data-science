@@ -1,0 +1,955 @@
+Row ID,Order ID,Order Date,Customer Name,Segment,Country,Postal Code,Category,Sales,Quantity
+528,CA-2018-118168,2016-05-13,Darrin Van Huff,Corporate,United States,77041,Technology,629.86,4
+360,CA-2016-106291,2017-09-15,Ken Lonsdale,Consumer,United States,77041,Office Supplies,1464.64,5
+448,CA-2017-133460,2017-11-29,Darrin Van Huff,Home Office,United States,10008,Office Supplies,184.82,9
+32,CA-2019-119476,2018-07-03,Ken Lonsdale,Consumer,United States,77041,Technology,745.52,9
+622,CA-2018-106179,2016-03-05,Ruben Hope,Home Office,United States,10008,Technology,1097.8,8
+591,CA-2017-103836,2017-10-29,Brosina Hoffman,Consumer,United States,10008,Office Supplies,370.56,5
+906,CA-2018-166411,2017-02-10,Ruben Hope,Home Office,United States,02108,Technology,711.78,9
+738,CA-2016-116749,2019-02-24,Claire Gute,Consumer,United States,90036,Office Supplies,1104.47,5
+77,CA-2019-172856,2018-10-12,Ken Lonsdale,Corporate,United States,10008,Technology,627.68,2
+949,CA-2018-194443,2018-08-03,Ken Lonsdale,Home Office,United States,Unknown,Technology,417.96,5
+433,CA-2016-162394,2017-02-08,Unknown,Corporate,United States,60610,Office Supplies,268.92,9
+71,CA-2017-114764,2017-11-08,Sean O'Donnell,Corporate,United States,60610,Office Supplies,375.83,5
+681,CA-2016-120052,2019-09-01,Sandra Flanagan,Corporate,United States,Unknown,Furniture,916.21,3
+102,CA-2016-121473,2018-10-13,Zuschuss Donatelli,Corporate,United States,02108,Office Supplies,543.39,2
+846,CA-2018-197111,2016-07-14,Unknown,Corporate,United States,60610,Furniture,1111.58,3
+657,CA-2019-134559,2017-03-27,Sean O'Donnell,Corporate,United States,02108,Furniture,365.12,6
+311,CA-2016-193007,2017-09-14,Sandra Flanagan,Consumer,United States,60610,Office Supplies,256.49,6
+345,CA-2019-156769,2017-02-12,Sandra Flanagan,Consumer,United States,02108,Technology,98.29,4
+838,CA-2018-112960,2017-04-11,Ken Lonsdale,Home Office,United States,10008,Technology,365.84,6
+175,CA-2017-139562,2016-01-14,Ruben Hope,Home Office,United States,77041,Furniture,453.95,6
+97,CA-2018-112234,2019-09-02,Sean O'Donnell,Home Office,United States,77041,Technology,1021.57,6
+599,CA-2019-147056,2019-01-30,Unknown,Consumer,United States,77041,Office Supplies,900.6,2
+219,CA-2018-122972,2019-08-20,Brosina Hoffman,Home Office,United States,10008,Furniture,521.11,9
+421,CA-2018-194580,2019-08-30,Ken Lonsdale,Home Office,United States,90036,Technology,282.64,7
+209,CA-2018-184907,2017-02-19,Brosina Hoffman,Consumer,United States,10008,Furniture,891.45,9
+775,CA-2019-181228,2019-06-14,Sean O'Donnell,Home Office,United States,10008,Technology,686.795,6
+291,CA-2019-160008,2018-02-26,Unknown,Consumer,United States,10008,Office Supplies,162.31,9
+890,CA-2016-183743,2018-07-24,Sean O'Donnell,Corporate,United States,60610,Technology,301.64,2
+671,CA-2016-109321,2019-06-29,Darrin Van Huff,Consumer,United States,60610,Furniture,642.41,3
+904,CA-2018-119560,2017-01-06,Brosina Hoffman,Consumer,United States,90036,Technology,212.64,5
+10412,CA-2019-134674,2016-07-08,Sandra Flanagan,Consumer,United States,60610,Office Supplies,1050.98,4
+637,CA-2018-129753,2019-08-15,Ken Lonsdale,Corporate,United States,77041,Furniture,307.27,2
+330,CA-2017-170070,2016-08-25,Ruben Hope,Home Office,United States,02108,Office Supplies,1448.02,1
+763,CA-2017-149052,2019-08-28,Darrin Van Huff,Corporate,United States,77041,Furniture,1133.8,3
+491,CA-2016-168521,2016-11-30,Ruben Hope,Consumer,United States,60610,Office Supplies,89.49,5
+351,CA-2019-104282,2016-02-01,Ruben Hope,Corporate,United States,60610,Office Supplies,778.33,10
+501,CA-2016-108784,2017-06-03,Unknown,Home Office,United States,77041,Office Supplies,51.41,2
+308,CA-2016-138138,2016-06-28,Brosina Hoffman,Corporate,United States,60610,Office Supplies,1401.22,10
+854,CA-2016-187525,2016-08-12,Ken Lonsdale,Consumer,United States,Unknown,Office Supplies,528.11,7
+352,CA-2018-172470,2016-11-21,Ken Lonsdale,Consumer,United States,90036,Office Supplies,980.52,7
+644,CA-2018-108442,2016-05-27,Darrin Van Huff,Corporate,United States,Unknown,Office Supplies,93.69,7
+440,CA-2019-136289,2018-08-11,Sean O'Donnell,Home Office,United States,02108,Office Supplies,341.72,6
+820,CA-2018-108833,2018-03-05,Brosina Hoffman,Home Office,United States,02108,Office Supplies,1019.01,10
+834,CA-2016-140811,2016-05-10,Darrin Van Huff,Home Office,United States,77041,Technology,1318.12,4
+519,CA-2018-179366,2019-03-28,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,475.25,1
+555,CA-2019-173793,2016-09-08,Brosina Hoffman,Consumer,United States,02108,Furniture,905.14,10
+290,CA-2018-177003,2017-02-19,Brosina Hoffman,Consumer,United States,77041,Office Supplies,1264.75,7
+293,CA-2016-170078,2018-03-11,Zuschuss Donatelli,Consumer,United States,60610,Office Supplies,899.32,7
+214,CA-2018-137363,2017-03-05,Sandra Flanagan,Home Office,United States,10008,Technology,348.94,4
+967,CA-2018-157133,2019-09-03,Claire Gute,Consumer,United States,77041,Technology,1393.17,10
+60,CA-2017-164752,2016-02-23,Sean O'Donnell,Corporate,United States,60610,Office Supplies,677.71,10
+693,CA-2019-183598,2018-04-02,Zuschuss Donatelli,Corporate,United States,Unknown,Technology,430.06,8
+322,CA-2016-180678,2018-07-31,Ruben Hope,Corporate,United States,90036,Furniture,986.67,3
+11,CA-2017-166307,2017-06-27,Brosina Hoffman,Home Office,United States,60610,Furniture,1114.91,5
+332,CA-2017-123295,2018-03-18,Darrin Van Huff,Home Office,United States,02108,Technology,202.61,1
+335,CA-2016-100285,2016-10-31,Sandra Flanagan,Corporate,United States,02108,Office Supplies,1459.41,4
+919,CA-2016-171498,2017-09-27,Sean O'Donnell,Consumer,United States,77041,Furniture,850.18,4
+87,CA-2017-162784,2017-10-05,Zuschuss Donatelli,Home Office,United States,60610,Furniture,695.13,7
+333,CA-2018-192727,2016-06-23,Sandra Flanagan,Corporate,United States,90036,Furniture,340.35,7
+744,CA-2017-165099,2016-10-18,Ken Lonsdale,Consumer,United States,77041,Furniture,417.65,2
+451,CA-2019-151249,2019-04-26,Brosina Hoffman,Corporate,United States,02108,Furniture,788.74,2
+469,CA-2019-137330,2019-01-03,Darrin Van Huff,Consumer,United States,90036,Furniture,1041.96,7
+306,CA-2017-193315,2016-10-20,Claire Gute,Corporate,United States,77041,Furniture,991.32,5
+31,CA-2019-112217,2017-04-05,Sean O'Donnell,Home Office,United States,60610,Furniture,417.99,1
+559,CA-2018-131302,2017-02-23,Ruben Hope,Home Office,United States,90036,Technology,791.69,4
+406,CA-2019-143274,2019-03-24,Unknown,Consumer,United States,77041,Technology,640.98,7
+55,CA-2016-168614,2018-01-08,Claire Gute,Home Office,United States,02108,Office Supplies,531.69,8
+24,CA-2017-190519,2018-09-02,Claire Gute,Home Office,United States,60610,Furniture,476.74,8
+762,CA-2016-174061,2016-12-17,Darrin Van Huff,Consumer,United States,90036,Furniture,14.81,6
+482,CA-2017-192830,2018-10-11,Claire Gute,Consumer,United States,90036,Office Supplies,890.5,6
+4,CA-2018-197912,2019-04-12,Brosina Hoffman,Corporate,United States,10008,Office Supplies,704.73,2
+232,CA-2016-110780,2017-11-02,Zuschuss Donatelli,Consumer,United States,02108,Technology,162.23,7
+356,CA-2019-126177,2019-03-07,Darrin Van Huff,Home Office,United States,90036,Furniture,560.63,6
+674,CA-2018-111668,2018-05-09,Claire Gute,Consumer,United States,60610,Office Supplies,169.32,5
+757,CA-2016-192558,2016-12-26,Darrin Van Huff,Corporate,United States,90036,Technology,686.795,3
+844,CA-2017-176322,2016-06-21,Brosina Hoffman,Consumer,United States,90036,Technology,789.14,7
+668,CA-2017-123414,2017-12-25,Ruben Hope,Corporate,United States,10008,Technology,87.86,1
+216,CA-2017-175775,2019-02-06,Sandra Flanagan,Corporate,United States,77041,Technology,629.57,8
+635,CA-2016-163632,2018-12-01,Sean O'Donnell,Corporate,United States,60610,Furniture,1414.74,6
+319,CA-2018-136152,2018-05-26,Brosina Hoffman,Corporate,United States,02108,Technology,1394.74,7
+987,CA-2019-174221,2019-03-30,Sandra Flanagan,Consumer,United States,77041,Technology,498.29,9
+716,CA-2017-169813,2016-09-14,Ruben Hope,Corporate,United States,02108,Furniture,96.19,4
+395,CA-2017-195336,2016-06-01,Sandra Flanagan,Consumer,United States,60610,Furniture,942.79,4
+199,CA-2016-100110,2019-02-20,Claire Gute,Corporate,United States,10008,Office Supplies,763.06,8
+864,CA-2018-161740,2017-10-31,Zuschuss Donatelli,Consumer,United States,Unknown,Office Supplies,1450.94,10
+925,CA-2017-175891,2016-07-11,Sean O'Donnell,Consumer,United States,60610,Office Supplies,675.06,10
+40,CA-2017-108992,2019-02-09,Brosina Hoffman,Home Office,United States,Unknown,Furniture,1183.71,5
+315,CA-2018-186397,2018-12-29,Ruben Hope,Corporate,United States,10008,Technology,541.8,10
+581,CA-2016-104015,2019-10-10,Sean O'Donnell,Corporate,United States,10008,Furniture,203.98,4
+67,CA-2019-119848,2018-04-25,Sandra Flanagan,Consumer,United States,02108,Technology,1082.78,4
+718,CA-2018-150572,2018-02-08,Ruben Hope,Consumer,United States,Unknown,Furniture,735.135,4
+68,CA-2018-137880,2017-02-28,Ruben Hope,Home Office,United States,77041,Office Supplies,123.15,9
+295,CA-2018-142384,2016-12-21,Ken Lonsdale,Home Office,United States,77041,Technology,1383.72,7
+922,CA-2016-117625,2018-04-02,Brosina Hoffman,Corporate,United States,90036,Office Supplies,1442.32,7
+465,CA-2016-186967,2019-09-03,Ken Lonsdale,Corporate,United States,77041,Furniture,485.66,5
+108,CA-2016-102857,2016-05-12,Sean O'Donnell,Corporate,United States,77041,Furniture,671.79,10
+630,CA-2016-192924,2016-07-03,Unknown,Corporate,United States,77041,Technology,1160.64,3
+577,CA-2018-188327,2016-11-22,Ruben Hope,Corporate,United States,02108,Technology,853.96,9
+255,CA-2019-199267,2019-10-04,Sean O'Donnell,Home Office,United States,90036,Technology,1039.25,10
+724,CA-2018-113068,2019-03-03,Brosina Hoffman,Consumer,United States,02108,Office Supplies,587.71,6
+930,CA-2017-142293,2019-02-16,Zuschuss Donatelli,Consumer,United States,77041,Technology,391.02,2
+540,CA-2018-135264,2016-04-16,Claire Gute,Corporate,United States,60610,Technology,160.29,9
+916,CA-2016-156015,2016-10-16,Sandra Flanagan,Consumer,United States,90036,Office Supplies,45.22,9
+526,CA-2019-151949,2019-04-20,Zuschuss Donatelli,Corporate,United States,02108,Technology,1345.39,1
+544,CA-2016-176871,2018-07-19,Brosina Hoffman,Corporate,United States,90036,Technology,1401.29,6
+755,CA-2018-179133,2016-09-13,Sandra Flanagan,Home Office,United States,10008,Office Supplies,1183.37,4
+101,CA-2017-136368,2016-06-20,Sean O'Donnell,Home Office,United States,10008,Furniture,178.4,3
+89,CA-2019-113886,2016-01-22,Brosina Hoffman,Home Office,United States,02108,Furniture,517.88,8
+64,CA-2019-103037,2016-07-03,Unknown,Corporate,United States,90036,Office Supplies,603.87,9
+849,CA-2018-123245,2019-06-27,Darrin Van Huff,Corporate,United States,77041,Furniture,627.75,4
+894,CA-2017-187742,2017-06-19,Brosina Hoffman,Home Office,United States,60610,Technology,622.69,3
+140,CA-2016-156165,2017-07-25,Zuschuss Donatelli,Consumer,United States,60610,Furniture,480.2,7
+604,CA-2019-157253,2016-10-31,Brosina Hoffman,Corporate,United States,77041,Furniture,1193.68,10
+621,CA-2017-107008,2017-02-21,Sandra Flanagan,Home Office,United States,02108,Technology,196.24,5
+543,CA-2019-149640,2019-09-12,Brosina Hoffman,Corporate,United States,02108,Furniture,788.8,5
+590,CA-2019-160851,2017-10-19,Zuschuss Donatelli,Home Office,United States,02108,Furniture,1440.72,8
+110,CA-2018-176544,2017-04-21,Zuschuss Donatelli,Home Office,United States,77041,Technology,1108.47,10
+963,CA-2018-149807,2019-09-15,Sean O'Donnell,Consumer,United States,10008,Office Supplies,1092.6,8
+248,CA-2016-133247,2018-10-30,Ruben Hope,Consumer,United States,10008,Technology,216.98,1
+923,CA-2018-189125,2016-08-14,Darrin Van Huff,Home Office,United States,60610,Furniture,585.51,8
+698,CA-2018-132422,2016-06-02,Ken Lonsdale,Home Office,United States,Unknown,Technology,230.26,7
+487,CA-2018-191531,2017-02-02,Brosina Hoffman,Consumer,United States,10008,Technology,676.98,1
+137,CA-2017-118111,2018-04-25,Zuschuss Donatelli,Corporate,United States,02108,Furniture,1043.0,10
+933,CA-2017-108038,2018-04-23,Brosina Hoffman,Consumer,United States,02108,Office Supplies,1477.95,5
+689,CA-2018-181777,2017-01-07,Sean O'Donnell,Corporate,United States,10008,Office Supplies,130.15,3
+759,CA-2017-158412,2016-03-21,Zuschuss Donatelli,Corporate,United States,90036,Office Supplies,1374.24,5
+159,CA-2018-164532,2019-03-22,Zuschuss Donatelli,Consumer,United States,60610,Office Supplies,1031.08,2
+494,CA-2017-177759,2017-09-13,Brosina Hoffman,Consumer,United States,10008,Office Supplies,589.18,4
+502,CA-2018-189764,2018-10-01,Darrin Van Huff,Consumer,United States,02108,Office Supplies,1057.54,10
+683,CA-2018-198422,2017-10-07,Zuschuss Donatelli,Consumer,United States,10008,Furniture,812.57,1
+974,CA-2018-182322,2019-08-04,Brosina Hoffman,Consumer,United States,02108,Furniture,1468.71,4
+257,CA-2019-106674,2017-11-14,Ken Lonsdale,Home Office,United States,77041,Office Supplies,95.75,10
+735,CA-2016-108967,2018-01-13,Ken Lonsdale,Corporate,United States,77041,Office Supplies,1082.92,9
+858,CA-2016-142457,2018-09-11,Sandra Flanagan,Home Office,United States,90036,Furniture,783.53,9
+960,CA-2018-126769,2016-03-13,Ruben Hope,Home Office,United States,77041,Furniture,587.08,10
+618,CA-2019-144553,2019-01-05,Zuschuss Donatelli,Consumer,United States,02108,Technology,631.01,10
+984,CA-2018-174596,2016-03-08,Claire Gute,Home Office,United States,90036,Technology,589.93,4
+902,CA-2018-116357,2018-06-21,Ruben Hope,Home Office,United States,02108,Furniture,1263.06,1
+211,CA-2018-112752,2018-07-23,Darrin Van Huff,Home Office,United States,60610,Furniture,506.58,3
+169,CA-2016-133202,2018-09-12,Claire Gute,Consumer,United States,02108,Furniture,1037.67,8
+940,CA-2019-195406,2017-10-29,Ken Lonsdale,Corporate,United States,10008,Technology,32.88,6
+441,CA-2017-175292,2017-12-27,Sean O'Donnell,Consumer,United States,90036,Office Supplies,763.06,8
+372,CA-2016-191956,2017-02-23,Sandra Flanagan,Home Office,United States,02108,Technology,686.795,9
+546,CA-2019-132921,2017-07-10,Ruben Hope,Consumer,United States,10008,Technology,849.91,7
+56,CA-2016-193853,2018-07-26,Brosina Hoffman,Corporate,United States,02108,Technology,191.09,7
+121,CA-2018-193004,2018-11-03,Claire Gute,Consumer,United States,02108,Technology,561.84,6
+617,CA-2016-177872,2019-09-05,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,493.68,6
+26,CA-2016-108564,2018-03-31,Claire Gute,Corporate,United States,77041,Office Supplies,449.54,2
+73,CA-2016-168879,2018-07-03,Darrin Van Huff,Home Office,United States,10008,Furniture,772.31,1
+533,CA-2019-134782,2016-01-09,Unknown,Consumer,United States,02108,Technology,434.9,4
+45,CA-2017-120632,2019-06-19,Ken Lonsdale,Corporate,United States,02108,Office Supplies,86.9,5
+297,CA-2019-196895,2017-11-04,Claire Gute,Home Office,United States,10008,Technology,337.55,2
+200,CA-2017-111097,2016-10-08,Ken Lonsdale,Corporate,United States,90036,Office Supplies,866.65,1
+754,CA-2017-173744,2016-12-19,Ken Lonsdale,Consumer,United States,02108,Furniture,106.06,7
+794,CA-2019-184466,2017-11-01,Unknown,Home Office,United States,10008,Office Supplies,645.02,10
+486,CA-2019-164291,2016-01-27,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,372.93,8
+210,CA-2016-104855,2017-11-25,Ken Lonsdale,Home Office,United States,02108,Furniture,33.5,5
+266,CA-2019-157682,2018-09-29,Sean O'Donnell,Corporate,United States,77041,Furniture,615.89,10
+378,CA-2017-108802,2018-06-17,Darrin Van Huff,Consumer,United States,02108,Furniture,116.79,7
+895,CA-2017-112008,2018-10-10,Ken Lonsdale,Consumer,United States,02108,Furniture,1103.28,7
+789,CA-2017-198856,2017-08-24,Zuschuss Donatelli,Home Office,United States,02108,Office Supplies,1348.8,8
+529,CA-2017-104823,2016-06-11,Darrin Van Huff,Home Office,United States,60610,Technology,830.42,1
+452,CA-2017-109227,2017-11-30,Zuschuss Donatelli,Home Office,United States,10008,Office Supplies,1275.7,2
+596,CA-2016-183006,2016-11-05,Darrin Van Huff,Corporate,United States,90036,Furniture,1083.9,8
+746,CA-2019-144659,2017-04-02,Claire Gute,Home Office,United States,77041,Office Supplies,46.1,3
+966,CA-2016-174150,2017-02-27,Claire Gute,Consumer,United States,10008,Technology,326.37,1
+527,CA-2017-104284,2016-09-30,Ruben Hope,Consumer,United States,60610,Furniture,1346.1,9
+307,CA-2018-150264,2017-07-28,Darrin Van Huff,Home Office,United States,60610,Office Supplies,1077.58,7
+320,CA-2017-162869,2018-10-16,Darrin Van Huff,Home Office,United States,02108,Technology,68.32,4
+61,CA-2019-165911,2016-04-23,Sean O'Donnell,Corporate,United States,60610,Technology,1412.7,10
+483,CA-2018-136890,2016-11-26,Claire Gute,Consumer,United States,02108,Technology,678.93,6
+855,CA-2018-195863,2019-04-13,Brosina Hoffman,Consumer,United States,02108,Technology,1038.58,1
+616,CA-2016-190105,2018-09-05,Claire Gute,Consumer,United States,02108,Technology,561.72,8
+542,CA-2016-187952,2017-05-24,Brosina Hoffman,Home Office,United States,02108,Furniture,673.38,2
+429,CA-2018-159031,2017-06-12,Sean O'Donnell,Consumer,United States,10008,Furniture,1044.15,5
+185,CA-2019-196360,2016-03-21,Claire Gute,Corporate,United States,90036,Furniture,174.19,5
+882,CA-2019-163994,2018-03-30,Ken Lonsdale,Consumer,United States,10008,Furniture,1081.46,5
+983,CA-2017-105478,2017-07-31,Claire Gute,Corporate,United States,02108,Office Supplies,921.25,10
+600,CA-2016-154046,2017-04-12,Darrin Van Huff,Consumer,United States,02108,Furniture,926.13,8
+907,CA-2017-185255,2018-04-16,Zuschuss Donatelli,Home Office,United States,Unknown,Furniture,604.34,1
+262,CA-2016-158009,2016-10-25,Darrin Van Huff,Consumer,United States,90036,Office Supplies,1329.25,6
+343,CA-2018-121164,2016-05-19,Darrin Van Huff,Corporate,United States,10008,Office Supplies,1286.22,6
+523,CA-2017-154734,2016-11-06,Brosina Hoffman,Consumer,United States,02108,Office Supplies,517.39,10
+238,CA-2016-170232,2017-03-14,Ken Lonsdale,Consumer,United States,60610,Office Supplies,453.36,9
+111,CA-2017-164517,2019-01-15,Claire Gute,Home Office,United States,Unknown,Technology,216.77,9
+498,CA-2018-153346,2016-12-22,Ruben Hope,Home Office,United States,90036,Office Supplies,811.12,3
+517,CA-2019-122010,2017-04-28,Darrin Van Huff,Consumer,United States,10008,Furniture,772.3,9
+362,CA-2017-152455,2017-01-19,Zuschuss Donatelli,Consumer,United States,02108,Technology,531.18,9
+430,CA-2017-103670,2017-03-09,Zuschuss Donatelli,Home Office,United States,60610,Office Supplies,1306.82,2
+278,CA-2016-143724,2018-11-30,Sandra Flanagan,Home Office,United States,90036,Technology,103.36,2
+261,CA-2017-184815,2018-01-14,Brosina Hoffman,Consumer,United States,02108,Technology,346.13,9
+833,CA-2016-163810,2018-06-24,Brosina Hoffman,Home Office,United States,90036,Technology,337.85,9
+797,CA-2016-177435,2017-02-10,Claire Gute,Corporate,United States,02108,Technology,626.89,4
+645,CA-2016-109658,2019-01-24,Claire Gute,Corporate,United States,60610,Furniture,591.98,1
+405,CA-2016-170481,2018-07-28,Sean O'Donnell,Consumer,United States,77041,Office Supplies,964.19,3
+843,CA-2018-191315,2019-04-19,Ruben Hope,Home Office,United States,02108,Furniture,794.86,8
+836,CA-2017-178829,2019-10-02,Ken Lonsdale,Consumer,United States,02108,Furniture,1489.03,4
+138,CA-2018-155363,2016-01-27,Claire Gute,Consumer,United States,02108,Technology,1110.54,5
+496,CA-2016-162456,2016-12-23,Sandra Flanagan,Consumer,United States,Unknown,Office Supplies,621.57,5
+245,CA-2017-177858,2018-04-20,Sean O'Donnell,Corporate,United States,77041,Technology,941.81,3
+771,CA-2019-122313,2018-06-27,Zuschuss Donatelli,Consumer,United States,02108,Furniture,79.6,9
+531,CA-2017-167211,2019-05-21,Sean O'Donnell,Home Office,United States,77041,Technology,1106.14,10
+573,CA-2018-146907,2016-12-16,Darrin Van Huff,Corporate,United States,02108,Furniture,635.74,9
+828,CA-2016-161438,2019-01-12,Ken Lonsdale,Home Office,United States,10008,Furniture,756.37,10
+717,CA-2016-144990,2018-12-23,Sean O'Donnell,Home Office,United States,02108,Office Supplies,1463.26,5
+437,CA-2016-186431,2018-03-09,Brosina Hoffman,Corporate,United States,02108,Technology,1465.88,10
+860,CA-2018-122193,2017-05-25,Claire Gute,Corporate,United States,10008,Furniture,735.135,6
+809,CA-2018-103561,2016-05-25,Darrin Van Huff,Home Office,United States,02108,Office Supplies,371.72,5
+79,CA-2018-140425,2017-06-19,Darrin Van Huff,Corporate,United States,90036,Furniture,348.88,6
+30,CA-2019-167449,2016-01-03,Claire Gute,Corporate,United States,02108,Technology,362.75,9
+381,CA-2018-146109,2017-01-31,Brosina Hoffman,Corporate,United States,02108,Furniture,274.99,6
+281,CA-2018-180753,2017-09-05,Claire Gute,Home Office,United States,02108,Furniture,115.23,2
+300,CA-2019-154502,2018-03-19,Unknown,Consumer,United States,02108,Technology,638.94,1
+663,CA-2016-182483,2018-01-01,Darrin Van Huff,Consumer,United States,77041,Office Supplies,1270.79,7
+656,CA-2016-111594,2017-08-28,Sean O'Donnell,Home Office,United States,60610,Technology,928.46,5
+310,CA-2017-191803,2016-04-17,Zuschuss Donatelli,Consumer,United States,77041,Furniture,824.27,6
+579,CA-2019-182059,2019-01-22,Claire Gute,Corporate,United States,10008,Office Supplies,1171.47,8
+179,CA-2016-114728,2016-04-21,Zuschuss Donatelli,Consumer,United States,60610,Technology,32.49,5
+10741,CA-2017-147396,2016-01-31,Zuschuss Donatelli,Corporate,United States,02108,Technology,1109.69,7
+66,CA-2018-162245,2016-02-04,Ken Lonsdale,Home Office,United States,60610,Technology,1163.04,2
+142,CA-2018-167411,2018-11-07,Brosina Hoffman,Consumer,United States,10008,Furniture,1243.98,2
+468,CA-2018-153635,2016-01-21,Brosina Hoffman,Home Office,United States,02108,Furniture,1353.81,5
+389,CA-2017-149950,2019-08-22,Brosina Hoffman,Home Office,United States,60610,Furniture,1199.51,4
+850,CA-2018-120873,2017-08-13,Ken Lonsdale,Consumer,United States,60610,Technology,585.44,3
+426,CA-2018-179929,2017-05-26,Unknown,Home Office,United States,10008,Technology,487.47,4
+334,CA-2016-164463,2016-12-13,Zuschuss Donatelli,Consumer,United States,10008,Technology,939.01,6
+685,CA-2019-120196,2019-10-19,Darrin Van Huff,Consumer,United States,60610,Furniture,942.67,3
+888,CA-2017-132435,2019-03-30,Sean O'Donnell,Home Office,United States,90036,Office Supplies,405.19,4
+424,CA-2017-149189,2019-01-05,Darrin Van Huff,Consumer,United States,02108,Office Supplies,998.03,9
+973,CA-2019-140503,2016-07-14,Ruben Hope,Corporate,United States,90036,Office Supplies,898.72,7
+222,CA-2017-121135,2017-05-02,Sean O'Donnell,Consumer,United States,77041,Office Supplies,1153.93,9
+276,CA-2016-116702,2017-06-15,Zuschuss Donatelli,Home Office,United States,02108,Office Supplies,1492.68,1
+236,CA-2018-142006,2016-05-05,Ruben Hope,Consumer,United States,02108,Office Supplies,1366.03,5
+328,CA-2018-147973,2018-07-07,Darrin Van Huff,Home Office,United States,60610,Technology,1222.73,8
+193,CA-2018-163369,2018-12-08,Darrin Van Huff,Consumer,United States,02108,Technology,503.27,1
+530,CA-2018-108658,2016-04-10,Ken Lonsdale,Home Office,United States,02108,Technology,280.02,6
+50,CA-2019-137243,2017-05-31,Sean O'Donnell,Consumer,United States,90036,Technology,1420.93,9
+991,CA-2019-189538,2019-03-26,Claire Gute,Home Office,United States,90036,Technology,614.55,1
+3,CA-2018-191988,2019-10-31,Brosina Hoffman,Home Office,United States,02108,Technology,475.44,5
+941,CA-2017-163500,2017-12-03,Zuschuss Donatelli,Corporate,United States,77041,Technology,810.68,7
+788,CA-2016-196440,2017-08-27,Sean O'Donnell,Corporate,United States,02108,Technology,856.96,7
+927,CA-2019-126229,2016-07-11,Ruben Hope,Consumer,United States,02108,Technology,320.83,1
+250,CA-2018-192933,2019-02-22,Sean O'Donnell,Corporate,United States,02108,Technology,1381.02,5
+553,CA-2016-110962,2017-10-22,Darrin Van Huff,Consumer,United States,60610,Furniture,472.7,5
+950,CA-2017-175268,2017-01-15,Claire Gute,Home Office,United States,90036,Furniture,464.75,8
+95,CA-2017-193243,2017-10-21,Sandra Flanagan,Home Office,United States,02108,Technology,1162.33,6
+34,CA-2017-197880,2016-07-04,Darrin Van Huff,Consumer,United States,02108,Furniture,123.06,3
+260,CA-2016-173010,2017-07-01,Darrin Van Huff,Corporate,United States,Unknown,Furniture,181.5,9
+205,CA-2018-185766,2019-04-11,Brosina Hoffman,Consumer,United States,02108,Furniture,735.135,10
+347,CA-2017-191316,2018-06-13,Claire Gute,Consumer,United States,02108,Office Supplies,751.67,1
+594,CA-2019-145785,2019-11-01,Ruben Hope,Consumer,United States,02108,Technology,862.91,2
+78,CA-2016-170206,2017-01-25,Claire Gute,Home Office,United States,90036,Office Supplies,1044.96,5
+85,CA-2016-140405,2018-06-29,Darrin Van Huff,Home Office,United States,02108,Office Supplies,131.63,3
+10679,CA-2019-110339,2019-03-20,Ruben Hope,Home Office,United States,60610,Office Supplies,1007.77,4
+83,CA-2017-176943,2016-10-22,Zuschuss Donatelli,Corporate,United States,02108,Office Supplies,118.65,6
+371,CA-2017-176064,2018-11-14,Zuschuss Donatelli,Consumer,United States,90036,Technology,893.54,2
+937,CA-2018-195899,2016-03-17,Zuschuss Donatelli,Home Office,United States,77041,Office Supplies,1139.88,6
+896,CA-2019-102289,2017-10-16,Ruben Hope,Corporate,United States,10008,Furniture,735.135,1
+536,CA-2016-181309,2016-06-25,Brosina Hoffman,Home Office,United States,60610,Office Supplies,1122.86,4
+383,CA-2017-168287,2017-04-17,Ruben Hope,Consumer,United States,02108,Office Supplies,454.12,1
+719,CA-2019-133408,2017-06-09,Darrin Van Huff,Home Office,United States,02108,Furniture,842.52,5
+6,CA-2018-140306,2017-05-05,Darrin Van Huff,Consumer,United States,10008,Technology,1036.35,9
+431,CA-2017-119672,2017-07-23,Brosina Hoffman,Home Office,United States,02108,Furniture,1442.68,8
+605,CA-2018-104895,2016-02-10,Darrin Van Huff,Home Office,United States,90036,Furniture,449.96,10
+98,CA-2019-190968,2016-09-27,Darrin Van Huff,Corporate,United States,10008,Technology,976.78,7
+287,CA-2019-130634,2018-11-22,Sandra Flanagan,Consumer,United States,60610,Furniture,196.88,6
+382,CA-2018-117002,2019-05-26,Darrin Van Huff,Consumer,United States,02108,Technology,481.69,10
+891,CA-2017-193890,2017-07-24,Sandra Flanagan,Consumer,United States,90036,Furniture,875.93,7
+282,CA-2018-105754,2016-03-01,Zuschuss Donatelli,Home Office,United States,90036,Office Supplies,461.08,10
+267,CA-2016-148688,2017-09-16,Sean O'Donnell,Consumer,United States,77041,Technology,1306.29,7
+449,CA-2017-152108,2018-11-12,Claire Gute,Home Office,United States,02108,Furniture,252.63,3
+708,CA-2019-130188,2018-01-19,Zuschuss Donatelli,Home Office,United States,60610,Office Supplies,906.54,4
+324,CA-2019-117225,2016-08-12,Ruben Hope,Consumer,United States,60610,Office Supplies,232.98,4
+409,CA-2016-105006,2018-01-26,Sean O'Donnell,Corporate,United States,60610,Office Supplies,1273.1,6
+899,CA-2016-104762,2017-12-15,Brosina Hoffman,Corporate,United States,90036,Office Supplies,714.18,2
+539,CA-2018-114860,2016-07-13,Darrin Van Huff,Consumer,United States,60610,Technology,1343.51,7
+119,CA-2019-114748,2018-04-28,Darrin Van Huff,Consumer,United States,77041,Technology,1042.02,5
+694,CA-2016-111802,2018-08-22,Ken Lonsdale,Home Office,United States,02108,Office Supplies,763.06,1
+251,CA-2019-148963,2019-04-24,Darrin Van Huff,Corporate,United States,90036,Technology,1196.57,1
+665,CA-2018-186412,2019-10-30,Sean O'Donnell,Corporate,United States,02108,Furniture,342.13,8
+667,CA-2019-192727,2017-06-20,Sandra Flanagan,Corporate,United States,Unknown,Furniture,441.6,10
+10,CA-2016-124356,2016-05-20,Ken Lonsdale,Consumer,United States,10008,Technology,477.68,2
+197,CA-2019-174345,2017-12-01,Darrin Van Huff,Corporate,United States,10008,Technology,571.47,10
+713,CA-2017-109366,2018-06-22,Darrin Van Huff,Home Office,United States,02108,Office Supplies,1185.91,9
+82,CA-2016-112255,2018-04-10,Claire Gute,Corporate,United States,90036,Office Supplies,763.06,6
+584,CA-2017-135275,2016-03-18,Zuschuss Donatelli,Consumer,United States,10008,Furniture,673.75,10
+508,CA-2019-184677,2019-07-25,Sandra Flanagan,Consumer,United States,90036,Office Supplies,805.26,7
+240,CA-2017-133612,2019-05-16,Brosina Hoffman,Corporate,United States,02108,Furniture,68.14,6
+313,CA-2017-103018,2019-04-16,Darrin Van Huff,Corporate,United States,90036,Technology,836.31,10
+212,CA-2018-172536,2016-12-03,Sean O'Donnell,Home Office,United States,10008,Technology,1159.98,7
+862,CA-2016-159727,2016-11-15,Unknown,Corporate,United States,02108,Technology,634.36,1
+550,CA-2017-189710,2018-05-10,Darrin Van Huff,Consumer,United States,10008,Office Supplies,918.37,1
+480,CA-2018-172401,2017-01-30,Sandra Flanagan,Home Office,United States,02108,Technology,1169.42,1
+228,CA-2018-118837,2016-01-27,Sandra Flanagan,Consumer,United States,60610,Technology,1204.86,1
+911,CA-2016-134018,2019-07-18,Darrin Van Huff,Consumer,United States,10008,Office Supplies,1268.58,3
+363,CA-2019-127795,2016-11-04,Claire Gute,Consumer,United States,10008,Technology,377.17,2
+968,CA-2019-163511,2017-07-01,Unknown,Corporate,United States,90036,Office Supplies,1109.63,3
+178,CA-2017-173553,2019-06-15,Zuschuss Donatelli,Home Office,United States,02108,Furniture,735.135,4
+885,CA-2016-137465,2017-06-06,Zuschuss Donatelli,Corporate,United States,90036,Office Supplies,299.64,7
+939,CA-2019-187420,2018-02-11,Zuschuss Donatelli,Consumer,United States,90036,Furniture,394.76,7
+500,CA-2018-198281,2018-04-15,Sandra Flanagan,Consumer,United States,90036,Furniture,149.4,1
+484,CA-2017-176969,2016-12-15,Sandra Flanagan,Corporate,United States,02108,Furniture,575.28,3
+8,CA-2019-161213,2016-04-20,Claire Gute,Consumer,United States,77041,Technology,979.96,2
+156,CA-2019-153143,2019-04-15,Darrin Van Huff,Home Office,United States,02108,Furniture,164.17,5
+558,CA-2018-144555,2019-01-18,Claire Gute,Corporate,United States,90036,Office Supplies,1458.85,1
+666,CA-2019-105971,2018-11-13,Darrin Van Huff,Consumer,United States,02108,Technology,950.02,2
+514,CA-2019-103018,2019-01-13,Ken Lonsdale,Corporate,United States,02108,Technology,256.73,5
+425,CA-2019-199198,2018-08-08,Unknown,Corporate,United States,77041,Furniture,757.53,10
+800,CA-2018-102408,2017-05-24,Sean O'Donnell,Consumer,United States,90036,Technology,944.37,5
+585,CA-2016-137156,2016-06-27,Ken Lonsdale,Consumer,United States,90036,Office Supplies,1335.83,7
+358,CA-2016-137360,2016-02-06,Claire Gute,Corporate,United States,90036,Furniture,625.54,5
+597,CA-2017-104852,2017-08-24,Brosina Hoffman,Corporate,United States,02108,Technology,939.9,6
+959,CA-2016-192601,2016-10-28,Ken Lonsdale,Consumer,United States,02108,Technology,67.28,10
+586,CA-2018-176489,2018-11-03,Sandra Flanagan,Consumer,United States,02108,Technology,435.61,2
+446,CA-2016-162624,2018-10-06,Sean O'Donnell,Consumer,United States,60610,Office Supplies,695.91,3
+852,CA-2016-113304,2018-03-17,Darrin Van Huff,Consumer,United States,90036,Technology,33.55,3
+602,CA-2019-136198,2016-07-03,Claire Gute,Home Office,United States,02108,Office Supplies,85.56,5
+729,CA-2018-141393,2016-07-12,Darrin Van Huff,Consumer,United States,02108,Furniture,163.92,2
+479,CA-2019-144239,2016-03-23,Sandra Flanagan,Consumer,United States,02108,Technology,565.84,6
+897,CA-2016-177245,2016-04-17,Darrin Van Huff,Home Office,United States,60610,Office Supplies,421.63,1
+229,CA-2018-118220,2018-06-24,Unknown,Consumer,United States,10008,Furniture,728.96,10
+867,CA-2018-131398,2018-04-04,Ruben Hope,Corporate,United States,02108,Office Supplies,647.74,10
+750,CA-2017-137821,2019-01-14,Claire Gute,Corporate,United States,02108,Office Supplies,1146.66,4
+213,CA-2016-178154,2017-01-03,Unknown,Consumer,United States,60610,Furniture,1195.94,1
+80,CA-2019-160401,2016-12-10,Sandra Flanagan,Home Office,United States,90036,Technology,331.99,5
+149,CA-2018-197243,2017-06-23,Ken Lonsdale,Consumer,United States,02108,Furniture,348.84,10
+303,CA-2017-199505,2017-01-27,Sandra Flanagan,Home Office,United States,90036,Furniture,1433.04,1
+799,CA-2016-145129,2017-12-10,Darrin Van Huff,Corporate,United States,02108,Office Supplies,9.03,5
+634,CA-2017-116558,2018-01-21,Unknown,Home Office,United States,90036,Office Supplies,757.13,5
+524,CA-2018-182775,2019-09-23,Zuschuss Donatelli,Consumer,United States,60610,Technology,1295.37,3
+366,CA-2018-159325,2018-10-01,Sandra Flanagan,Corporate,United States,02108,Office Supplies,990.75,8
+44,CA-2016-179822,2019-09-09,Zuschuss Donatelli,Consumer,United States,90036,Technology,632.65,10
+847,CA-2016-141879,2017-04-20,Claire Gute,Consumer,United States,90036,Furniture,964.4,4
+134,CA-2019-175108,2018-07-06,Darrin Van Huff,Consumer,United States,60610,Technology,1425.78,9
+568,CA-2019-183917,2016-08-29,Claire Gute,Consumer,United States,60610,Technology,1136.73,7
+312,CA-2016-115380,2018-11-21,Sean O'Donnell,Consumer,United States,77041,Office Supplies,977.21,2
+627,CA-2017-174262,2017-03-06,Claire Gute,Consumer,United States,02108,Technology,694.66,1
+598,CA-2018-117646,2016-11-03,Brosina Hoffman,Corporate,United States,10008,Technology,30.55,8
+811,CA-2018-190002,2018-08-17,Sandra Flanagan,Consumer,United States,10008,Office Supplies,366.63,3
+1,CA-2016-103278,2017-07-17,Unknown,Consumer,United States,60610,Furniture,513.67,6
+317,CA-2016-143169,2019-08-04,Zuschuss Donatelli,Corporate,United States,10008,Technology,885.3,5
+868,CA-2019-108739,2016-04-09,Brosina Hoffman,Corporate,United States,10008,Furniture,333.83,5
+955,CA-2016-142038,2017-04-02,Zuschuss Donatelli,Consumer,United States,60610,Technology,1125.22,3
+552,CA-2016-134033,2017-06-18,Claire Gute,Consumer,United States,60610,Office Supplies,763.06,1
+549,CA-2018-125237,2016-12-18,Sean O'Donnell,Consumer,United States,10008,Office Supplies,763.06,6
+948,CA-2018-155235,2016-06-08,Ken Lonsdale,Consumer,United States,77041,Office Supplies,640.45,7
+399,CA-2018-146229,2019-02-06,Ruben Hope,Home Office,United States,Unknown,Furniture,792.2,1
+173,CA-2016-180862,2017-06-28,Zuschuss Donatelli,Home Office,United States,10008,Technology,625.7,10
+126,CA-2019-118772,2017-10-09,Ruben Hope,Home Office,United States,10008,Furniture,735.135,4
+423,CA-2017-160548,2018-10-18,Unknown,Home Office,United States,60610,Furniture,879.48,5
+450,CA-2019-126502,2017-07-24,Zuschuss Donatelli,Corporate,United States,02108,Technology,93.54,4
+588,CA-2019-150570,2019-04-16,Sandra Flanagan,Consumer,United States,10008,Technology,556.41,3
+926,CA-2019-181825,2019-05-14,Sean O'Donnell,Corporate,United States,90036,Furniture,741.31,7
+91,CA-2016-175674,2016-07-27,Sandra Flanagan,Corporate,United States,02108,Office Supplies,887.3,6
+964,CA-2019-136509,2017-10-25,Zuschuss Donatelli,Corporate,United States,77041,Technology,756.9,2
+182,CA-2019-140944,2019-05-24,Sean O'Donnell,Consumer,United States,10008,Technology,181.99,7
+364,CA-2016-175396,2017-06-29,Brosina Hoffman,Corporate,United States,10008,Technology,281.69,4
+275,CA-2018-125101,2016-07-03,Brosina Hoffman,Corporate,United States,60610,Office Supplies,743.55,10
+918,CA-2016-131161,2019-08-21,Brosina Hoffman,Corporate,United States,02108,Furniture,999.22,4
+70,CA-2016-185498,2019-03-21,Claire Gute,Consumer,United States,02108,Technology,1393.04,3
+292,CA-2016-109593,2019-08-01,Ruben Hope,Corporate,United States,10008,Technology,1071.8,1
+132,CA-2017-113593,2018-05-02,Sandra Flanagan,Corporate,United States,02108,Office Supplies,23.48,4
+301,CA-2018-179355,2018-07-21,Sean O'Donnell,Home Office,United States,10008,Technology,989.44,2
+454,CA-2017-147277,2019-04-03,Unknown,Home Office,United States,02108,Technology,686.795,8
+327,CA-2018-131228,2019-08-24,Darrin Van Huff,Consumer,United States,77041,Technology,1142.68,5
+145,CA-2018-127752,2018-04-25,Sean O'Donnell,Consumer,United States,60610,Furniture,872.99,5
+545,CA-2018-186283,2018-11-23,Darrin Van Huff,Consumer,United States,60610,Furniture,735.135,4
+961,CA-2016-112804,2017-01-31,Sandra Flanagan,Corporate,United States,90036,Technology,1485.54,5
+661,CA-2016-189216,2016-02-07,Darrin Van Huff,Corporate,United States,77041,Technology,238.85,7
+136,CA-2016-159048,2018-07-25,Sandra Flanagan,Home Office,United States,10008,Office Supplies,580.07,6
+436,CA-2019-107249,2018-04-17,Unknown,Home Office,United States,77041,Furniture,662.95,10
+165,CA-2017-177441,2019-05-08,Ken Lonsdale,Corporate,United States,02108,Technology,686.795,8
+29,CA-2016-188117,2017-07-05,Sandra Flanagan,Corporate,United States,77041,Office Supplies,763.06,2
+793,CA-2016-137957,2017-09-01,Sandra Flanagan,Home Office,United States,10008,Furniture,29.94,5
+194,CA-2017-142058,2017-02-14,Sandra Flanagan,Consumer,United States,02108,Technology,111.51,8
+753,CA-2016-157873,2016-07-27,Sandra Flanagan,Corporate,United States,90036,Furniture,1333.56,8
+658,CA-2019-103668,2018-02-04,Ken Lonsdale,Corporate,United States,02108,Office Supplies,409.93,2
+818,CA-2016-136974,2019-05-08,Ken Lonsdale,Consumer,United States,90036,Technology,116.57,5
+170,CA-2018-199557,2019-07-04,Darrin Van Huff,Home Office,United States,90036,Office Supplies,840.74,6
+760,CA-2019-199120,2017-10-27,Ruben Hope,Home Office,United States,90036,Technology,1462.54,7
+141,CA-2018-128992,2017-03-12,Brosina Hoffman,Corporate,United States,02108,Furniture,484.8,5
+174,CA-2019-113644,2016-12-07,Sean O'Donnell,Corporate,United States,77041,Office Supplies,1389.59,1
+7,CA-2016-144313,2016-02-13,Claire Gute,Consumer,United States,90036,Technology,858.71,2
+756,CA-2018-178142,2018-07-09,Ruben Hope,Corporate,United States,02108,Furniture,1172.98,3
+670,CA-2018-109439,2016-06-07,Unknown,Home Office,United States,10008,Furniture,5.79,5
+74,CA-2017-175800,2016-05-29,Claire Gute,Corporate,United States,10008,Office Supplies,1376.09,3
+704,CA-2017-154322,2019-08-09,Brosina Hoffman,Consumer,United States,02108,Office Supplies,999.57,6
+443,CA-2016-159893,2016-02-03,Darrin Van Huff,Consumer,United States,02108,Office Supplies,1346.51,5
+239,CA-2017-102438,2019-07-09,Sandra Flanagan,Home Office,United States,90036,Technology,1266.96,7
+146,CA-2018-163682,2018-07-11,Sean O'Donnell,Corporate,United States,77041,Office Supplies,541.32,5
+814,CA-2019-142415,2018-06-12,Brosina Hoffman,Consumer,United States,10008,Technology,230.07,8
+235,CA-2016-150283,2018-07-10,Claire Gute,Corporate,United States,77041,Technology,716.49,7
+221,CA-2017-168107,2019-08-13,Ruben Hope,Home Office,United States,02108,Furniture,430.15,3
+507,CA-2016-119151,2019-09-28,Darrin Van Huff,Consumer,United States,02108,Office Supplies,46.36,4
+133,CA-2018-168039,2018-12-07,Brosina Hoffman,Home Office,United States,10008,Office Supplies,499.69,4
+884,CA-2016-114906,2017-01-19,Darrin Van Huff,Corporate,United States,02108,Technology,1064.18,1
+676,CA-2018-197691,2017-03-29,Zuschuss Donatelli,Home Office,United States,77041,Furniture,735.135,6
+186,CA-2019-177373,2017-02-17,Sean O'Donnell,Consumer,United States,Unknown,Furniture,850.41,1
+42,CA-2016-142219,2019-05-30,Ruben Hope,Corporate,United States,60610,Office Supplies,601.1,3
+109,CA-2018-165390,2018-04-23,Ken Lonsdale,Home Office,United States,02108,Office Supplies,273.82,1
+654,CA-2018-108766,2019-06-23,Darrin Van Huff,Consumer,United States,60610,Office Supplies,1130.95,2
+57,CA-2019-148148,2018-11-29,Darrin Van Huff,Consumer,United States,60610,Technology,532.08,2
+434,CA-2018-182040,2018-06-20,Sandra Flanagan,Home Office,United States,90036,Furniture,167.52,8
+785,CA-2016-143066,2016-01-04,Darrin Van Huff,Consumer,United States,02108,Technology,1441.61,3
+582,CA-2016-144588,2018-04-09,Ruben Hope,Home Office,United States,60610,Office Supplies,1173.62,9
+883,CA-2017-126816,2017-03-11,Ken Lonsdale,Consumer,United States,90036,Office Supplies,432.63,6
+25,CA-2018-113176,2017-02-01,Claire Gute,Consumer,United States,02108,Office Supplies,663.5,1
+817,CA-2019-195542,2016-05-25,Sandra Flanagan,Home Office,United States,60610,Technology,761.6,10
+786,CA-2019-172124,2016-12-22,Zuschuss Donatelli,Consumer,United States,60610,Technology,117.52,10
+548,CA-2018-170919,2016-12-08,Sandra Flanagan,Corporate,United States,02108,Technology,686.795,2
+639,CA-2018-139265,2019-01-14,Sean O'Donnell,Home Office,United States,90036,Office Supplies,506.67,7
+715,CA-2016-148549,2017-10-08,Ken Lonsdale,Corporate,United States,60610,Technology,194.17,10
+951,CA-2017-134229,2018-07-21,Claire Gute,Corporate,United States,10008,Furniture,1122.84,8
+339,CA-2016-168354,2018-02-12,Claire Gute,Home Office,United States,77041,Furniture,161.08,3
+52,CA-2019-130671,2018-12-29,Sandra Flanagan,Home Office,United States,60610,Furniture,83.01,9
+384,CA-2016-129418,2017-02-25,Unknown,Corporate,United States,02108,Technology,644.19,7
+532,CA-2016-159631,2019-04-25,Sandra Flanagan,Corporate,United States,60610,Office Supplies,979.82,4
+944,CA-2017-125713,2017-03-31,Sandra Flanagan,Consumer,United States,02108,Furniture,1415.09,9
+653,CA-2017-157667,2018-07-24,Darrin Van Huff,Consumer,United States,90036,Furniture,735.135,4
+265,CA-2017-145919,2017-09-04,Sean O'Donnell,Consumer,United States,10008,Furniture,672.02,7
+848,CA-2018-143979,2018-04-23,Zuschuss Donatelli,Consumer,United States,77041,Technology,375.04,4
+732,CA-2017-197449,2018-10-03,Claire Gute,Consumer,United States,60610,Office Supplies,171.29,9
+931,CA-2016-179050,2017-05-11,Ken Lonsdale,Home Office,United States,02108,Office Supplies,53.01,8
+445,CA-2019-104485,2016-10-22,Unknown,Consumer,United States,77041,Technology,6.08,9
+396,CA-2017-196149,2018-10-14,Darrin Van Huff,Home Office,United States,90036,Technology,798.04,8
+534,CA-2018-123230,2019-01-21,Darrin Van Huff,Corporate,United States,02108,Office Supplies,250.04,5
+478,CA-2017-114545,2019-10-01,Darrin Van Huff,Corporate,United States,02108,Furniture,1359.2,4
+19,CA-2016-154377,2018-04-14,Brosina Hoffman,Consumer,United States,02108,Technology,821.47,1
+737,CA-2016-120902,2019-06-23,Sean O'Donnell,Home Office,United States,02108,Technology,599.39,5
+515,CA-2019-103181,2019-02-27,Claire Gute,Corporate,United States,77041,Office Supplies,407.34,10
+981,CA-2018-118924,2016-04-28,Darrin Van Huff,Home Office,United States,90036,Office Supplies,369.53,3
+463,CA-2018-150430,2017-09-19,Ruben Hope,Consumer,United States,10008,Furniture,1222.47,2
+368,CA-2018-114442,2016-01-18,Sean O'Donnell,Home Office,United States,90036,Furniture,992.08,5
+84,CA-2018-159054,2018-10-01,Ken Lonsdale,Corporate,United States,90036,Furniture,1176.92,7
+62,CA-2016-103718,2016-06-15,Zuschuss Donatelli,Corporate,United States,02108,Furniture,241.33,6
+273,CA-2016-139405,2016-07-02,Zuschuss Donatelli,Home Office,United States,77041,Technology,1371.46,5
+286,CA-2016-171568,2017-02-14,Zuschuss Donatelli,Corporate,United States,02108,Technology,22.78,4
+361,CA-2017-186439,2019-08-18,Darrin Van Huff,Consumer,United States,10008,Office Supplies,984.66,7
+355,CA-2017-135073,2017-07-14,Zuschuss Donatelli,Corporate,United States,02108,Furniture,1430.87,6
+989,CA-2017-123205,2017-06-25,Sandra Flanagan,Corporate,United States,02108,Technology,660.99,7
+279,CA-2016-159429,2018-02-25,Darrin Van Huff,Consumer,United States,90036,Technology,634.41,1
+13,CA-2018-105229,2018-01-02,Ruben Hope,Corporate,United States,02108,Technology,1174.67,3
+183,CA-2018-119917,2017-01-19,Zuschuss Donatelli,Home Office,United States,60610,Office Supplies,293.92,1
+369,CA-2017-111272,2017-07-08,Unknown,Corporate,United States,90036,Office Supplies,487.11,9
+520,CA-2017-158974,2019-04-24,Unknown,Consumer,United States,02108,Furniture,1384.51,7
+636,CA-2019-114314,2019-09-07,Claire Gute,Corporate,United States,90036,Furniture,388.36,5
+224,CA-2019-125486,2018-10-01,Claire Gute,Consumer,United States,02108,Office Supplies,626.34,7
+592,CA-2019-196615,2018-10-06,Brosina Hoffman,Corporate,United States,90036,Office Supplies,858.71,10
+914,CA-2018-185224,2016-11-07,Brosina Hoffman,Home Office,United States,10008,Technology,169.75,4
+697,CA-2017-126361,2017-04-07,Brosina Hoffman,Home Office,United States,90036,Furniture,735.135,9
+466,CA-2016-124651,2016-07-01,Sean O'Donnell,Home Office,United States,02108,Technology,1274.59,8
+603,CA-2018-164491,2017-09-06,Brosina Hoffman,Consumer,United States,77041,Office Supplies,1008.22,8
+177,CA-2017-120079,2016-04-13,Sandra Flanagan,Consumer,United States,02108,Office Supplies,600.8,4
+686,CA-2016-115627,2018-12-23,Ruben Hope,Home Office,United States,90036,Furniture,532.02,10
+893,CA-2016-160116,2016-02-13,Brosina Hoffman,Corporate,United States,90036,Office Supplies,1364.75,1
+606,CA-2017-184938,2016-05-13,Darrin Van Huff,Home Office,United States,02108,Office Supplies,376.12,9
+457,CA-2019-134520,2016-10-25,Sean O'Donnell,Home Office,United States,02108,Technology,1489.05,4
+537,CA-2019-173067,2018-07-26,Claire Gute,Home Office,United States,90036,Technology,1150.36,6
+394,CA-2017-103584,2019-05-10,Brosina Hoffman,Consumer,United States,60610,Furniture,651.24,2
+164,CA-2016-103455,2018-03-24,Zuschuss Donatelli,Corporate,United States,10008,Technology,1373.33,9
+249,CA-2018-198018,2018-01-08,Zuschuss Donatelli,Consumer,United States,77041,Furniture,278.8,8
+835,CA-2018-146813,2018-05-23,Sandra Flanagan,Consumer,United States,90036,Office Supplies,316.43,10
+908,CA-2017-136747,2016-12-18,Sandra Flanagan,Corporate,United States,02108,Technology,99.84,9
+690,CA-2016-142281,2018-04-20,Ruben Hope,Corporate,United States,10008,Furniture,735.135,9
+376,CA-2019-142422,2017-04-19,Sean O'Donnell,Corporate,United States,Unknown,Furniture,1049.59,5
+413,CA-2016-115112,2018-11-24,Sandra Flanagan,Corporate,United States,90036,Furniture,735.135,10
+75,CA-2017-170419,2018-03-15,Claire Gute,Corporate,United States,02108,Furniture,735.135,4
+114,CA-2016-150585,2018-06-16,Ken Lonsdale,Home Office,United States,02108,Furniture,1427.73,3
+589,CA-2016-196606,2016-09-30,Sean O'Donnell,Home Office,United States,60610,Office Supplies,801.11,3
+825,CA-2016-175109,2017-10-21,Zuschuss Donatelli,Consumer,United States,60610,Furniture,533.89,5
+115,CA-2016-171702,2016-07-09,Sandra Flanagan,Home Office,United States,10008,Technology,360.13,10
+418,CA-2019-101518,2018-09-22,Claire Gute,Home Office,United States,02108,Office Supplies,578.29,10
+971,CA-2016-163099,2016-02-08,Zuschuss Donatelli,Home Office,United States,90036,Technology,875.48,4
+458,CA-2017-129600,2018-06-20,Unknown,Home Office,United States,60610,Technology,1196.21,4
+410,CA-2019-154575,2019-09-29,Sean O'Donnell,Corporate,United States,Unknown,Office Supplies,180.98,2
+93,CA-2018-122047,2018-07-25,Darrin Van Huff,Home Office,United States,77041,Furniture,1498.97,2
+583,CA-2016-184649,2018-09-29,Ruben Hope,Corporate,United States,60610,Furniture,900.51,4
+90,CA-2016-102960,2017-12-03,Brosina Hoffman,Corporate,United States,02108,Technology,677.11,4
+337,CA-2017-127621,2017-04-04,Unknown,Corporate,United States,02108,Office Supplies,371.34,7
+900,CA-2019-190450,2016-07-20,Sean O'Donnell,Consumer,United States,77041,Furniture,280.19,10
+945,CA-2019-134729,2018-10-12,Brosina Hoffman,Home Office,United States,02108,Office Supplies,632.74,3
+977,CA-2018-192173,2018-12-15,Sandra Flanagan,Consumer,United States,10008,Office Supplies,954.7,4
+889,CA-2018-126805,2016-11-18,Ken Lonsdale,Consumer,United States,10008,Furniture,735.135,10
+626,CA-2018-163077,2019-03-31,Zuschuss Donatelli,Corporate,United States,10008,Technology,784.59,9
+632,CA-2016-117393,2018-06-02,Sean O'Donnell,Consumer,United States,90036,Furniture,688.09,10
+12,CA-2017-190111,2019-07-22,Claire Gute,Corporate,United States,02108,Furniture,1325.24,5
+397,CA-2018-171226,2018-09-12,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,1032.4,5
+43,CA-2016-111188,2016-07-09,Sean O'Donnell,Home Office,United States,90036,Furniture,725.87,5
+168,CA-2017-107345,2017-06-29,Brosina Hoffman,Corporate,United States,77041,Furniture,1473.26,1
+417,CA-2017-118098,2018-10-20,Darrin Van Huff,Corporate,United States,77041,Furniture,1100.34,3
+778,CA-2017-189055,2018-03-05,Darrin Van Huff,Home Office,United States,60610,Technology,1265.47,5
+427,CA-2017-123183,2018-08-02,Ruben Hope,Consumer,United States,77041,Office Supplies,1325.62,1
+905,CA-2018-164856,2016-07-07,Ruben Hope,Corporate,United States,02108,Technology,574.32,6
+988,CA-2019-150486,2019-02-18,Ken Lonsdale,Consumer,United States,02108,Technology,954.36,4
+705,CA-2019-118581,2016-09-15,Ken Lonsdale,Corporate,United States,02108,Furniture,464.42,6
+803,CA-2019-131584,2017-01-16,Ken Lonsdale,Consumer,United States,77041,Office Supplies,1090.98,3
+258,CA-2019-162041,2016-08-27,Unknown,Corporate,United States,02108,Office Supplies,588.6,8
+336,CA-2019-169792,2019-01-03,Ken Lonsdale,Home Office,United States,90036,Office Supplies,1274.75,9
+16,CA-2018-152743,2017-08-28,Ken Lonsdale,Home Office,United States,77041,Technology,712.41,9
+650,CA-2019-121951,2016-07-11,Claire Gute,Consumer,United States,77041,Furniture,417.79,9
+325,CA-2019-192597,2016-07-30,Brosina Hoffman,Home Office,United States,10008,Office Supplies,1051.74,7
+874,CA-2019-185313,2019-07-09,Darrin Van Huff,Corporate,United States,02108,Technology,750.94,8
+223,CA-2018-162116,2017-08-16,Sandra Flanagan,Corporate,United States,60610,Technology,792.02,8
+180,CA-2018-106957,2018-08-10,Zuschuss Donatelli,Consumer,United States,77041,Technology,686.795,4
+812,CA-2019-127879,2019-10-29,Unknown,Home Office,United States,77041,Office Supplies,358.95,3
+522,CA-2016-157461,2018-09-25,Darrin Van Huff,Corporate,United States,10008,Office Supplies,334.26,1
+23,CA-2018-180728,2019-01-07,Zuschuss Donatelli,Consumer,United States,77041,Office Supplies,896.25,4
+357,CA-2016-193952,2017-11-04,Brosina Hoffman,Home Office,United States,77041,Furniture,750.48,6
+978,CA-2019-157885,2016-05-08,Brosina Hoffman,Home Office,United States,10008,Furniture,42.66,6
+341,CA-2019-197183,2018-10-28,Claire Gute,Home Office,United States,90036,Furniture,245.77,6
+432,CA-2018-196919,2017-01-09,Brosina Hoffman,Consumer,United States,90036,Furniture,874.0,2
+569,CA-2017-191113,2019-03-05,Sean O'Donnell,Home Office,United States,Unknown,Office Supplies,151.89,6
+856,CA-2019-178708,2017-03-19,Darrin Van Huff,Corporate,United States,90036,Furniture,844.92,9
+204,CA-2017-160819,2018-03-27,Brosina Hoffman,Corporate,United States,77041,Furniture,957.95,6
+651,CA-2019-121300,2016-01-03,Zuschuss Donatelli,Consumer,United States,77041,Technology,103.73,1
+94,CA-2018-193159,2019-06-03,Brosina Hoffman,Home Office,United States,02108,Technology,207.71,3
+576,CA-2017-171239,2019-10-27,Unknown,Home Office,United States,90036,Furniture,28.12,3
+69,CA-2018-117992,2016-08-11,Claire Gute,Home Office,United States,10008,Technology,241.12,5
+859,CA-2018-117919,2018-09-19,Brosina Hoffman,Home Office,United States,02108,Technology,923.93,7
+285,CA-2016-138672,2018-06-29,Sandra Flanagan,Corporate,United States,90036,Furniture,755.14,2
+827,CA-2018-113896,2019-03-14,Brosina Hoffman,Consumer,United States,77041,Office Supplies,8.72,2
+435,CA-2017-174843,2019-10-08,Ken Lonsdale,Home Office,United States,77041,Office Supplies,462.82,10
+154,CA-2019-196440,2016-10-09,Sean O'Donnell,Corporate,United States,90036,Furniture,336.55,1
+76,CA-2016-158515,2019-05-09,Claire Gute,Consumer,United States,60610,Office Supplies,1478.61,10
+752,CA-2016-117561,2017-04-24,Darrin Van Huff,Corporate,United States,77041,Office Supplies,655.52,5
+447,CA-2017-175938,2016-03-11,Claire Gute,Consumer,United States,90036,Technology,1489.08,9
+189,CA-2018-143150,2018-12-15,Claire Gute,Home Office,United States,02108,Technology,781.96,5
+272,CA-2017-118660,2018-02-03,Ken Lonsdale,Consumer,United States,02108,Office Supplies,380.08,9
+237,CA-2018-104899,2018-08-01,Ken Lonsdale,Home Office,United States,77041,Furniture,756.64,7
+488,CA-2016-142888,2017-12-30,Zuschuss Donatelli,Corporate,United States,02108,Furniture,758.67,5
+560,CA-2017-164563,2017-03-19,Brosina Hoffman,Consumer,United States,02108,Technology,789.09,5
+118,CA-2016-199246,2018-07-08,Brosina Hoffman,Corporate,United States,10008,Furniture,836.76,1
+965,CA-2018-169017,2018-03-01,Ken Lonsdale,Home Office,United States,10008,Office Supplies,656.57,5
+513,CA-2017-111950,2019-03-15,Sandra Flanagan,Corporate,United States,02108,Technology,672.02,3
+571,CA-2016-106280,2016-05-15,Zuschuss Donatelli,Consumer,United States,60610,Furniture,555.7,10
+612,CA-2017-182616,2018-04-12,Brosina Hoffman,Home Office,United States,77041,Technology,37.97,2
+117,CA-2017-198596,2019-09-28,Ken Lonsdale,Home Office,United States,77041,Furniture,123.04,10
+474,CA-2017-195591,2019-09-12,Ken Lonsdale,Corporate,United States,60610,Technology,778.66,8
+714,CA-2016-110878,2017-01-08,Ruben Hope,Consumer,United States,90036,Furniture,927.71,3
+58,CA-2017-104081,2016-10-19,Sean O'Donnell,Consumer,United States,02108,Office Supplies,421.64,3
+695,CA-2017-170679,2017-11-20,Darrin Van Huff,Corporate,United States,90036,Technology,1168.64,7
+935,CA-2016-166659,2017-01-01,Darrin Van Huff,Corporate,United States,10008,Office Supplies,1164.17,5
+370,CA-2018-174273,2019-07-10,Ken Lonsdale,Home Office,United States,02108,Technology,1151.32,3
+269,CA-2016-125221,2019-06-21,Brosina Hoffman,Consumer,United States,10008,Technology,605.69,1
+47,CA-2016-151873,2017-09-27,Sean O'Donnell,Home Office,United States,10008,Furniture,1160.41,10
+350,CA-2019-165976,2019-04-05,Brosina Hoffman,Corporate,United States,77041,Furniture,1174.38,5
+196,CA-2018-142567,2018-07-17,Ruben Hope,Corporate,United States,90036,Office Supplies,361.67,4
+103,CA-2016-129937,2018-11-08,Brosina Hoffman,Consumer,United States,10008,Office Supplies,1011.62,4
+954,CA-2017-140862,2016-11-17,Sandra Flanagan,Consumer,United States,10008,Technology,298.98,6
+712,CA-2019-186975,2018-12-05,Zuschuss Donatelli,Home Office,United States,77041,Office Supplies,1066.42,10
+758,CA-2016-127175,2019-04-12,Ken Lonsdale,Home Office,United States,02108,Technology,686.795,4
+444,CA-2017-118378,2018-08-20,Zuschuss Donatelli,Consumer,United States,Unknown,Furniture,939.84,6
+696,CA-2019-131990,2017-04-10,Brosina Hoffman,Corporate,United States,90036,Office Supplies,685.04,2
+305,CA-2017-148290,2018-07-14,Unknown,Consumer,United States,02108,Furniture,1408.93,2
+342,CA-2018-147227,2019-06-30,Ken Lonsdale,Home Office,United States,77041,Furniture,1306.33,2
+619,CA-2016-191067,2019-10-14,Sean O'Donnell,Corporate,United States,10008,Furniture,1475.32,9
+994,CA-2016-152275,2019-06-07,Sandra Flanagan,Consumer,United States,90036,Office Supplies,401.03,6
+150,CA-2017-154344,2017-11-07,Sandra Flanagan,Corporate,United States,02108,Technology,253.68,1
+125,CA-2017-189091,2017-11-18,Zuschuss Donatelli,Corporate,United States,60610,Furniture,575.6,4
+808,CA-2019-120565,2016-12-09,Darrin Van Huff,Corporate,United States,77041,Office Supplies,962.32,6
+845,CA-2016-118715,2018-05-26,Darrin Van Huff,Consumer,United States,10008,Technology,686.795,6
+51,CA-2017-128074,2017-11-30,Sean O'Donnell,Consumer,United States,60610,Technology,252.48,8
+952,CA-2016-126680,2018-01-20,Sean O'Donnell,Corporate,United States,60610,Furniture,905.46,9
+143,CA-2019-193961,2017-11-10,Zuschuss Donatelli,Consumer,United States,02108,Technology,1135.16,2
+471,CA-2019-103317,2018-06-21,Zuschuss Donatelli,Corporate,United States,60610,Technology,1399.54,7
+400,CA-2017-104427,2017-07-11,Ken Lonsdale,Corporate,United States,60610,Furniture,1289.66,8
+821,CA-2017-151769,2016-09-01,Sean O'Donnell,Consumer,United States,02108,Office Supplies,786.49,6
+321,CA-2017-167329,2017-12-24,Ruben Hope,Home Office,United States,77041,Furniture,1394.02,10
+20,CA-2019-194919,2016-12-04,Claire Gute,Home Office,United States,77041,Office Supplies,571.79,1
+972,CA-2017-147178,2019-04-30,Claire Gute,Home Office,United States,02108,Technology,263.56,2
+831,CA-2018-196760,2016-06-29,Sean O'Donnell,Home Office,United States,02108,Office Supplies,605.68,1
+538,CA-2018-132248,2017-10-01,Darrin Van Huff,Consumer,United States,77041,Technology,38.98,9
+722,CA-2016-126620,2017-09-16,Darrin Van Huff,Corporate,United States,10008,Furniture,17.6,2
+39,CA-2019-136666,2016-03-08,Brosina Hoffman,Home Office,United States,10008,Furniture,897.73,6
+176,CA-2016-178018,2019-08-08,Ken Lonsdale,Corporate,United States,10008,Technology,460.65,9
+246,CA-2019-178694,2017-06-16,Darrin Van Huff,Corporate,United States,02108,Technology,1237.01,1
+851,CA-2019-125757,2019-07-04,Brosina Hoffman,Home Office,United States,90036,Technology,914.59,6
+688,CA-2018-138591,2017-09-10,Zuschuss Donatelli,Consumer,United States,10008,Office Supplies,569.4,4
+947,CA-2018-194680,2017-06-23,Ruben Hope,Consumer,United States,77041,Furniture,60.04,1
+881,CA-2019-194770,2019-03-07,Darrin Van Huff,Home Office,United States,60610,Furniture,293.64,5
+155,CA-2019-180473,2019-09-05,Claire Gute,Consumer,United States,60610,Office Supplies,5.43,5
+288,CA-2019-199987,2019-01-06,Claire Gute,Corporate,United States,10008,Office Supplies,680.05,1
+623,CA-2017-131836,2019-09-22,Unknown,Home Office,United States,90036,Office Supplies,1240.92,4
+570,CA-2016-133021,2017-01-28,Zuschuss Donatelli,Consumer,United States,60610,Furniture,1469.58,10
+765,CA-2019-140499,2019-04-19,Claire Gute,Corporate,United States,90036,Furniture,352.02,6
+18,CA-2018-198992,2018-06-25,Ken Lonsdale,Consumer,United States,02108,Furniture,355.57,7
+128,CA-2019-102506,2017-04-12,Claire Gute,Corporate,United States,60610,Furniture,982.08,2
+323,CA-2019-186019,2018-06-18,Claire Gute,Consumer,United States,90036,Office Supplies,736.16,7
+256,CA-2019-139669,2016-06-28,Claire Gute,Consumer,United States,60610,Furniture,735.135,8
+678,CA-2017-101331,2016-03-28,Zuschuss Donatelli,Home Office,United States,02108,Office Supplies,1297.16,8
+992,CA-2019-159797,2018-06-18,Brosina Hoffman,Corporate,United States,77041,Furniture,659.52,3
+191,CA-2019-104660,2019-08-15,Ruben Hope,Home Office,United States,02108,Technology,1200.31,1
+116,CA-2016-147294,2016-01-08,Unknown,Consumer,United States,77041,Office Supplies,1328.81,4
+607,CA-2016-180025,2018-07-02,Zuschuss Donatelli,Home Office,United States,60610,Technology,46.01,9
+181,CA-2019-151563,2016-11-17,Zuschuss Donatelli,Home Office,United States,90036,Office Supplies,136.25,4
+302,CA-2018-118705,2017-07-04,Zuschuss Donatelli,Corporate,United States,77041,Office Supplies,205.83,4
+781,CA-2019-152403,2016-02-19,Ruben Hope,Home Office,United States,02108,Office Supplies,666.96,7
+875,CA-2016-116386,2016-02-24,Ruben Hope,Home Office,United States,10008,Furniture,940.97,7
+801,CA-2019-142165,2016-11-18,Ken Lonsdale,Home Office,United States,90036,Furniture,763.31,7
+706,CA-2018-122376,2016-07-16,Sandra Flanagan,Corporate,United States,10008,Furniture,1169.8,8
+824,CA-2018-197872,2016-05-21,Ken Lonsdale,Corporate,United States,02108,Office Supplies,792.31,7
+518,CA-2017-106336,2018-08-18,Ruben Hope,Consumer,United States,90036,Office Supplies,434.37,7
+46,CA-2019-123028,2016-09-21,Ruben Hope,Consumer,United States,60610,Office Supplies,1421.68,2
+942,CA-2016-182468,2018-04-22,Brosina Hoffman,Home Office,United States,90036,Furniture,216.25,5
+158,CA-2016-172686,2016-12-31,Zuschuss Donatelli,Consumer,United States,10008,Furniture,1015.34,1
+766,CA-2019-133013,2018-02-23,Claire Gute,Consumer,United States,60610,Furniture,98.88,5
+172,CA-2016-105737,2016-09-22,Unknown,Home Office,United States,10008,Office Supplies,1248.96,7
+17,CA-2016-198453,2017-04-26,Sean O'Donnell,Corporate,United States,Unknown,Furniture,332.17,2
+512,CA-2018-116701,2016-07-15,Claire Gute,Home Office,United States,60610,Furniture,478.49,10
+49,CA-2017-142143,2019-05-24,Sandra Flanagan,Corporate,United States,77041,Office Supplies,1162.82,6
+999,CA-2018-138319,2019-01-16,Ruben Hope,Consumer,United States,90036,Furniture,117.84,8
+924,CA-2017-100391,2016-02-27,Brosina Hoffman,Consumer,United States,60610,Office Supplies,423.84,5
+516,CA-2017-104757,2018-02-20,Sean O'Donnell,Consumer,United States,77041,Technology,1308.36,3
+707,CA-2017-180935,2017-12-10,Ruben Hope,Corporate,United States,90036,Furniture,1374.77,5
+481,CA-2016-120479,2019-04-08,Ruben Hope,Consumer,United States,90036,Technology,79.75,6
+284,CA-2017-166665,2018-03-05,Sandra Flanagan,Home Office,United States,60610,Furniture,462.47,9
+886,CA-2018-158638,2016-08-13,Zuschuss Donatelli,Home Office,United States,90036,Furniture,158.73,6
+226,CA-2019-129428,2016-02-24,Sandra Flanagan,Corporate,United States,02108,Office Supplies,1303.18,5
+27,CA-2017-134687,2019-09-14,Darrin Van Huff,Home Office,United States,77041,Furniture,1182.8,9
+804,CA-2016-158168,2016-05-10,Ruben Hope,Corporate,United States,77041,Furniture,1464.45,7
+438,CA-2017-142970,2019-03-18,Zuschuss Donatelli,Consumer,United States,77041,Office Supplies,763.06,2
+982,CA-2019-101496,2017-02-04,Ken Lonsdale,Corporate,United States,77041,Furniture,562.9,7
+38,CA-2016-181205,2019-02-23,Darrin Van Huff,Home Office,United States,77041,Office Supplies,1115.99,7
+993,CA-2019-170731,2019-08-30,Brosina Hoffman,Consumer,United States,77041,Office Supplies,1334.95,5
+375,CA-2017-136482,2019-09-10,Sandra Flanagan,Home Office,United States,02108,Furniture,1278.79,2
+470,CA-2017-157936,2019-05-07,Brosina Hoffman,Consumer,United States,02108,Office Supplies,441.25,3
+995,CA-2016-133544,2016-12-07,Unknown,Consumer,United States,90036,Technology,818.81,3
+873,CA-2016-124091,2019-04-06,Sean O'Donnell,Home Office,United States,60610,Furniture,432.05,4
+915,CA-2017-184790,2017-09-04,Brosina Hoffman,Consumer,United States,90036,Technology,909.41,8
+747,CA-2019-132940,2018-09-12,Sandra Flanagan,Corporate,United States,02108,Office Supplies,1455.57,3
+195,CA-2019-107051,2016-06-25,Sandra Flanagan,Consumer,United States,90036,Technology,1150.91,5
+877,CA-2017-159448,2017-11-20,Sean O'Donnell,Consumer,United States,10008,Furniture,832.85,6
+887,CA-2019-114787,2016-06-23,Ken Lonsdale,Home Office,United States,90036,Furniture,387.1,3
+504,CA-2016-150764,2019-09-01,Sean O'Donnell,Home Office,United States,Unknown,Office Supplies,1049.89,9
+997,CA-2019-122764,2019-03-26,Ken Lonsdale,Consumer,United States,90036,Office Supplies,229.34,3
+853,CA-2019-125750,2019-04-27,Sean O'Donnell,Consumer,United States,02108,Furniture,1123.34,4
+580,CA-2017-181741,2019-03-22,Sean O'Donnell,Home Office,United States,90036,Furniture,1325.12,10
+996,CA-2017-122122,2016-09-07,Claire Gute,Home Office,United States,60610,Office Supplies,1328.89,3
+163,CA-2018-129912,2017-10-04,Ken Lonsdale,Corporate,United States,90036,Technology,254.53,2
+723,CA-2019-103039,2017-01-16,Zuschuss Donatelli,Corporate,United States,10008,Office Supplies,406.45,8
+153,CA-2017-100716,2016-01-15,Ken Lonsdale,Corporate,United States,60610,Furniture,1176.76,5
+917,CA-2019-184340,2017-08-21,Darrin Van Huff,Corporate,United States,77041,Furniture,1118.44,9
+721,CA-2018-180434,2018-11-08,Ruben Hope,Corporate,United States,02108,Office Supplies,1439.98,5
+957,CA-2019-170195,2016-10-16,Sean O'Donnell,Corporate,United States,02108,Furniture,735.135,10
+112,CA-2018-192345,2019-09-18,Ruben Hope,Corporate,United States,60610,Technology,686.795,10
+227,CA-2018-121344,2019-04-06,Sean O'Donnell,Corporate,United States,90036,Furniture,1309.3,6
+709,CA-2017-125589,2016-09-12,Darrin Van Huff,Home Office,United States,60610,Furniture,715.45,9
+104,CA-2019-109034,2018-08-10,Unknown,Consumer,United States,60610,Technology,371.46,7
+420,CA-2017-111016,2018-12-31,Sandra Flanagan,Corporate,United States,02108,Furniture,1470.5,5
+934,CA-2018-100959,2019-05-15,Darrin Van Huff,Corporate,United States,60610,Technology,1346.4,6
+587,CA-2018-103328,2016-10-05,Zuschuss Donatelli,Home Office,United States,02108,Furniture,723.39,2
+802,CA-2019-105578,2019-05-06,Darrin Van Huff,Home Office,United States,90036,Technology,222.16,6
+673,CA-2017-115866,2019-04-15,Ruben Hope,Corporate,United States,90036,Office Supplies,699.08,5
+120,CA-2019-135203,2018-02-01,Zuschuss Donatelli,Home Office,United States,77041,Furniture,321.03,1
+54,CA-2016-102490,2017-06-08,Ken Lonsdale,Corporate,United States,02108,Technology,1079.22,6
+152,CA-2016-169655,2018-10-27,Claire Gute,Home Office,United States,77041,Technology,641.11,10
+404,CA-2018-168482,2017-10-22,Sean O'Donnell,Consumer,United States,10008,Furniture,1074.05,1
+970,CA-2016-179580,2018-10-30,Darrin Van Huff,Corporate,United States,90036,Technology,778.44,7
+208,CA-2018-151292,2019-03-22,Sandra Flanagan,Home Office,United States,77041,Office Supplies,950.25,2
+659,CA-2017-110364,2016-12-28,Claire Gute,Home Office,United States,77041,Office Supplies,672.79,4
+866,CA-2019-172832,2018-04-19,Sean O'Donnell,Home Office,United States,02108,Technology,699.67,10
+784,CA-2016-191406,2016-10-27,Sandra Flanagan,Corporate,United States,02108,Technology,1139.14,10
+9,CA-2017-153269,2018-09-21,Unknown,Corporate,United States,60610,Furniture,815.58,9
+830,CA-2019-178974,2016-04-28,Ken Lonsdale,Consumer,United States,10008,Technology,167.62,10
+37,CA-2017-133681,2018-09-13,Darrin Van Huff,Consumer,United States,77041,Technology,556.04,6
+453,CA-2018-132986,2019-08-04,Zuschuss Donatelli,Consumer,United States,02108,Technology,780.86,2
+652,CA-2016-116722,2016-03-14,Sean O'Donnell,Home Office,United States,10008,Furniture,735.135,1
+254,CA-2017-168562,2018-05-25,Claire Gute,Corporate,United States,60610,Technology,686.795,7
+304,CA-2018-163691,2018-08-27,Ruben Hope,Corporate,United States,90036,Technology,1253.95,2
+768,CA-2018-171136,2018-09-16,Ken Lonsdale,Consumer,United States,02108,Technology,1440.25,6
+572,CA-2019-118314,2018-04-05,Ruben Hope,Home Office,United States,02108,Office Supplies,1405.18,8
+624,CA-2017-134965,2019-07-02,Zuschuss Donatelli,Home Office,United States,60610,Furniture,385.32,9
+731,CA-2016-157302,2017-09-07,Brosina Hoffman,Home Office,United States,Unknown,Furniture,863.26,1
+263,CA-2018-169178,2019-06-04,Brosina Hoffman,Home Office,United States,02108,Technology,1089.02,2
+611,CA-2019-176157,2019-09-10,Claire Gute,Home Office,United States,60610,Office Supplies,843.45,3
+298,CA-2017-106829,2019-07-23,Sean O'Donnell,Consumer,United States,10008,Office Supplies,306.09,7
+415,CA-2018-107051,2016-07-04,Ruben Hope,Consumer,United States,10008,Technology,564.52,4
+151,CA-2018-111239,2017-03-19,Sandra Flanagan,Home Office,United States,02108,Office Supplies,167.31,3
+810,CA-2016-189130,2017-10-17,Claire Gute,Home Office,United States,02108,Furniture,296.24,8
+641,CA-2019-189388,2018-03-07,Claire Gute,Consumer,United States,90036,Technology,1443.16,7
+912,CA-2019-149093,2018-05-16,Sean O'Donnell,Consumer,United States,02108,Technology,686.795,4
+551,CA-2019-111930,2019-04-05,Claire Gute,Consumer,United States,10008,Technology,817.79,9
+489,CA-2016-103777,2019-08-27,Sandra Flanagan,Corporate,United States,02108,Technology,1434.38,6
+711,CA-2018-129423,2017-03-05,Zuschuss Donatelli,Corporate,United States,90036,Technology,722.14,6
+148,CA-2017-199248,2018-11-18,Sean O'Donnell,Corporate,United States,02108,Furniture,735.135,6
+147,CA-2017-134502,2019-07-07,Claire Gute,Home Office,United States,10008,Office Supplies,754.18,6
+742,CA-2018-121446,2017-12-31,Ken Lonsdale,Corporate,United States,Unknown,Technology,463.55,9
+998,CA-2016-110783,2018-09-28,Darrin Van Huff,Home Office,United States,10008,Office Supplies,1023.01,7
+761,CA-2017-159456,2016-12-06,Brosina Hoffman,Home Office,United States,60610,Office Supplies,1270.5,1
+660,CA-2018-117918,2017-05-05,Darrin Van Huff,Corporate,United States,60610,Furniture,478.52,4
+349,CA-2019-168572,2017-11-18,Ruben Hope,Home Office,United States,60610,Furniture,29.56,9
+464,CA-2018-114126,2017-12-15,Darrin Van Huff,Home Office,United States,90036,Office Supplies,609.41,10
+326,CA-2018-147654,2017-07-28,Unknown,Home Office,United States,02108,Furniture,1156.84,6
+187,CA-2019-137851,2019-07-06,Brosina Hoffman,Consumer,United States,77041,Furniture,14.83,4
+124,CA-2016-178647,2018-04-07,Claire Gute,Corporate,United States,10008,Office Supplies,1268.9,3
+975,CA-2018-193538,2017-10-16,Brosina Hoffman,Home Office,United States,77041,Technology,1138.18,7
+609,CA-2017-174853,2018-06-20,Sean O'Donnell,Home Office,United States,90036,Office Supplies,141.8,10
+144,CA-2016-136899,2018-06-15,Sandra Flanagan,Home Office,United States,02108,Technology,67.45,4
+986,CA-2018-158803,2017-05-05,Ruben Hope,Consumer,United States,02108,Furniture,816.9,10
+198,CA-2016-199231,2016-10-27,Ken Lonsdale,Consumer,United States,77041,Technology,609.28,5
+610,CA-2019-173359,2018-10-30,Sandra Flanagan,Consumer,United States,77041,Furniture,429.76,7
+280,CA-2018-140788,2019-04-10,Zuschuss Donatelli,Consumer,United States,60610,Furniture,515.62,6
+401,CA-2019-149359,2017-08-19,Zuschuss Donatelli,Home Office,United States,Unknown,Furniture,717.83,5
+123,CA-2018-155549,2018-02-10,Zuschuss Donatelli,Consumer,United States,60610,Office Supplies,1292.93,3
+184,CA-2017-197303,2019-10-06,Sandra Flanagan,Corporate,United States,77041,Technology,1314.3,1
+203,CA-2017-186396,2018-07-03,Brosina Hoffman,Consumer,United States,77041,Furniture,1263.54,5
+439,CA-2019-106295,2018-12-18,Claire Gute,Home Office,United States,90036,Technology,772.68,4
+247,CA-2019-132547,2018-01-27,Claire Gute,Home Office,United States,02108,Technology,502.63,10
+416,CA-2019-192566,2017-05-12,Sean O'Donnell,Corporate,United States,02108,Technology,686.795,10
+815,CA-2016-154285,2018-11-02,Ken Lonsdale,Consumer,United States,77041,Office Supplies,435.06,8
+929,CA-2018-198269,2017-08-28,Brosina Hoffman,Consumer,United States,02108,Office Supplies,1338.5,5
+790,CA-2019-153885,2016-11-07,Claire Gute,Home Office,United States,60610,Technology,206.66,5
+910,CA-2016-114637,2016-10-18,Zuschuss Donatelli,Corporate,United States,77041,Technology,339.05,6
+638,CA-2018-105951,2016-11-10,Ken Lonsdale,Corporate,United States,60610,Office Supplies,611.42,4
+403,CA-2019-141027,2019-08-28,Darrin Van Huff,Consumer,United States,77041,Technology,733.35,7
+736,CA-2017-167284,2018-07-03,Claire Gute,Consumer,United States,90036,Office Supplies,293.02,1
+220,CA-2018-188251,2016-05-14,Darrin Van Huff,Consumer,United States,10008,Technology,686.795,4
+642,CA-2016-110346,2017-10-16,Sean O'Donnell,Home Office,United States,02108,Office Supplies,667.2,3
+938,CA-2019-182779,2016-01-17,Ken Lonsdale,Home Office,United States,90036,Furniture,1198.26,5
+774,CA-2016-198155,2017-02-06,Ken Lonsdale,Corporate,United States,02108,Office Supplies,1214.23,1
+829,CA-2019-141465,2017-07-12,Claire Gute,Corporate,United States,77041,Technology,1029.81,10
+946,CA-2019-155214,2018-08-14,Ruben Hope,Corporate,United States,60610,Furniture,74.53,6
+625,CA-2018-190234,2016-05-15,Darrin Van Huff,Home Office,United States,60610,Technology,641.25,10
+782,CA-2016-162202,2017-01-27,Darrin Van Huff,Home Office,United States,10008,Furniture,1234.43,1
+387,CA-2016-130496,2016-08-22,Unknown,Home Office,United States,02108,Furniture,120.83,6
+1000,CA-2018-105804,2016-08-06,Unknown,Consumer,United States,02108,Furniture,865.15,10
+510,CA-2017-190060,2018-01-10,Sandra Flanagan,Home Office,United States,77041,Office Supplies,223.78,7
+268,CA-2017-199870,2016-10-10,Sandra Flanagan,Consumer,United States,02108,Technology,252.59,5
+842,CA-2018-144993,2016-05-10,Zuschuss Donatelli,Corporate,United States,02108,Office Supplies,1098.17,4
+442,CA-2016-158189,2017-03-03,Brosina Hoffman,Consumer,United States,60610,Office Supplies,540.79,9
+497,CA-2017-135033,2016-02-19,Brosina Hoffman,Home Office,United States,77041,Furniture,687.1,9
+113,CA-2016-123865,2019-05-18,Brosina Hoffman,Corporate,United States,90036,Furniture,378.06,5
+233,CA-2017-108481,2018-01-14,Ken Lonsdale,Home Office,United States,77041,Technology,1153.16,5
+892,CA-2018-105333,2019-05-28,Brosina Hoffman,Consumer,United States,02108,Furniture,938.09,5
+608,CA-2017-148414,2019-06-13,Sandra Flanagan,Consumer,United States,60610,Furniture,1392.47,8
+672,CA-2016-160343,2017-11-25,Sandra Flanagan,Consumer,United States,60610,Office Supplies,286.62,3
+374,CA-2017-103666,2017-08-03,Zuschuss Donatelli,Home Office,United States,77041,Technology,1354.31,10
+865,CA-2019-137914,2016-08-28,Unknown,Consumer,United States,90036,Office Supplies,120.42,2
+234,CA-2017-103895,2016-07-22,Claire Gute,Home Office,United States,60610,Office Supplies,763.06,1
+807,CA-2017-160747,2017-12-15,Zuschuss Donatelli,Home Office,United States,02108,Furniture,894.89,5
+677,CA-2019-194836,2017-03-23,Zuschuss Donatelli,Consumer,United States,90036,Technology,434.16,3
+318,CA-2016-122380,2017-10-13,Ken Lonsdale,Consumer,United States,02108,Technology,558.38,8
+649,CA-2017-129576,2019-02-01,Sean O'Donnell,Home Office,United States,77041,Furniture,321.1,6
+411,CA-2016-124334,2017-10-12,Sean O'Donnell,Corporate,United States,10008,Office Supplies,214.94,3
+921,CA-2016-114434,2019-04-11,Zuschuss Donatelli,Corporate,United States,90036,Office Supplies,1217.27,7
+710,CA-2016-141085,2017-01-06,Ruben Hope,Corporate,United States,60610,Office Supplies,747.36,7
+359,CA-2018-191286,2018-07-19,Darrin Van Huff,Consumer,United States,10008,Furniture,735.135,1
+259,CA-2017-137022,2016-06-25,Sean O'Donnell,Corporate,United States,02108,Technology,100.18,5
+745,CA-2019-197981,2016-07-21,Ken Lonsdale,Home Office,United States,60610,Technology,1268.87,1
+633,CA-2017-136743,2016-07-07,Sean O'Donnell,Consumer,United States,02108,Technology,444.0,3
+283,CA-2016-115531,2016-10-22,Ken Lonsdale,Consumer,United States,02108,Office Supplies,1278.0,8
+377,CA-2017-126370,2016-11-27,Brosina Hoffman,Home Office,United States,90036,Furniture,1436.83,8
+385,CA-2018-170092,2018-08-07,Zuschuss Donatelli,Home Office,United States,02108,Furniture,447.26,5
+225,CA-2016-118827,2017-03-01,Ruben Hope,Corporate,United States,02108,Furniture,1249.26,10
+980,CA-2017-143666,2019-06-21,Ruben Hope,Home Office,United States,02108,Technology,1275.75,5
+837,CA-2016-161153,2017-02-28,Sandra Flanagan,Home Office,United States,77041,Furniture,508.32,7
+473,CA-2017-150915,2017-06-10,Zuschuss Donatelli,Home Office,United States,02108,Office Supplies,585.72,4
+348,CA-2017-183138,2018-07-09,Brosina Hoffman,Home Office,United States,02108,Office Supplies,1345.5,8
+506,CA-2016-130441,2017-02-18,Ken Lonsdale,Consumer,United States,10008,Technology,720.71,7
+640,CA-2016-177865,2016-03-10,Ruben Hope,Consumer,United States,90036,Office Supplies,1479.49,6
+798,CA-2016-190679,2018-08-21,Darrin Van Huff,Home Office,United States,02108,Office Supplies,1457.54,2
+953,CA-2016-122388,2019-02-08,Darrin Van Huff,Home Office,United States,02108,Furniture,1489.17,5
+928,CA-2017-191448,2016-04-06,Claire Gute,Corporate,United States,10008,Technology,497.49,1
+878,CA-2017-105405,2016-07-12,Claire Gute,Consumer,United States,10008,Office Supplies,521.41,7
+826,CA-2017-140917,2016-11-10,Sandra Flanagan,Home Office,United States,90036,Technology,306.19,9
+646,CA-2016-109552,2018-10-07,Sean O'Donnell,Consumer,United States,60610,Furniture,1107.16,1
+869,CA-2017-183905,2019-06-09,Sandra Flanagan,Consumer,United States,10008,Office Supplies,465.18,2
+557,CA-2019-181143,2019-10-20,Zuschuss Donatelli,Consumer,United States,Unknown,Office Supplies,1473.4,1
+985,CA-2017-183573,2018-03-26,Unknown,Consumer,United States,60610,Technology,1160.19,5
+578,CA-2019-181715,2019-06-01,Claire Gute,Consumer,United States,60610,Office Supplies,450.72,2
+796,CA-2018-115796,2016-11-30,Brosina Hoffman,Corporate,United States,77041,Furniture,133.81,6
+86,CA-2018-139469,2017-07-03,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,932.19,10
+243,CA-2018-189816,2016-09-06,Ken Lonsdale,Corporate,United States,10008,Office Supplies,414.68,8
+699,CA-2018-175333,2016-07-11,Sean O'Donnell,Consumer,United States,10008,Furniture,620.95,5
+160,CA-2016-101549,2019-10-12,Ruben Hope,Home Office,United States,77041,Office Supplies,273.93,10
+525,CA-2017-132602,2018-08-08,Ruben Hope,Home Office,United States,02108,Office Supplies,235.3,6
+36,CA-2016-179482,2018-10-14,Ruben Hope,Corporate,United States,90036,Furniture,493.45,6
+541,CA-2018-175588,2017-01-19,Brosina Hoffman,Home Office,United States,02108,Office Supplies,749.03,3
+171,CA-2017-109027,2018-12-23,Ruben Hope,Consumer,United States,10008,Furniture,748.84,2
+655,CA-2018-147404,2016-05-03,Unknown,Corporate,United States,02108,Technology,255.08,3
+913,CA-2016-157124,2018-10-08,Ruben Hope,Home Office,United States,90036,Technology,798.24,9
+880,CA-2019-193187,2018-10-05,Ruben Hope,Home Office,United States,60610,Furniture,1182.2,1
+870,CA-2019-136934,2019-04-12,Ken Lonsdale,Corporate,United States,60610,Furniture,486.63,5
+969,CA-2018-142071,2019-08-22,Claire Gute,Corporate,United States,10008,Office Supplies,763.06,8
+734,CA-2019-162918,2017-06-12,Zuschuss Donatelli,Consumer,United States,90036,Technology,392.41,1
+96,CA-2019-128551,2018-05-29,Zuschuss Donatelli,Home Office,United States,77041,Furniture,6.01,5
+564,CA-2016-199973,2016-02-25,Ruben Hope,Consumer,United States,60610,Office Supplies,844.25,5
+241,CA-2019-147636,2019-10-07,Sean O'Donnell,Home Office,United States,90036,Technology,1209.73,4
+575,CA-2019-187461,2018-11-17,Sean O'Donnell,Home Office,United States,77041,Technology,659.71,4
+691,CA-2016-129233,2019-09-02,Zuschuss Donatelli,Consumer,United States,10008,Furniture,561.31,9
+461,CA-2016-180458,2016-05-10,Brosina Hoffman,Consumer,United States,02108,Office Supplies,1423.8,6
+554,CA-2017-178688,2019-09-30,Darrin Van Huff,Corporate,United States,02108,Furniture,395.62,9
+901,CA-2019-111223,2018-03-20,Claire Gute,Consumer,United States,77041,Office Supplies,42.28,1
+207,CA-2016-133847,2017-06-26,Brosina Hoffman,Corporate,United States,02108,Office Supplies,749.06,1
+393,CA-2019-137389,2017-10-23,Sean O'Donnell,Home Office,United States,02108,Furniture,1376.95,3
+795,CA-2016-185070,2018-01-27,Darrin Van Huff,Home Office,United States,77041,Technology,1158.01,4
+398,CA-2019-107969,2019-02-25,Ken Lonsdale,Corporate,United States,90036,Furniture,169.92,1
+767,CA-2016-176269,2019-08-03,Claire Gute,Home Office,United States,02108,Technology,944.28,3
+871,CA-2017-179311,2018-06-10,Darrin Van Huff,Corporate,United States,77041,Technology,268.26,1
+218,CA-2019-124241,2018-01-28,Darrin Van Huff,Home Office,United States,60610,Office Supplies,86.94,5
+5,CA-2018-184012,2017-11-27,Claire Gute,Corporate,United States,02108,Furniture,1169.05,6
+769,CA-2017-142026,2018-06-14,Sean O'Donnell,Corporate,United States,10008,Technology,835.4,6
+643,CA-2018-192837,2019-04-23,Brosina Hoffman,Consumer,United States,60610,Technology,419.76,1
+920,CA-2019-198184,2018-11-11,Unknown,Consumer,United States,77041,Office Supplies,46.24,4
+613,CA-2017-146890,2019-09-16,Brosina Hoffman,Consumer,United States,90036,Technology,252.53,2
+739,CA-2018-185864,2016-12-29,Brosina Hoffman,Consumer,United States,10008,Office Supplies,635.67,2
+547,CA-2019-170120,2016-05-28,Sandra Flanagan,Consumer,United States,02108,Furniture,144.8,4
+726,CA-2018-130991,2018-03-11,Ruben Hope,Home Office,United States,60610,Technology,43.87,1
+684,CA-2017-121418,2019-09-17,Claire Gute,Corporate,United States,90036,Office Supplies,935.34,7
+99,CA-2017-111362,2016-07-24,Ken Lonsdale,Consumer,United States,90036,Technology,590.67,7
+805,CA-2018-102155,2016-09-22,Sandra Flanagan,Home Office,United States,02108,Furniture,798.7,10
+728,CA-2019-107050,2016-10-23,Sean O'Donnell,Home Office,United States,Unknown,Office Supplies,1235.82,4
+574,CA-2016-124954,2017-03-22,Zuschuss Donatelli,Home Office,United States,02108,Furniture,311.31,3
+407,CA-2019-146529,2017-09-30,Brosina Hoffman,Corporate,United States,02108,Furniture,1283.78,4
+503,CA-2019-109057,2018-10-25,Ken Lonsdale,Home Office,United States,Unknown,Technology,168.96,2
+48,CA-2018-182210,2017-10-09,Zuschuss Donatelli,Corporate,United States,02108,Furniture,763.07,8
+780,CA-2016-171826,2016-10-04,Sandra Flanagan,Consumer,United States,Unknown,Office Supplies,861.1,10
+840,CA-2016-109485,2017-03-03,Brosina Hoffman,Home Office,United States,Unknown,Furniture,1166.41,7
+201,CA-2016-176056,2018-09-13,Zuschuss Donatelli,Home Office,United States,90036,Office Supplies,21.12,6
+135,CA-2018-193836,2018-07-15,Claire Gute,Corporate,United States,77041,Office Supplies,1237.71,6
+28,CA-2018-118643,2016-05-26,Zuschuss Donatelli,Corporate,United States,60610,Office Supplies,907.55,4
+903,CA-2017-134326,2017-07-06,Sandra Flanagan,Corporate,United States,60610,Technology,967.4,1
+773,CA-2018-101353,2016-01-31,Brosina Hoffman,Corporate,United States,10008,Office Supplies,144.26,6
+379,CA-2016-176385,2018-08-22,Ken Lonsdale,Consumer,United States,90036,Furniture,110.79,8
+289,CA-2016-124470,2017-02-11,Brosina Hoffman,Consumer,United States,77041,Technology,1432.87,8
+419,CA-2019-157001,2016-04-09,Sandra Flanagan,Home Office,United States,Unknown,Office Supplies,58.24,1
+392,CA-2016-109666,2017-12-27,Ken Lonsdale,Consumer,United States,90036,Office Supplies,1085.19,1
+593,CA-2019-194209,2016-08-18,Ruben Hope,Home Office,United States,02108,Furniture,71.48,8
+499,CA-2017-175195,2016-10-12,Ken Lonsdale,Home Office,United States,02108,Technology,736.32,9
+139,CA-2019-150797,2018-05-03,Claire Gute,Corporate,United States,60610,Office Supplies,1025.57,3
+63,CA-2019-117139,2018-01-28,Sandra Flanagan,Consumer,United States,60610,Technology,288.8,9
+472,CA-2016-150793,2019-03-07,Claire Gute,Home Office,United States,60610,Office Supplies,1482.03,6
+648,CA-2017-111498,2016-12-16,Unknown,Consumer,United States,10008,Office Supplies,1043.88,8
+129,CA-2018-162180,2016-11-09,Zuschuss Donatelli,Home Office,United States,60610,Furniture,1248.09,9
+521,CA-2018-146500,2018-11-15,Sandra Flanagan,Corporate,United States,02108,Furniture,560.04,6
+839,CA-2019-192678,2017-01-18,Ken Lonsdale,Home Office,United States,02108,Furniture,1274.3,4
+990,CA-2018-137946,2016-11-28,Ruben Hope,Corporate,United States,60610,Technology,515.42,10
+65,CA-2016-116864,2016-07-17,Ruben Hope,Consumer,United States,60610,Technology,592.47,9
+813,CA-2017-189916,2017-01-08,Claire Gute,Consumer,United States,02108,Technology,1010.64,6
+15,CA-2018-105014,2016-08-10,Ruben Hope,Consumer,United States,60610,Office Supplies,998.04,5
+157,CA-2018-170504,2019-03-23,Sandra Flanagan,Corporate,United States,90036,Office Supplies,532.88,7
+41,CA-2019-168955,2016-08-20,Ruben Hope,Home Office,United States,90036,Office Supplies,642.28,8
+493,CA-2016-182271,2019-06-29,Ken Lonsdale,Home Office,United States,02108,Office Supplies,173.48,10
+380,CA-2016-113639,2016-03-13,Ken Lonsdale,Consumer,United States,10008,Technology,583.75,2
+188,CA-2017-107217,2019-08-30,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,1346.81,8
+764,CA-2016-145458,2019-03-01,Brosina Hoffman,Corporate,United States,02108,Technology,89.38,8
+217,CA-2019-169615,2018-03-18,Darrin Van Huff,Home Office,United States,02108,Technology,686.795,8
+792,CA-2019-159105,2019-06-05,Claire Gute,Home Office,United States,10008,Furniture,1120.32,1
+53,CA-2017-135755,2018-07-09,Brosina Hoffman,Consumer,United States,02108,Office Supplies,210.71,5
+879,CA-2019-153835,2017-06-16,Ken Lonsdale,Home Office,United States,10008,Office Supplies,803.08,7
+338,CA-2017-198055,2018-12-16,Ruben Hope,Consumer,United States,02108,Office Supplies,1314.58,4
+749,CA-2018-191354,2016-10-17,Ken Lonsdale,Corporate,United States,02108,Technology,390.75,2
+720,CA-2017-163780,2018-05-09,Darrin Van Huff,Corporate,United States,02108,Office Supplies,1044.28,1
+725,CA-2019-139131,2016-10-22,Brosina Hoffman,Home Office,United States,90036,Office Supplies,980.93,5
+296,CA-2017-143522,2016-12-25,Sandra Flanagan,Home Office,United States,60610,Furniture,94.58,1
+252,CA-2016-197491,2016-05-24,Ken Lonsdale,Corporate,United States,77041,Office Supplies,1105.15,2
+727,CA-2016-114307,2017-02-22,Sandra Flanagan,Corporate,United States,02108,Furniture,1489.25,1
+462,CA-2017-192702,2018-05-31,Ken Lonsdale,Home Office,United States,60610,Technology,562.85,9
+456,CA-2019-183817,2017-01-16,Sandra Flanagan,Corporate,United States,02108,Technology,929.61,2
+863,CA-2016-100674,2016-01-08,Claire Gute,Consumer,United States,60610,Furniture,830.56,5
+270,CA-2016-169193,2017-10-11,Darrin Van Huff,Consumer,United States,02108,Furniture,152.62,6
+202,CA-2018-121955,2016-03-13,Zuschuss Donatelli,Consumer,United States,90036,Technology,1287.5,2
+162,CA-2018-145107,2016-02-10,Brosina Hoffman,Home Office,United States,77041,Furniture,962.67,2
+556,CA-2017-116484,2016-05-12,Darrin Van Huff,Home Office,United States,02108,Furniture,570.24,3
+730,CA-2019-199280,2017-08-07,Ken Lonsdale,Home Office,United States,60610,Furniture,735.135,5
+402,CA-2016-112502,2019-02-22,Brosina Hoffman,Corporate,United States,Unknown,Technology,612.77,4
+703,CA-2016-100082,2017-03-11,Ken Lonsdale,Home Office,United States,90036,Technology,1346.32,1
+477,CA-2016-187014,2016-10-27,Ken Lonsdale,Consumer,United States,02108,Office Supplies,852.34,3
+772,CA-2018-160775,2016-07-10,Claire Gute,Consumer,United States,02108,Furniture,656.71,5
+106,CA-2016-157014,2019-09-18,Ruben Hope,Home Office,United States,60610,Furniture,1447.13,3
+390,CA-2019-147432,2016-06-12,Ruben Hope,Corporate,United States,10008,Office Supplies,515.65,7
+2,CA-2018-145082,2019-05-21,Darrin Van Huff,Home Office,United States,90036,Furniture,1477.91,6
+962,CA-2016-134028,2018-07-30,Brosina Hoffman,Consumer,United States,90036,Office Supplies,1212.7,9
+562,CA-2016-168938,2019-08-02,Brosina Hoffman,Corporate,United States,10008,Office Supplies,509.85,5
+932,CA-2017-143073,2019-08-25,Darrin Van Huff,Home Office,United States,Unknown,Furniture,977.43,10
+81,CA-2019-101553,2016-02-04,Zuschuss Donatelli,Home Office,United States,10008,Office Supplies,1439.15,2
+206,CA-2017-178562,2019-07-30,Sean O'Donnell,Home Office,United States,77041,Office Supplies,1003.03,1
+35,CA-2019-133466,2019-09-27,Zuschuss Donatelli,Corporate,United States,77041,Furniture,735.135,7
+943,CA-2018-184240,2018-10-28,Sandra Flanagan,Corporate,United States,77041,Office Supplies,320.87,4
+776,CA-2018-197695,2017-04-06,Claire Gute,Consumer,United States,90036,Office Supplies,1415.69,7
+509,CA-2017-161515,2017-11-21,Darrin Van Huff,Corporate,United States,60610,Technology,399.55,3
+428,CA-2016-138399,2018-03-26,Sandra Flanagan,Consumer,United States,02108,Furniture,498.39,5
+455,CA-2018-146186,2017-05-24,Sandra Flanagan,Consumer,United States,02108,Office Supplies,1111.09,2
+367,CA-2019-147109,2017-02-26,Ken Lonsdale,Home Office,United States,02108,Office Supplies,871.38,10
+92,CA-2019-178174,2016-10-09,Sean O'Donnell,Consumer,United States,77041,Office Supplies,740.13,4
+340,CA-2016-199158,2017-09-25,Claire Gute,Home Office,United States,02108,Office Supplies,1438.31,3
+898,CA-2018-192573,2017-03-27,Brosina Hoffman,Consumer,United States,02108,Technology,686.795,6
+565,CA-2017-139846,2019-02-09,Brosina Hoffman,Home Office,United States,10008,Office Supplies,1042.48,6
+346,CA-2019-135369,2017-05-31,Zuschuss Donatelli,Home Office,United States,90036,Office Supplies,1131.0,6
+777,CA-2016-104260,2019-04-06,Ken Lonsdale,Home Office,United States,02108,Technology,815.64,5
+242,CA-2018-177264,2016-04-24,Darrin Van Huff,Home Office,United States,02108,Technology,1110.48,5
+14,CA-2016-161694,2017-03-31,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,1266.27,5
+316,CA-2018-150040,2019-08-23,Zuschuss Donatelli,Consumer,United States,60610,Furniture,1182.74,9
+601,CA-2018-181645,2016-05-12,Ruben Hope,Consumer,United States,02108,Furniture,735.135,7
+388,CA-2016-184133,2018-05-23,Ruben Hope,Home Office,United States,90036,Furniture,768.64,4
+274,CA-2016-188172,2016-12-21,Sandra Flanagan,Home Office,United States,02108,Technology,686.795,1
+167,CA-2019-180967,2018-07-16,Ruben Hope,Home Office,United States,10008,Office Supplies,633.26,1
+841,CA-2019-106887,2016-08-13,Sean O'Donnell,Home Office,United States,02108,Office Supplies,1321.79,9
+647,CA-2016-146683,2017-05-15,Ken Lonsdale,Consumer,United States,02108,Technology,1463.04,9
+819,CA-2016-123914,2018-07-11,Sean O'Donnell,Home Office,United States,10008,Furniture,1162.66,9
+485,CA-2017-112431,2016-02-03,Brosina Hoffman,Corporate,United States,77041,Furniture,163.49,9
+505,CA-2016-154869,2018-08-28,Ken Lonsdale,Home Office,United States,10008,Furniture,671.92,3
+832,CA-2019-119232,2019-04-22,Brosina Hoffman,Home Office,United States,02108,Office Supplies,768.99,4
+244,CA-2018-194029,2018-05-15,Darrin Van Huff,Consumer,United States,10008,Technology,865.83,4
+567,CA-2018-175927,2018-02-25,Ruben Hope,Home Office,United States,10008,Furniture,647.66,1
+876,CA-2017-126007,2019-11-01,Sean O'Donnell,Home Office,United States,77041,Office Supplies,911.38,1
+563,CA-2018-117046,2018-11-30,Ruben Hope,Corporate,United States,Unknown,Furniture,1312.87,4
+979,CA-2019-131101,2018-08-22,Darrin Van Huff,Home Office,United States,10008,Office Supplies,1208.63,2
+687,CA-2016-164748,2016-07-27,Ken Lonsdale,Home Office,United States,90036,Technology,686.795,9
+958,CA-2018-164523,2016-09-22,Unknown,Home Office,United States,10008,Technology,446.39,1
+190,CA-2016-160933,2019-07-04,Ken Lonsdale,Home Office,United States,Unknown,Technology,597.09,6
+783,CA-2017-111416,2019-10-13,Claire Gute,Consumer,United States,Unknown,Office Supplies,798.1,5
+976,CA-2018-175317,2016-03-09,Sean O'Donnell,Home Office,United States,02108,Technology,605.7,4
+700,CA-2016-172515,2019-05-04,Zuschuss Donatelli,Home Office,United States,60610,Office Supplies,946.72,7
+476,CA-2018-111789,2017-10-03,Brosina Hoffman,Home Office,United States,10008,Furniture,182.07,5
+682,CA-2017-181737,2017-04-23,Ken Lonsdale,Consumer,United States,77041,Technology,1351.85,7
+511,CA-2017-133398,2018-10-10,Zuschuss Donatelli,Corporate,United States,77041,Furniture,1141.39,2
+59,CA-2016-134311,2017-06-17,Zuschuss Donatelli,Consumer,United States,02108,Office Supplies,1069.15,2
+475,CA-2017-150589,2019-03-08,Sean O'Donnell,Consumer,United States,77041,Furniture,1181.51,1
+561,CA-2016-176820,2016-08-06,Sean O'Donnell,Consumer,United States,02108,Furniture,1021.78,2
+857,CA-2016-181375,2019-05-18,Brosina Hoffman,Corporate,United States,10008,Furniture,850.38,4
+748,CA-2018-125448,2016-10-03,Sean O'Donnell,Home Office,United States,77041,Furniture,666.51,10
+253,CA-2019-158385,2018-03-05,Darrin Van Huff,Home Office,United States,10008,Technology,439.6,3
+22,CA-2018-175470,2019-10-19,Darrin Van Huff,Consumer,United States,60610,Technology,23.91,8
+314,CA-2016-198763,2017-02-28,Sean O'Donnell,Corporate,United States,02108,Furniture,735.135,5
+460,CA-2018-108573,2017-07-19,Claire Gute,Home Office,United States,02108,Furniture,1470.37,6
+161,CA-2018-130907,2019-02-11,Unknown,Corporate,United States,02108,Furniture,94.75,6
+277,CA-2018-155058,2018-12-26,Ruben Hope,Consumer,United States,10008,Office Supplies,40.92,8
+956,CA-2019-180461,2019-05-09,Zuschuss Donatelli,Consumer,United States,Unknown,Technology,956.49,5
+192,CA-2017-174839,2019-05-25,Zuschuss Donatelli,Consumer,United States,02108,Furniture,668.44,8
+386,CA-2016-116293,2017-09-20,Unknown,Consumer,United States,60610,Furniture,390.72,3
+806,CA-2017-176892,2016-03-30,Brosina Hoffman,Consumer,United States,10008,Technology,686.795,10
+414,CA-2019-195807,2018-03-28,Ruben Hope,Corporate,United States,02108,Technology,454.37,10
+492,CA-2017-120005,2016-10-08,Ken Lonsdale,Corporate,United States,02108,Furniture,15.69,3
+344,CA-2019-134449,2019-10-29,Brosina Hoffman,Consumer,United States,10008,Technology,1228.34,3
+770,CA-2016-169898,2017-01-10,Ken Lonsdale,Corporate,United States,90036,Furniture,372.3,1
+309,CA-2016-170555,2018-08-01,Brosina Hoffman,Home Office,United States,02108,Technology,1243.89,6
+662,CA-2019-134047,2017-06-30,Claire Gute,Consumer,United States,10008,Office Supplies,613.07,1
+131,CA-2018-155836,2016-08-25,Claire Gute,Consumer,United States,90036,Office Supplies,581.64,2
+664,CA-2018-129715,2019-03-20,Brosina Hoffman,Home Office,United States,10008,Office Supplies,1082.66,4
+872,CA-2018-198503,2016-03-08,Sean O'Donnell,Corporate,United States,02108,Technology,369.06,1
+100,CA-2016-169243,2016-01-25,Ken Lonsdale,Consumer,United States,10008,Furniture,599.97,7
+373,CA-2016-139311,2018-04-08,Zuschuss Donatelli,Home Office,United States,10008,Office Supplies,154.53,2
+88,CA-2018-131722,2017-06-01,Ken Lonsdale,Corporate,United States,02108,Furniture,988.11,7
+459,CA-2017-142160,2017-05-20,Sandra Flanagan,Home Office,United States,60610,Furniture,261.16,3
+331,CA-2016-194712,2018-02-21,Brosina Hoffman,Corporate,United States,10008,Office Supplies,281.62,5
+215,CA-2019-126208,2018-02-08,Claire Gute,Home Office,United States,02108,Furniture,700.97,3
+467,CA-2018-109563,2017-02-20,Claire Gute,Home Office,United States,Unknown,Furniture,934.54,5
+615,CA-2017-142788,2019-06-28,Zuschuss Donatelli,Home Office,United States,60610,Furniture,884.59,3
+21,CA-2018-129389,2019-08-24,Claire Gute,Consumer,United States,10008,Technology,1167.8,5
+72,CA-2018-185679,2018-01-06,Sandra Flanagan,Home Office,United States,02108,Office Supplies,910.58,4
+107,CA-2016-128183,2017-11-02,Unknown,Consumer,United States,60610,Furniture,97.2,2
+271,CA-2016-106799,2017-02-18,Sandra Flanagan,Consumer,United States,02108,Technology,1014.27,7
+861,CA-2016-192744,2018-08-13,Zuschuss Donatelli,Corporate,United States,90036,Office Supplies,1408.92,3
