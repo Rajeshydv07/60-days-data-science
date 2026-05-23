@@ -1,33 +1,34 @@
-def get_average(marks_list):
+def find_average(marks):
     total = 0
-    for m in marks_list:
+    for m in marks:
         total = total + m
     
-    avg = total / len(marks_list)
+    avg = total / len(marks)
     return avg
 
-def get_grade(average):
-    if average >= 75:
+def check_grade(avg):
+    if avg >= 75:
         return "Distinction"
-    elif average >= 40:
+    elif avg >= 40:
         return "Pass"
     else:
         return "Fail"
 
-marks = []
-
-count = int(input("How many subjects? "))
+my_marks = []
+subjects = int(input("Enter number of subjects: "))
 
 i = 0
-while i < count:
-    score = float(input(f"Enter score for subject {i+1}: "))
-    marks.append(score)
+while i < subjects:
+    print("Enter marks for subject", i + 1)
+    mark = int(input())
+    my_marks.append(mark)
     i = i + 1
 
-final_avg = get_average(marks)
-final_grade = get_grade(final_avg)
+student_avg = find_average(my_marks)
+student_grade = check_grade(student_avg)
 
-print("\n--- Report Card ---")
-print("Marks:", marks)
-print("Average:", final_avg)
-print("Grade:", final_grade)
+print("")
+print("Result")
+print("All marks:", my_marks)
+print("Average mark:", student_avg)
+print("Final grade:", student_grade)
