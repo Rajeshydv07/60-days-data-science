@@ -36,7 +36,9 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 10** | Feature Engineering | Categorical encoding, numerical scaling, ratio/date derived features, and model-readiness comparisons. | [day10/README.md](./day10/README.md) • [day10/day10_feature_engineering.ipynb](./day10/day10_feature_engineering.ipynb) |
 | **Day 11** | Building Your First ML Pipeline | Binary classification pipeline predicting High-Value Sales, leakage prevention, split, baseline Logistic Regression, and visual evaluation diagnostics. | [day11/README.md](./day11/README.md) • [day11/day11_ml_pipeline.ipynb](./day11/day11_ml_pipeline.ipynb) |
 | **Day 12** | Regression Modeling | Teaching machines to predict continuous numerical values (Sales) using Linear Regression, analyzing metrics, coefficients, and visual diagnostics. | [day12/README.md](./day12/README.md) • [day12/day12_regression.ipynb](./day12/day12_regression.ipynb) |
-| **Day 13+** | *In Progress* 🔄 | Upcoming days will cover advanced machine learning architectures and tuning. | *Stay tuned!* |
+| **Day 13** | Overfitting & Regularization | Optimizing regression models using Ridge (L2) and Lasso (L1) regularization to prevent overfitting on noisy data, analyze coefficient paths, and perform embedded feature selection. | [day13/README.md](./day13/README.md) • [day13/day13_regularization.ipynb](./day13/day13_regularization.ipynb) |
+| **Day 14+** | *In Progress* 🔄 | Upcoming days will cover advanced machine learning architectures and tuning. | *Stay tuned!* |
+
 
 ---
 
