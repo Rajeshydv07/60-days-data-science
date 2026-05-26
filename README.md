@@ -37,7 +37,8 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 11** | Building Your First ML Pipeline | Binary classification pipeline predicting High-Value Sales, leakage prevention, split, baseline Logistic Regression, and visual evaluation diagnostics. | [day11/README.md](./day11/README.md) • [day11/day11_ml_pipeline.ipynb](./day11/day11_ml_pipeline.ipynb) |
 | **Day 12** | Regression Modeling | Teaching machines to predict continuous numerical values (Sales) using Linear Regression, analyzing metrics, coefficients, and visual diagnostics. | [day12/README.md](./day12/README.md) • [day12/day12_regression.ipynb](./day12/day12_regression.ipynb) |
 | **Day 13** | Overfitting & Regularization | Optimizing regression models using Ridge (L2) and Lasso (L1) regularization to prevent overfitting on noisy data, analyze coefficient paths, and perform embedded feature selection. | [day13/README.md](./day13/README.md) • [day13/day13_regularization.ipynb](./day13/day13_regularization.ipynb) |
-| **Day 14+** | *In Progress* 🔄 | Upcoming days will cover advanced machine learning architectures and tuning. | *Stay tuned!* |
+| **Day 14** | Adapting Models to Changing Constraints | Sprint Review challenge simulating a real-world constraint shift: removing the most important feature (Is_Weekend), retraining OLS/Ridge/Lasso, and evaluating how the models adapt. Includes a Sprint 2 reflection. | [day14/README.md](./day14/README.md) • [day14/day14_adaptation.ipynb](./day14/day14_adaptation.ipynb) |
+| **Day 15+** | *In Progress* 🔄 | Upcoming days will cover advanced machine learning architectures and tuning. | *Stay tuned!* |
 
 
 ---
