@@ -38,7 +38,9 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 12** | Regression Modeling | Teaching machines to predict continuous numerical values (Sales) using Linear Regression, analyzing metrics, coefficients, and visual diagnostics. | [day12/README.md](./day12/README.md) • [day12/day12_regression.ipynb](./day12/day12_regression.ipynb) |
 | **Day 13** | Overfitting & Regularization | Optimizing regression models using Ridge (L2) and Lasso (L1) regularization to prevent overfitting on noisy data, analyze coefficient paths, and perform embedded feature selection. | [day13/README.md](./day13/README.md) • [day13/day13_regularization.ipynb](./day13/day13_regularization.ipynb) |
 | **Day 15** | Predicting Customer Churn | Building a customer churn binary classifier using Logistic Regression, cleaning empty data, encoding features, analyzing FP vs FN business costs, and creating visual diagnostics. | [day15/README.md](./day15/README.md) • [day15/day15_churn_prediction.ipynb](./day15/day15_churn_prediction.ipynb) |
-| **Day 16+** | *In Progress* 🔄 | Upcoming days will cover advanced machine learning architectures and tuning. | *Stay tuned!* |
+| **Day 16** | Movie Recommendation | Building a similarity-based movie recommendation system using K-Nearest Neighbors (KNN), computing Cosine Similarity, handling sparse user-item matrices, and tuning the hyperparameter K. | [day16/README.md](./day16/README.md) • [day16/day16_movie_recommendation.ipynb](./day16/day16_movie_recommendation.ipynb) |
+| **Day 17** | Loan Approval Prediction | Training a Decision Tree classifier, exploring split math (Gini, Information Gain), analyzing feature importance, demonstrating overfitting via pruning curves, and explaining decision pathways. | [day17/README.md](./day17/README.md) • [day17/day17_loan_prediction.ipynb](./day17/day17_loan_prediction.ipynb) |
+| **Day 18+** | *In Progress* 🔄 | Upcoming days will cover advanced machine learning architectures and tuning. | *Stay tuned!* |
 
 
 ---
