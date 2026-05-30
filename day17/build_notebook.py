@@ -5,7 +5,7 @@ from nbconvert.preprocessors import ExecutePreprocessor
 
 notebook_path = "c:/60-days-data-science/day17/day17_loan_prediction.ipynb"
 
-# Define the cells
+# Define the cells with highly optimized and compressed image settings
 cells = [
     # Cell 1 (Markdown)
     nbformat.v4.new_markdown_cell(
@@ -24,13 +24,15 @@ cells = [
         "from sklearn.model_selection import train_test_split\n"
         "from sklearn.tree import DecisionTreeClassifier, plot_tree\n"
         "from sklearn.metrics import accuracy_score, classification_report, confusion_matrix\n\n"
-        "# Configure Matplotlib to output vector SVG graphics for compact size and high resolution\n"
+        "# Configure Matplotlib to output compressed, web-friendly PNGs\n"
         "%matplotlib inline\n"
-        "%config InlineBackend.figure_format = 'svg'\n\n"
-        "# Set style for premium visualizations\n"
+        "%config InlineBackend.figure_format = 'png'\n\n"
+        "# Set low DPI and compact figure sizes to prevent GitHub rendering errors\n"
+        "plt.rcParams['figure.dpi'] = 75\n"
+        "plt.rcParams['savefig.dpi'] = 75\n"
         "sns.set_theme(style=\"whitegrid\")\n"
-        "plt.rcParams[\"figure.figsize\"] = (10, 6)\n"
-        "plt.rcParams[\"font.size\"] = 12"
+        "plt.rcParams[\"figure.figsize\"] = (7, 4)\n"
+        "plt.rcParams[\"font.size\"] = 10"
     ),
     # Cell 3 (Markdown)
     nbformat.v4.new_markdown_cell(
@@ -63,9 +65,9 @@ cells = [
     # Cell 8 (Code)
     nbformat.v4.new_code_cell(
         "# Credit Score vs Loan Approval status\n"
-        "plt.figure(figsize=(10, 5))\n"
+        "plt.figure(figsize=(7, 3.5))\n"
         "sns.kdeplot(data=df, x='Credit_Score', hue='Approved', fill=True, palette='coolwarm', alpha=0.5)\n"
-        "plt.title('Credit Score Distribution by Loan Approval Status', fontsize=14, fontweight='bold')\n"
+        "plt.title('Credit Score Distribution by Loan Approval Status', fontsize=11, fontweight='bold')\n"
         "plt.xlabel('FICO Credit Score')\n"
         "plt.ylabel('Density')\n"
         "plt.legend(['Rejected', 'Approved'])\n"
@@ -79,9 +81,9 @@ cells = [
     # Cell 10 (Code)
     nbformat.v4.new_code_cell(
         "# DTI Ratio vs Loan Approval Status\n"
-        "plt.figure(figsize=(10, 5))\n"
+        "plt.figure(figsize=(7, 3.5))\n"
         "sns.boxplot(data=df, x='Approved', y='Debt_to_Income_Ratio', palette='Set2')\n"
-        "plt.title('Debt-to-Income (DTI) Ratio by Loan Approval Status', fontsize=14, fontweight='bold')\n"
+        "plt.title('Debt-to-Income (DTI) Ratio by Loan Approval Status', fontsize=11, fontweight='bold')\n"
         "plt.xlabel('Approval Status (0 = Rejected, 1 = Approved)')\n"
         "plt.ylabel('Debt-to-Income (DTI) Ratio')\n"
         "plt.xticks([0, 1], ['Rejected', 'Approved'])\n"
@@ -151,10 +153,10 @@ cells = [
         "    train_accuracies.append(accuracy_score(y_train, clf.predict(X_train)))\n"
         "    test_accuracies.append(accuracy_score(y_test, clf.predict(X_test)))\n\n"
         "# Plot the overfitting curve\n"
-        "plt.figure(figsize=(10, 6))\n"
+        "plt.figure(figsize=(7, 4))\n"
         "plt.plot(depths, train_accuracies, marker='o', label='Training Accuracy', color='#2b5c8f', linewidth=2)\n"
         "plt.plot(depths, test_accuracies, marker='s', label='Testing Accuracy', color='#d95f02', linewidth=2)\n"
-        "plt.title('Decision Tree Bias-Variance Trade-off (Overfitting Analysis)', fontsize=14, fontweight='bold', pad=15)\n"
+        "plt.title('Decision Tree Bias-Variance Trade-off (Overfitting Analysis)', fontsize=11, fontweight='bold', pad=12)\n"
         "plt.xlabel('Tree Depth (max_depth)')\n"
         "plt.ylabel('Accuracy')\n"
         "plt.xticks(depths)\n"
@@ -192,10 +194,10 @@ cells = [
     # Cell 24 (Code)
     nbformat.v4.new_code_cell(
         "cm = confusion_matrix(y_test, y_test_pred_pr)\n"
-        "plt.figure(figsize=(6, 5))\n"
+        "plt.figure(figsize=(4.5, 4))\n"
         "sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False,\n"
         "            xticklabels=['Rejected', 'Approved'], yticklabels=['Rejected', 'Approved'])\n"
-        "plt.title('Confusion Matrix (Pruned Model)', fontsize=14, fontweight='bold', pad=12)\n"
+        "plt.title('Confusion Matrix (Pruned Model)', fontsize=11, fontweight='bold', pad=10)\n"
         "plt.xlabel('Predicted Label')\n"
         "plt.ylabel('True Label')\n"
         "plt.tight_layout()\n"
@@ -208,17 +210,17 @@ cells = [
     ),
     # Cell 26 (Code)
     nbformat.v4.new_code_cell(
-        "plt.figure(figsize=(20, 10))\n"
+        "plt.figure(figsize=(12, 6))\n"
         "plot_tree(\n"
         "    clf_pruned,\n"
         "    feature_names=list(X.columns),\n"
         "    class_names=['Rejected', 'Approved'],\n"
         "    filled=True,\n"
         "    rounded=True,\n"
-        "    fontsize=10,\n"
+        "    fontsize=8,\n"
         "    precision=2\n"
         ")\n"
-        "plt.title('Pruned Decision Tree Flowchart (Depth=4)', fontsize=18, fontweight='bold', pad=20)\n"
+        "plt.title('Pruned Decision Tree Flowchart (Depth=4)', fontsize=14, fontweight='bold', pad=15)\n"
         "plt.show()"
     ),
     # Cell 27 (Markdown)
@@ -247,10 +249,10 @@ cells = [
     nbformat.v4.new_code_cell(
         "importances = clf_pruned.feature_importances_\n"
         "feat_importances = pd.Series(importances, index=X.columns).sort_values(ascending=True)\n\n"
-        "plt.figure(figsize=(10, 6))\n"
+        "plt.figure(figsize=(7, 4))\n"
         "colors = sns.color_palette(\"Blues_d\", len(feat_importances))\n"
         "feat_importances.plot(kind='barh', color=colors)\n"
-        "plt.title('Gini Feature Importance Analysis (Pruned Tree)', fontsize=14, fontweight='bold', pad=15)\n"
+        "plt.title('Gini Feature Importance Analysis (Pruned Tree)', fontsize=11, fontweight='bold', pad=12)\n"
         "plt.xlabel('Relative Importance (Gini)')\n"
         "plt.ylabel('Features')\n"
         "plt.tight_layout()\n"
