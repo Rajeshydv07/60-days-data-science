@@ -1,131 +1,121 @@
-# 🛡️ Day 18 — Fraud Detection Using Random Forest
+# Day 18 - Fraud Detection Using Random Forest
 
-**60 Days Data Science Challenge**  
-**Phase:** Ensemble Learning  
-**Topic:** Random Forest for Credit Card Fraud Detection
-
----
-
-## 📌 Overview
-
-Today I built a complete **fraud detection pipeline** using **Random Forest** ensemble learning,
-compared against a **Decision Tree** baseline. The dataset simulates real-world credit card
-transactions with severe class imbalance (~1.8% fraud rate).
+60 Days Data Science Challenge | Day 18  
+Topic: Ensemble Learning - Random Forest
 
 ---
 
-## 🎯 What I Did
+## what i did today
 
-| Step | Description |
-|------|-------------|
-| 1️⃣ Data Generation | Simulated 10,000 credit card transactions (180 fraudulent) |
-| 2️⃣ EDA | Explored class imbalance, amount distributions, hour-of-day patterns |
-| 3️⃣ Preprocessing | Train/test split (stratified), StandardScaler for Amount & Hour |
-| 4️⃣ Baseline Model | Decision Tree (max_depth=8, class_weight='balanced') |
-| 5️⃣ Random Forest | 200 trees, max_depth=12, sqrt features, balanced weights |
-| 6️⃣ Evaluation | Confusion matrix, ROC-AUC, PR-AUC, F1, Precision, Recall |
-| 7️⃣ Feature Importance | Ranked all 17 features by Gini impurity decrease |
-| 8️⃣ Cross-Validation | 5-Fold Stratified CV for model robustness check |
-| 9️⃣ Threshold Analysis | Precision/Recall/F1 trade-off across decision thresholds |
+today i built a fraud detection model using **random forest** and compared it with  
+yesterday's decision tree to see if ensemble methods actually help.
+
+spoiler: they do. a lot.
 
 ---
 
-## 📊 Results
+## dataset
 
-### Model Comparison
+i don't have the actual kaggle credit card fraud dataset downloaded  
+so i simulated one with similar properties:
+- 10,000 transactions total
+- 180 fraud cases (~1.8% fraud rate)
+- features: V1-V15 (PCA style), Amount, Hour, Class
 
-| Metric | Decision Tree | Random Forest | Improvement |
-|--------|:------------:|:-------------:|:-----------:|
-| Accuracy | ~0.970 | ~0.992 | +2.2% |
-| Precision (Fraud) | ~0.650 | ~0.850 | +30.8% |
-| Recall (Fraud) | ~0.700 | ~0.880 | +25.7% |
-| F1-Score (Fraud) | ~0.674 | ~0.865 | +28.3% |
-| **ROC-AUC** | **~0.920** | **~0.982** | **+6.7%** |
-| **PR-AUC** | **~0.600** | **~0.850** | **+41.7%** |
-
-> **Random Forest dominates across every metric**, especially PR-AUC — the most meaningful
-> metric for imbalanced fraud detection problems.
+the real dataset has 284k transactions with only 0.17% fraud which is way more extreme
 
 ---
 
-## 🗂️ Files
+## steps i followed
+
+1. imported libraries
+2. created the dataset with realistic fraud patterns (higher amounts, late night)
+3. EDA - looked at class imbalance, amount distributions, hour of day
+4. preprocessed - stratified split (important for imbalanced data), scaled Amount and Hour
+5. trained decision tree as baseline
+6. trained random forest (200 trees)
+7. compared both models on all metrics
+8. plotted confusion matrices, ROC curve, PR curve
+9. analysed feature importance
+10. ran 5-fold cross validation to check stability
+11. did threshold analysis (what if i lower the 0.5 threshold?)
+
+---
+
+## results
+
+| metric | decision tree | random forest |
+|--------|:------------:|:-------------:|
+| accuracy | ~0.97 | ~0.99 |
+| precision | ~0.65 | ~0.85 |
+| recall | ~0.70 | ~0.88 |
+| f1 | ~0.67 | ~0.86 |
+| roc-auc | ~0.92 | ~0.98 |
+| pr-auc | ~0.60 | ~0.85 |
+
+random forest won on everything. biggest difference was in pr-auc (+41%)  
+pr-auc matters more than roc-auc for imbalanced datasets like fraud
+
+---
+
+## charts saved
+
+- `eda_overview.png` - class distribution, amount histogram, hour of day
+- `confusion_matrices.png` - side by side for both models  
+- `roc_pr_curves.png` - ROC and precision-recall curves
+- `feature_importance.png` - which features RF found most useful
+- `cross_validation.png` - 5-fold CV boxplot showing stability
+- `threshold_analysis.png` - precision/recall/f1 at different thresholds
+- `model_comparison.png` - bar chart comparing all 6 metrics
+
+---
+
+## key things i learned
+
+**why random forest is better than single decision tree:**
+- 200 trees voting together = less variance (bagging)
+- each tree sees random subset of features = trees are diverse
+- averaging 200 probabilities is smoother than one tree's hard decision
+- much more stable in cross-validation (lower std across folds)
+
+**class imbalance handling:**
+- used `class_weight='balanced'` in both models
+- with stratify in train_test_split to preserve fraud% in both splits
+- pr-auc is better metric than roc-auc for imbalanced data
+
+**threshold tuning:**
+- default is 0.5 but can lower it to catch more fraud
+- lowering threshold = more recall, less precision
+- bank wants high recall (dont miss fraud even if some false alarms)
+
+**real world fraud detection challenges i read about:**
+1. real fraud rate is 0.1% - much worse than my 1.8%
+2. fraud patterns change over time (concept drift)
+3. model needs to decide in <100ms for real-time card approval
+4. too many false positives = customers get annoyed when card is blocked
+5. fraudsters study the system and try to beat it
+
+---
+
+## what's next
+
+day 19: gradient boosting (XGBoost/LightGBM) - should be even better  
+also want to try SMOTE oversampling instead of class_weight approach
+
+---
+
+## files
 
 ```
 day18/
-├── day18_fraud_detection.ipynb   ← Main notebook (fully executed)
-├── eda_overview.png              ← Class distribution, amount, hour charts
-├── confusion_matrices.png        ← DT vs RF confusion matrices
-├── roc_pr_curves.png             ← ROC and Precision-Recall curves
-├── feature_importance.png        ← Random Forest feature ranking
-├── cross_validation.png          ← 5-Fold CV stability boxplot
-├── threshold_analysis.png        ← Precision/Recall/F1 vs threshold
-├── model_comparison.png          ← Side-by-side bar chart of all metrics
-└── README.md                     ← This file
+├── day18_fraud_detection.ipynb   <- main notebook (fully executed)
+├── eda_overview.png
+├── confusion_matrices.png
+├── roc_pr_curves.png
+├── feature_importance.png
+├── cross_validation.png
+├── threshold_analysis.png
+├── model_comparison.png
+├── build_notebook.py             <- script that generates the notebook
+└── README.md
 ```
-
----
-
-## 💡 Key Learnings
-
-### Why Random Forest > Decision Tree for Fraud Detection
-
-1. **Bagging reduces variance** — 200 trees vote together, smoothing out noisy individual predictions
-2. **Feature randomness** — Each tree sees only √p features, forcing diverse learning
-3. **Handles imbalance better** — The averaged ensemble is less susceptible to class skew
-4. **Built-in importance** — No extra tools needed to understand what drives predictions
-5. **Stable in CV** — Much lower standard deviation across folds
-
-### Real-World Fraud Detection Challenges
-
-| Challenge | Why It's Hard |
-|-----------|---------------|
-| **Extreme class imbalance** | Real fraud rate is ~0.1-0.2%; naive model predicts all legit |
-| **Concept drift** | Fraud patterns evolve; weekly retraining needed |
-| **Feature velocity** | Need real-time aggregations (last 5 txns, hourly spend) |
-| **Latency** | <100ms decision time for real-time card authorization |
-| **False positives** | Blocking legit purchases hurts customer satisfaction |
-| **Adversarial adaptation** | Fraudsters study detection patterns and adapt |
-
-### When to Lower the Decision Threshold
-- **Higher recall priority** (banks): lower threshold → catch more fraud, more false alerts
-- **Higher precision priority** (customer UX): higher threshold → fewer false blocks, miss some fraud
-
----
-
-## 🔍 Feature Importance Insights
-
-Top fraud indicators found by Random Forest:
-1. **Hour** — Late-night (0–5 AM) transactions are highly suspicious
-2. **Amount** — Fraudulent charges tend to be larger
-3. **V-features** — Several anonymised PCA components carry strong signal
-
----
-
-## 📈 Visualisations
-
-All charts are saved as high-resolution PNG files (150 DPI) in this directory.
-
----
-
-## 🚀 What's Next
-
-**Day 19:** Gradient Boosting (XGBoost / LightGBM)
-- Sequential tree building vs. parallel (RF)
-- Usually even better on tabular fraud data
-- Will experiment with SMOTE for oversampling
-
----
-
-## 🔗 LinkedIn Reflection
-
-> Day 18 of #60DaysOfDataScience ✅  
-> Built a complete fraud detection system using Random Forest ensemble learning!  
-> Key insight: For imbalanced datasets, PR-AUC matters more than ROC-AUC.  
-> Random Forest improved PR-AUC by 41% over a single Decision Tree baseline.  
-> The feature importance analysis revealed that late-night transactions and  
-> high amounts are the strongest fraud signals.  
-> #MachineLearning #FraudDetection #RandomForest #EnsembleLearning #Python
-
----
-
-*Part of the ABtalksDS 60-Days Data Science Challenge*
