@@ -41,8 +41,8 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 16** | Movie Recommendation | Building a similarity-based movie recommendation system using K-Nearest Neighbors (KNN), computing Cosine Similarity, handling sparse user-item matrices, and tuning the hyperparameter K. | [day16/README.md](./day16/README.md) • [day16/day16_movie_recommendation.ipynb](./day16/day16_movie_recommendation.ipynb) |
 | **Day 17** | Loan Approval Prediction | Training a Decision Tree classifier, exploring split math (Gini, Information Gain), analyzing feature importance, demonstrating overfitting via pruning curves, and explaining decision pathways. | [day17/README.md](./day17/README.md) • [day17/day17_loan_prediction.ipynb](./day17/day17_loan_prediction.ipynb) |
 | **Day 18** | Fraud Detection Using Random Forest | Ensemble learning baseline with Random Forest. Implemented stratified splitting, class weight balancing, threshold tuning, and model evaluation curves (ROC vs PR AUC). | [day18/README.md](./day18/README.md) • [day18/day18_fraud_detection.ipynb](./day18/day18_fraud_detection.ipynb) |
-| **Day 19** | Boosting Model Performance | Advanced ensembles with XGBoost and LightGBM. Analyzed boosting residual convergence via loss curves, compared bagging vs leaf-wise boosting, and cross-validated stability. | [day19/README.md](./day19/README.md) • [day19/day19_boosting_models.ipynb](./day19/day19_boosting_models.ipynb) |
-| **Day 20+** | *In Progress* 🔄 | Upcoming days will cover advanced machine learning architectures and tuning. | *Stay tuned!* |
+| **Day 20** | Model Evaluation | Head-to-head comparison of 5 trained classifiers and a naive control on highly imbalanced data. Demonstrated the Accuracy Paradox and why PR-AUC and F1-score are vital. | [day20/README.md](./day20/README.md) • [day20/day20_model_evaluation.ipynb](./day20/day20_model_evaluation.ipynb) |
+| **Day 21+** | *In Progress* 🔄 | Upcoming days will cover hyperparameter tuning, advanced sampling (SMOTE), and model deployment. | *Stay tuned!* |
 
 
 ---
