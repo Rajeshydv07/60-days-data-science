@@ -1,0 +1,15 @@
+tenure
+Contract_Two year
+InternetService_Fiber optic
+PaymentMethod_Electronic check
+TotalCharges
+MonthlyCharges
+StreamingMovies_No internet service
+TechSupport_No internet service
+StreamingTV_No internet service
+OnlineBackup_No internet service
+Contract_One year
+PaperlessBilling_Yes
+DeviceProtection_No internet service
+StreamingMovies_Yes
+OnlineSecurity_No internet service
