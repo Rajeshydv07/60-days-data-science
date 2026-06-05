@@ -168,11 +168,11 @@ magnitude distortion).
 cells.append(code(r"""X_all = df_enc.drop(columns=['Churn'])
 y_all = df_enc['Churn']
 
-# Scale before VIF so coefficient magnitudes don't distort results
+# scale before VIF to avoid magnitude distortion
 scaler_vif = StandardScaler()
 X_scaled = pd.DataFrame(scaler_vif.fit_transform(X_all), columns=X_all.columns)
 
-# Calculate VIF for each feature
+# calculate VIF for each feature
 vif_data = pd.DataFrame()
 vif_data['Feature'] = X_scaled.columns
 vif_data['VIF'] = [
@@ -233,7 +233,7 @@ mi_scores = pd.Series(
     index=X_scaled.columns
 )
 
-# Combine
+# combine results
 univariate_df = pd.DataFrame({
     'F_Score'  : f_scores,
     'F_pvalue' : f_pvals,
@@ -255,7 +255,7 @@ axes[0].set_xlabel('Mutual Information Score', fontsize=11)
 axes[0].set_title('Mutual Information — Top 20 Features', fontsize=12, fontweight='bold')
 axes[0].invert_yaxis()
 
-# F-Statistic
+# F-statistic bar
 axes[1].barh(top_uni.index, top_uni['F_Score'], color='#9b59b6', edgecolor='white')
 axes[1].set_xlabel('ANOVA F-Score', fontsize=11)
 axes[1].set_title('ANOVA F-Score — Top 20 Features', fontsize=12, fontweight='bold')
@@ -350,7 +350,7 @@ To pick a robust final set I will **normalize each score to [0, 1]** and average
 into a consensus score.  Features that score high across all three methods are the safest
 to keep.
 """))
-cells.append(code(r"""# Normalize each score to [0, 1]
+cells.append(code(r"""# normalize each score to 0 to 1
 def normalize(series):
     mn, mx = series.min(), series.max()
     if mx == mn:
@@ -360,7 +360,7 @@ def normalize(series):
 mi_norm  = normalize(univariate_df['MI_Score'])
 f_norm   = normalize(univariate_df['F_Score'])
 rf_norm  = normalize(rf_importance)
-# RFE: invert rank so rank=1 → highest score
+# rfe: invert rank so rank 1 gets highest score
 rfe_score = 1 / rfe_df.set_index('Feature')['Rank']
 rfe_norm  = normalize(rfe_score)
 
@@ -421,7 +421,7 @@ for i, feat in enumerate(selected_features, 1):
     score   = consensus.loc[feat, 'Consensus_Score']
     print(f"  {i:2d}. {feat:<45s}  consensus={score:.4f}  VIF={vif_val:.2f}")
 
-# Check for high VIF in selected set
+# check for high VIF in selected set
 high_vif_selected = [
     f for f in selected_features
     if vif_data.set_index('Feature')['VIF'].get(f, 0) > 10
@@ -487,7 +487,7 @@ for name, model in models.items():
         ('All Features',      X_tr_full, X_te_full),
         ('Selected Features', X_tr_sel,  X_te_sel),
     ]:
-        m = type(model)(**model.get_params())  # fresh instance
+        m = type(model)(**model.get_params())  # fresh instance each loop
         m.fit(Xtr, y_tr)
         yp = m.predict(Xte)
         yp_proba = m.predict_proba(Xte)[:, 1]
@@ -552,7 +552,7 @@ for _, row in results_df.iterrows():
                 fmt='o', color=color, markersize=10, capsize=5, linewidth=2,
                 label=row['Feature Set'])
 
-# Deduplicate legend
+# remove duplicate legend entries
 handles, labels = ax.get_legend_handles_labels()
 by_label = dict(zip(labels, handles))
 ax.legend(by_label.values(), by_label.keys(), fontsize=10)
@@ -572,18 +572,18 @@ print("Saved cv_comparison.png")
 
 # Step 12: Save outputs
 cells.append(md(r"""## Step 11 - Save Selected Features"""))
-cells.append(code(r"""# Save consensus ranking table
+cells.append(code(r"""# save consensus ranking table
 consensus.reset_index().rename(columns={'index': 'Feature'}).to_csv(
     'feature_ranking.csv', index=False
 )
 print("Saved feature_ranking.csv")
 
-# Save the selected feature list
+# save the selected feature list
 with open('selected_features.txt', 'w') as f:
     f.write('\n'.join(selected_features))
 print(f"Saved selected_features.txt  ({len(selected_features)} features)")
 
-# Print final selected set
+# print final selected set
 print("\nFinal Selected Features:")
 for i, feat in enumerate(selected_features, 1):
     print(f"  {i:2d}. {feat}")
