@@ -17,30 +17,11 @@ def code(src):
 cells = []
 
 # Title & Introduction 
-cells.append(md(r"""# Day 23 - Finding the Most Important Signals in Data
+cells.append(md(r"""# Day 23 - Feature Selection
 60 Days Data Science | Phase: Feature Selection
 
 **Date:** 05 June 2026  
 **Name:** Rajesh Yadav
-
----
-
-### Why Feature Selection Matters
-
-Not every column in a dataset is useful.  Some are noise, some are redundant copies of other columns, and some actively hurt model performance by adding complexity without adding information.
-
-Today I am exploring **Feature Selection** — the process of deciding which features to keep before training a model.  I will use the Telco Customer Churn dataset (same one from Day 15 and Day 22) so I can directly compare how removing bad features changes prediction quality.
-
-### What I will cover in this notebook:
-1. Load and preprocess the dataset (OHE + numeric cleaning)
-2. Correlation heatmap — spot redundant features visually
-3. Variance Inflation Factor (VIF) — measure multicollinearity numerically
-4. Univariate SelectKBest — rank features by statistical test scores
-5. Random Forest feature importances — tree-based ranking
-6. Recursive Feature Elimination (RFE) — iterative wrapper method
-7. Combine all rankings into a consensus score table
-8. Train models on **all features** vs **selected features** — measure the difference
-9. Document which features matter and why
 """))
 
 # Step 1: Imports
@@ -77,15 +58,7 @@ print("pandas :", pd.__version__)
 """))
 
 # Step 2: Load and preprocess
-cells.append(md(r"""## Step 2 - Load and Preprocess Dataset
-
-I am reusing the Telco Customer Churn CSV from Day 15.
-The preprocessing steps are the same as Day 22:
-- Fix `TotalCharges` (some rows have a space string instead of a number)
-- Encode the target `Churn` as 0/1
-- Drop `customerID` (it is just a row identifier, not a real feature)
-- One-Hot Encode all categorical features (this gives us a clean numeric matrix)
-"""))
+cells.append(md(r"""## Step 2 - Load and Preprocess Dataset"""))
 cells.append(code(r"""dataset_path = '../day15/telco_customer_churn.csv'
 if not os.path.exists(dataset_path):
     dataset_path = 'telco_customer_churn.csv'
@@ -114,15 +87,7 @@ df_enc.head(3)
 """))
 
 # Step 3: Correlation heatmap
-cells.append(md(r"""## Step 3 - Correlation Heatmap
-
-A correlation matrix shows how strongly every feature moves together with every other feature.
-Values close to **+1 or -1** mean the two features are highly correlated — carrying almost the
-same information, so keeping both is redundant.
-
-I will focus on the top-correlated features with the target `Churn` first, then look at
-inter-feature correlation to find pairs I should worry about.
-"""))
+cells.append(md(r"""## Step 3 - Correlation Heatmap"""))
 cells.append(code(r"""corr_matrix = df_enc.corr()
 
 # top features correlated with Churn
@@ -152,19 +117,7 @@ print("Saved correlation_heatmap.png")
 """))
 
 # Step 4: VIF
-cells.append(md(r"""## Step 4 - Variance Inflation Factor (VIF)
-
-Correlation shows pairwise relationships.  VIF captures something different: it tells you
-how well one feature can be explained by **all the other features combined**.
-
-> **Rule of thumb:** VIF > 5 is moderate concern, VIF > 10 means severe multicollinearity.
-
-High VIF features are good candidates for removal because they are (almost) linear combinations
-of other features — they add no new information.
-
-I will compute VIF on the numerical features only (using the scaled version to avoid
-magnitude distortion).
-"""))
+cells.append(md(r"""## Step 4 - Variance Inflation Factor (VIF)"""))
 cells.append(code(r"""X_all = df_enc.drop(columns=['Churn'])
 y_all = df_enc['Churn']
 
@@ -210,17 +163,7 @@ print("Saved vif_chart.png")
 """))
 
 # Step 5: SelectKBest
-cells.append(md(r"""## Step 5 - Univariate Feature Selection (SelectKBest)
-
-SelectKBest tests each feature independently against the target using a statistical test.
-I will use two tests here:
-
-- **f_classif**: ANOVA F-statistic (works on continuous features)
-- **mutual_info_classif**: information-theoretic score (captures non-linear relationships too)
-
-Both give a score per feature.  Higher score = more informative for predicting `Churn`.
-This is called a **filter method** because it filters features before the model ever sees them.
-"""))
+cells.append(md(r"""## Step 5 - Univariate Feature Selection (SelectKBest)"""))
 cells.append(code(r"""# ANOVA F-test
 selector_f = SelectKBest(f_classif, k='all')
 selector_f.fit(X_scaled, y_all)
@@ -269,15 +212,7 @@ print("Saved univariate_scores.png")
 """))
 
 # Step 6: Random Forest importance
-cells.append(md(r"""## Step 6 - Random Forest Feature Importance (Embedded Method)
-
-Random Forest computes feature importance as the **average reduction in impurity** (Gini
-impurity) that each feature contributes across all trees in the forest.
-
-This is called an **embedded method** because importance is measured during training itself —
-it is not a separate step.  The advantage over filter methods is that it captures interactions
-between features, not just one-vs-target.
-"""))
+cells.append(md(r"""## Step 6 - Random Forest Feature Importance"""))
 cells.append(code(r"""X_train, X_test, y_train, y_test = train_test_split(
     X_scaled, y_all, test_size=0.2, random_state=SEED, stratify=y_all
 )
@@ -311,19 +246,7 @@ print("Saved rf_importance.png")
 """))
 
 # Step 7: RFE
-cells.append(md(r"""## Step 7 - Recursive Feature Elimination (RFE)
-
-RFE is a **wrapper method**.  Unlike filter or embedded methods, it trains a model, checks which
-features were least important, removes them, then retrains.  It repeats this until only `k`
-features remain.
-
-I am using Logistic Regression as the estimator inside RFE, because:
-- It trains fast so many iterations are practical
-- Its coefficients give a clean, interpretable importance signal
-- It is sensitive to feature quality, so RFE pruning genuinely helps it
-
-I will select the top 15 features.
-"""))
+cells.append(md(r"""## Step 7 - Recursive Feature Elimination (RFE)"""))
 cells.append(code(r"""lr_for_rfe = LogisticRegression(max_iter=1000, solver='lbfgs', random_state=SEED)
 rfe = RFE(estimator=lr_for_rfe, n_features_to_select=15, step=1)
 rfe.fit(X_train, y_train)
@@ -339,17 +262,7 @@ print(rfe_df[rfe_df['Selected']].to_string(index=False))
 """))
 
 # Step 8: Consensus ranking
-cells.append(md(r"""## Step 8 - Consensus Feature Ranking
-
-Each method gives a different ranking because they measure different things:
-- Filter (MI, F-score): individual statistical association with target
-- Embedded (RF importance): contribution inside a forest, captures interactions
-- Wrapper (RFE): the actual model's preferred set for linear decision boundaries
-
-To pick a robust final set I will **normalize each score to [0, 1]** and average them
-into a consensus score.  Features that score high across all three methods are the safest
-to keep.
-"""))
+cells.append(md(r"""## Step 8 - Consensus Feature Ranking"""))
 cells.append(code(r"""# normalize each score to 0 to 1
 def normalize(series):
     mn, mx = series.min(), series.max()
@@ -402,16 +315,7 @@ print("Saved consensus_importance.png")
 """))
 
 # Step 9: Select final features
-cells.append(md(r"""## Step 9 - Select Final Feature Set
-
-I will pick the **top 15 features** by consensus score.  These are the features that
-consistently scored well across all four methods.
-
-I am also cross-checking:
-- None of the top 15 should have extreme VIF (> 10) — I will flag and note any that do
-- The set should include features from different information groups (contract type,
-  tenure, charges, service add-ons) to avoid redundancy
-"""))
+cells.append(md(r"""## Step 9 - Select Final Feature Set"""))
 cells.append(code(r"""N_SELECT = 15
 selected_features = consensus.head(N_SELECT).index.tolist()
 
@@ -434,18 +338,7 @@ else:
 """))
 
 # Step 10: Before vs after comparison
-cells.append(md(r"""## Step 10 - Before vs After: Full Feature Set vs Selected Features
-
-Now for the important question: **does removing features actually help?**
-
-I will train three models on both versions of the dataset:
-1. **Logistic Regression** — sensitive to irrelevant/correlated features
-2. **Random Forest** — tree-based, more robust to noise
-3. **Gradient Boosting** — another ensemble, great all-around baseline
-
-I evaluate using 5-fold stratified cross-validation (ROC-AUC) so the comparison
-is not dependent on a single random split.
-"""))
+cells.append(md(r"""## Step 10 - Before vs After Comparison"""))
 cells.append(code(r"""X_full     = X_scaled.copy()
 X_selected = X_scaled[selected_features].copy()
 
@@ -590,42 +483,7 @@ for i, feat in enumerate(selected_features, 1):
 """))
 
 # Step 13: Summary
-cells.append(md(r"""## Step 12 - Summary & Key Findings
-
-### What I found
-
-**Features that matter most for predicting churn:**
-
-| Rank | Feature | Why it matters |
-|------|---------|----------------|
-| 1 | `tenure` | Customers who stay longer are far less likely to leave |
-| 2 | `Contract_Two year` | Long-term contracts lock customers in |
-| 3 | `Contract_One year` | Same reason — any contract beats month-to-month |
-| 4 | `MonthlyCharges` | Higher bills → higher churn risk |
-| 5 | `TotalCharges` | Correlated with tenure (long customers pay more total) |
-| 6 | `InternetService_Fiber optic` | Fiber customers churn more — higher bill, more competition |
-| 7 | `OnlineSecurity_No` | No security = unhappy customer who hasn't committed |
-| 8 | `TechSupport_No` | Same pattern as OnlineSecurity |
-| 9 | `PaymentMethod_Electronic check` | E-check payers are often month-to-month |
-| 10 | `PaperlessBilling_True` | Slight signal, correlated with tech-savvy month-to-month users |
-
-### Multicollinearity findings
-- `TotalCharges` and `tenure` are highly correlated (long customers accumulate high total charges).
-  Both were kept because they capture slightly different signals (duration vs. financial magnitude).
-- `MonthlyCharges` had moderate VIF but strong predictive power across all methods.
-
-### Before vs After performance
-- Feature selection gave a **small but consistent improvement** in ROC-AUC for Logistic Regression.
-- Random Forest and Gradient Boosting saw minimal change because tree-based models naturally
-  ignore irrelevant features during training.
-- The big win was **model simplicity**: we went from 30+ features down to 15 with almost no
-  accuracy loss — faster training, easier to interpret, less risk of overfitting on new data.
-
-### Key takeaway
-> Feature selection is not just about accuracy.
-> It is about building models that are simpler, faster, more interpretable, and more
-> likely to generalize to real-world data that looks slightly different from training data.
-"""))
+cells.append(md(r"""## Step 12 - Summary"""))
 
 # Build notebook and execute
 nb = new_notebook(cells=cells)
