@@ -427,10 +427,10 @@ high_vif_selected = [
     if vif_data.set_index('Feature')['VIF'].get(f, 0) > 10
 ]
 if high_vif_selected:
-    print(f"\n⚠️  High VIF (>10) in selected set: {high_vif_selected}")
+    print(f"\nHigh VIF (>10) in selected set: {high_vif_selected}")
     print("   These are flagged but kept since their predictive power is confirmed by other methods.")
 else:
-    print("\n✅  No features with VIF > 10 in the selected set.")
+    print("\nNo features with VIF > 10 in the selected set.")
 """))
 
 # Step 10: Before vs after comparison
