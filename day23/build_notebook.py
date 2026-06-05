@@ -94,7 +94,7 @@ df_raw = pd.read_csv(dataset_path)
 print(f"Raw shape: {df_raw.shape}")
 print(df_raw.dtypes)
 
-# --- basic cleaning ---
+# basic cleaning
 df = df_raw.copy()
 df['TotalCharges'] = df['TotalCharges'].replace(' ', np.nan)
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'])
@@ -102,7 +102,7 @@ df['TotalCharges'] = df['TotalCharges'].fillna(0.0)
 df['Churn'] = df['Churn'].map({'Yes': 1, 'No': 0})
 df = df.drop(columns=['customerID'])
 
-# --- OHE all remaining object columns ---
+# OHE all remaining object columns
 cat_cols = df.select_dtypes(include='object').columns.tolist()
 df_enc = pd.get_dummies(df, columns=cat_cols, drop_first=True)
 bool_cols = df_enc.select_dtypes(include='bool').columns
@@ -125,7 +125,7 @@ inter-feature correlation to find pairs I should worry about.
 """))
 cells.append(code(r"""corr_matrix = df_enc.corr()
 
-# --- Top features correlated with Churn ---
+# top features correlated with Churn
 churn_corr = corr_matrix['Churn'].drop('Churn').sort_values(key=abs, ascending=False)
 top20_churn_corr = churn_corr.head(20)
 
@@ -133,7 +133,7 @@ print("Top 20 features by absolute correlation with Churn:")
 print(top20_churn_corr.round(4).to_string())
 """))
 
-cells.append(code(r"""# --- Full correlation heatmap for top 20 features (+ Churn) ---
+cells.append(code(r"""# full correlation heatmap for top 20 features + Churn
 top_features_for_heatmap = top20_churn_corr.index.tolist() + ['Churn']
 corr_subset = df_enc[top_features_for_heatmap].corr()
 
@@ -188,7 +188,7 @@ print(f"\nTotal features with VIF > 10 : {(vif_data['VIF'] > 10).sum()}")
 print(f"Total features with VIF > 5  : {(vif_data['VIF'] > 5).sum()}")
 """))
 
-cells.append(code(r"""# --- VIF bar chart (top 20) ---
+cells.append(code(r"""# VIF bar chart top 20
 vif_top = vif_data.head(20)
 
 fig, ax = plt.subplots(figsize=(10, 7))
@@ -221,13 +221,13 @@ I will use two tests here:
 Both give a score per feature.  Higher score = more informative for predicting `Churn`.
 This is called a **filter method** because it filters features before the model ever sees them.
 """))
-cells.append(code(r"""# --- ANOVA F-test ---
+cells.append(code(r"""# ANOVA F-test
 selector_f = SelectKBest(f_classif, k='all')
 selector_f.fit(X_scaled, y_all)
 f_scores = pd.Series(selector_f.scores_, index=X_scaled.columns)
 f_pvals  = pd.Series(selector_f.pvalues_, index=X_scaled.columns)
 
-# --- Mutual Information ---
+# Mutual Information
 mi_scores = pd.Series(
     mutual_info_classif(X_scaled, y_all, random_state=SEED),
     index=X_scaled.columns
@@ -244,7 +244,7 @@ print("Top 20 features by Mutual Information score:")
 print(univariate_df.head(20).round(4).to_string())
 """))
 
-cells.append(code(r"""# --- Plot top 20 MI and F scores side by side ---
+cells.append(code(r"""# plot top 20 MI and F scores side by side
 top_uni = univariate_df.head(20)
 
 fig, axes = plt.subplots(1, 2, figsize=(16, 8))
@@ -294,7 +294,7 @@ print("Top 20 features by Random Forest importance:")
 print(rf_importance.head(20).round(5).to_string())
 """))
 
-cells.append(code(r"""# --- RF Importance bar chart ---
+cells.append(code(r"""# RF importance bar chart
 rf_top20 = rf_importance.head(20)
 
 fig, ax = plt.subplots(figsize=(10, 8))
@@ -378,7 +378,7 @@ print("Top 20 features by Consensus Score:")
 print(consensus.head(20).round(4).to_string())
 """))
 
-cells.append(code(r"""# --- Stacked bar chart of individual method scores ---
+cells.append(code(r"""# stacked bar chart of method scores
 top_consensus = consensus.head(20)
 
 fig, ax = plt.subplots(figsize=(12, 9))
@@ -474,7 +474,7 @@ results_df = pd.DataFrame(results)
 print(results_df.round(4).to_string(index=False))
 """))
 
-cells.append(code(r"""# --- Single-split metrics for more detailed comparison ---
+cells.append(code(r"""# single split metrics for detailed comparison
 X_tr_full, X_te_full, y_tr, y_te = train_test_split(
     X_full, y_all, test_size=0.2, random_state=SEED, stratify=y_all
 )
@@ -505,7 +505,7 @@ detailed_df = pd.DataFrame(detailed)
 print(detailed_df.round(4).to_string(index=False))
 """))
 
-cells.append(code(r"""# --- Comparison visualization ---
+cells.append(code(r"""# comparison visualization
 fig, axes = plt.subplots(1, 3, figsize=(18, 6), sharey=True)
 
 metrics_to_plot = ['ROC-AUC', 'F1', 'Accuracy']
@@ -537,7 +537,7 @@ print("Saved before_after_comparison.png")
 """))
 
 # Step 11: Cross-val comparison plot
-cells.append(code(r"""# --- Cross-val comparison dot plot ---
+cells.append(code(r"""# cross-val comparison dot plot
 fig, ax = plt.subplots(figsize=(10, 5))
 
 palette_cv = {'All Features': '#e74c3c', 'Selected Features': '#2ecc71'}
