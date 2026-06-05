@@ -16,7 +16,7 @@ def code(src):
 
 cells = []
 
-# ── Title & Introduction ───────────────────────────────────────────────────────
+# Title & Introduction 
 cells.append(md(r"""# Day 23 - Finding the Most Important Signals in Data
 60 Days Data Science | Phase: Feature Selection
 
@@ -43,7 +43,7 @@ Today I am exploring **Feature Selection** — the process of deciding which fea
 9. Document which features matter and why
 """))
 
-# ── Step 1: Imports ────────────────────────────────────────────────────────────
+# Step 1: Imports
 cells.append(md(r"""## Step 1 - Imports & Setup"""))
 cells.append(code(r"""import numpy as np
 import pandas as pd
@@ -76,7 +76,7 @@ print("numpy  :", np.__version__)
 print("pandas :", pd.__version__)
 """))
 
-# ── Step 2: Load & Preprocess ──────────────────────────────────────────────────
+# Step 2: Load and preprocess
 cells.append(md(r"""## Step 2 - Load and Preprocess Dataset
 
 I am reusing the Telco Customer Churn CSV from Day 15.
@@ -113,7 +113,7 @@ print("Null values:", df_enc.isnull().sum().sum())
 df_enc.head(3)
 """))
 
-# ── Step 3: Correlation Heatmap ────────────────────────────────────────────────
+# Step 3: Correlation heatmap
 cells.append(md(r"""## Step 3 - Correlation Heatmap
 
 A correlation matrix shows how strongly every feature moves together with every other feature.
@@ -151,7 +151,7 @@ plt.show()
 print("Saved correlation_heatmap.png")
 """))
 
-# ── Step 4: VIF ───────────────────────────────────────────────────────────────
+# Step 4: VIF
 cells.append(md(r"""## Step 4 - Variance Inflation Factor (VIF)
 
 Correlation shows pairwise relationships.  VIF captures something different: it tells you
@@ -209,7 +209,7 @@ plt.show()
 print("Saved vif_chart.png")
 """))
 
-# ── Step 5: SelectKBest ────────────────────────────────────────────────────────
+# Step 5: SelectKBest
 cells.append(md(r"""## Step 5 - Univariate Feature Selection (SelectKBest)
 
 SelectKBest tests each feature independently against the target using a statistical test.
@@ -268,7 +268,7 @@ plt.show()
 print("Saved univariate_scores.png")
 """))
 
-# ── Step 6: Random Forest Importance ──────────────────────────────────────────
+# Step 6: Random Forest importance
 cells.append(md(r"""## Step 6 - Random Forest Feature Importance (Embedded Method)
 
 Random Forest computes feature importance as the **average reduction in impurity** (Gini
@@ -310,7 +310,7 @@ plt.show()
 print("Saved rf_importance.png")
 """))
 
-# ── Step 7: RFE ───────────────────────────────────────────────────────────────
+# Step 7: RFE
 cells.append(md(r"""## Step 7 - Recursive Feature Elimination (RFE)
 
 RFE is a **wrapper method**.  Unlike filter or embedded methods, it trains a model, checks which
@@ -338,7 +338,7 @@ print("RFE selected features (rank = 1 means selected):")
 print(rfe_df[rfe_df['Selected']].to_string(index=False))
 """))
 
-# ── Step 8: Consensus ranking ──────────────────────────────────────────────────
+# Step 8: Consensus ranking
 cells.append(md(r"""## Step 8 - Consensus Feature Ranking
 
 Each method gives a different ranking because they measure different things:
@@ -401,7 +401,7 @@ plt.show()
 print("Saved consensus_importance.png")
 """))
 
-# ── Step 9: Select Final Feature Set ──────────────────────────────────────────
+# Step 9: Select final features
 cells.append(md(r"""## Step 9 - Select Final Feature Set
 
 I will pick the **top 15 features** by consensus score.  These are the features that
@@ -433,7 +433,7 @@ else:
     print("\n✅  No features with VIF > 10 in the selected set.")
 """))
 
-# ── Step 10: Before vs After Comparison ───────────────────────────────────────
+# Step 10: Before vs after comparison
 cells.append(md(r"""## Step 10 - Before vs After: Full Feature Set vs Selected Features
 
 Now for the important question: **does removing features actually help?**
@@ -536,7 +536,7 @@ plt.show()
 print("Saved before_after_comparison.png")
 """))
 
-# ── Step 11: Cross-val ROC-AUC Comparison ─────────────────────────────────────
+# Step 11: Cross-val comparison plot
 cells.append(code(r"""# --- Cross-val comparison dot plot ---
 fig, ax = plt.subplots(figsize=(10, 5))
 
@@ -570,7 +570,7 @@ plt.show()
 print("Saved cv_comparison.png")
 """))
 
-# ── Step 12: Save Selected Features List ──────────────────────────────────────
+# Step 12: Save outputs
 cells.append(md(r"""## Step 11 - Save Selected Features"""))
 cells.append(code(r"""# Save consensus ranking table
 consensus.reset_index().rename(columns={'index': 'Feature'}).to_csv(
@@ -589,7 +589,7 @@ for i, feat in enumerate(selected_features, 1):
     print(f"  {i:2d}. {feat}")
 """))
 
-# ── Step 12: Summary ──────────────────────────────────────────────────────────
+# Step 13: Summary
 cells.append(md(r"""## Step 12 - Summary & Key Findings
 
 ### What I found
@@ -627,7 +627,7 @@ cells.append(md(r"""## Step 12 - Summary & Key Findings
 > likely to generalize to real-world data that looks slightly different from training data.
 """))
 
-# ── Build & Execute ────────────────────────────────────────────────────────────
+# Build notebook and execute
 nb = new_notebook(cells=cells)
 nb.metadata['kernelspec'] = {
     'display_name': 'Python 3',
