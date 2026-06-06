@@ -35,12 +35,12 @@ By running PCA with all 30 features, I calculated the individual and cumulative 
 We projected the 30-dimensional data onto the first two principal components. The points are colored by Churn status (blue for No, red/orange for Yes).
 While there is overlap, we can see a concentration of churned customers toward the left-center of the distribution.
 
-![2D PCA Space](pca_2d_scatter.png)
+![2D PCA Space](pca_2d.png)
 
 ### 3D PCA Space (PC1 vs PC2 vs PC3)
 We also projected the data onto the first three principal components. This 3D view shows more structural separation between the churned and loyal customers.
 
-![3D PCA Space](pca_3d_scatter.png)
+![3D PCA Space](pca_3d.png)
 
 ---
 
@@ -48,7 +48,7 @@ We also projected the data onto the first three principal components. This 3D vi
 
 To understand what the principal components represent in terms of the original features, I extracted the loading weights for the top 10 features in PC1 and PC2.
 
-![PCA Loadings](pca_loadings.png)
+![PCA Loadings](loadings.png)
 
 ### Interpretation:
 1. **Principal Component 1 (PC1):**
@@ -89,7 +89,7 @@ I trained two classification models (Logistic Regression and Random Forest) usin
 | PCA (90% Var, 15 Comps) | Logistic Regression | 0.8355 | 0.0126 | 0.7982 | 0.0141 |
 | PCA (90% Var, 15 Comps) | Random Forest | 0.8307 | 0.0148 | 0.7865 | 0.0144 |
 
-![Performance Comparison](performance_comparison.png)
+![Performance Comparison](before_after_comparison.png)
 
 ### Observations:
 - **2 & 3 Components:** Reducing 30 features down to just 2 or 3 components causes a small performance drop (ROC-AUC drops from ~0.845 to ~0.798-0.827). However, these 2-3 components allow us to plot the dataset in 2D/3D and still capture the main churn trends.
@@ -128,10 +128,10 @@ On to Day 25.
 - [build_notebook.py](build_notebook.py) — Script to construct and run the notebook
 - [day24_pca.ipynb](day24_pca.ipynb) — Executed Jupyter notebook
 - [scree_plot.png](scree_plot.png) — Explained variance plot
-- [pca_2d_scatter.png](pca_2d_scatter.png) — 2D projection scatter plot
-- [pca_3d_scatter.png](pca_3d_scatter.png) — 3D projection scatter plot
-- [pca_loadings.png](pca_loadings.png) — Loading weights bar chart
-- [pca_loadings.csv](pca_loadings.csv) — Exact loadings matrix
-- [pca_performance_comparison.csv](pca_performance_comparison.csv) — Exact performance results CSV
-- [performance_comparison.png](performance_comparison.png) — Model performance comparison bar chart
+- [pca_2d.png](pca_2d.png) — 2D projection scatter plot
+- [pca_3d.png](pca_3d.png) — 3D projection scatter plot
+- [loadings.png](loadings.png) — Loading weights bar chart
+- [loadings.csv](loadings.csv) — Exact loadings matrix
+- [performance_comparison.csv](performance_comparison.csv) — Exact performance results CSV
+- [before_after_comparison.png](before_after_comparison.png) — Model performance comparison bar chart
 - [README.md](README.md) — This report

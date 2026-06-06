@@ -155,9 +155,9 @@ plt.title('2D PCA Projection of Telco Churn Data', fontsize=14, fontweight='bold
 plt.colorbar(scatter, label='Churn (0 = No, 1 = Yes)')
 plt.grid(True, linestyle='--', alpha=0.5)
 plt.tight_layout()
-plt.savefig('pca_2d_scatter.png', dpi=150, bbox_inches='tight')
+plt.savefig('pca_2d.png', dpi=150, bbox_inches='tight')
 plt.show()
-print("Saved pca_2d_scatter.png")
+print("Saved pca_2d.png")
 """))
 
 # Step 7: Visualize 3D PCA Space
@@ -171,9 +171,9 @@ ax.set_zlabel('PC 3', fontsize=10)
 ax.set_title('3D PCA Projection of Telco Churn Data', fontsize=14, fontweight='bold')
 plt.colorbar(scatter, label='Churn (0 = No, 1 = Yes)', ax=ax, shrink=0.6)
 plt.tight_layout()
-plt.savefig('pca_3d_scatter.png', dpi=150, bbox_inches='tight')
+plt.savefig('pca_3d.png', dpi=150, bbox_inches='tight')
 plt.show()
-print("Saved pca_3d_scatter.png")
+print("Saved pca_3d.png")
 """))
 
 # Step 8: Component Loadings
@@ -191,8 +191,8 @@ print(loadings['PC2'].abs().sort_values(ascending=False).head(10))
 print("\nTop 10 strongest loadings for PC3:")
 print(loadings['PC3'].abs().sort_values(ascending=False).head(10))
 
-loadings.to_csv('pca_loadings.csv')
-print("\nSaved pca_loadings.csv")
+loadings.to_csv('loadings.csv')
+print("\nSaved loadings.csv")
 """))
 
 # Step 9: Loadings Bar Chart
@@ -217,9 +217,9 @@ axes[1].grid(True, linestyle='--', alpha=0.5)
 
 plt.suptitle('Principal Component Loadings Analysis', fontsize=14, fontweight='bold', y=1.02)
 plt.tight_layout()
-plt.savefig('pca_loadings.png', dpi=150, bbox_inches='tight')
+plt.savefig('loadings.png', dpi=150, bbox_inches='tight')
 plt.show()
-print("Saved pca_loadings.png")
+print("Saved loadings.png")
 """))
 
 # Step 10: Performance comparison
@@ -259,8 +259,8 @@ for f_name, X_data in feature_sets.items():
 results_df = pd.DataFrame(results)
 print(results_df.round(4).to_string(index=False))
 
-results_df.to_csv('pca_performance_comparison.csv', index=False)
-print("\nSaved pca_performance_comparison.csv")
+results_df.to_csv('performance_comparison.csv', index=False)
+print("\nSaved performance_comparison.csv")
 """))
 
 # Step 11: Plot performance comparison
@@ -289,9 +289,9 @@ for p in ax.patches:
                     textcoords='offset points')
 
 plt.tight_layout()
-plt.savefig('performance_comparison.png', dpi=150, bbox_inches='tight')
+plt.savefig('before_after_comparison.png', dpi=150, bbox_inches='tight')
 plt.show()
-print("Saved performance_comparison.png")
+print("Saved before_after_comparison.png")
 """))
 
 # Save notebook
