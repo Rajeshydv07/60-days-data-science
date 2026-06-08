@@ -1,0 +1,4 @@
+Model,Tuning Method,Best Params,Search Time (s),Accuracy,Precision,Recall,F1-Score,ROC-AUC
+Default Random Forest,None,Default,0.9154231548309326,0.7849538679914834,0.6187290969899666,0.4946524064171123,0.549777117384844,0.8248417680642744
+Tuned Random Forest (Random),RandomizedSearchCV,"{'n_estimators': 200, 'min_samples_split': 5, 'min_samples_leaf': 8, 'max_depth': 20, 'bootstrap': True}",15.609423398971558,0.8048261178140526,0.671280276816609,0.5187165775401069,0.5852187028657617,0.844244232607404
+Tuned Random Forest (Grid),GridSearchCV,"{'bootstrap': True, 'max_depth': 8, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 150}",6.267596006393433,0.8019872249822569,0.6727272727272727,0.4946524064171123,0.5701078582434514,0.8444341109302747
