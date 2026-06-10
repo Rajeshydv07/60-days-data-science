@@ -1,0 +1,8 @@
+Day,Model,Test ROC-AUC,Improvement vs Day22
+Day 22 – Basic Sklearn Pipeline,Logistic Regression (Pipeline),0.8412,0.0
+Day 23 – Preprocessing Workflows,RandomForest + Full Preprocessing,0.8521,0.0109
+Day 24 – Cross-Validation & Selection,Best CV Model (RF),0.8563,0.0151
+Day 25 – Ensemble Methods,Stacking Ensemble,0.858,0.0168
+Day 26 – Hyperparameter Tuning,Tuned RandomForest (GridSearch),0.8601,0.0189
+Day 27 – Bias-Variance Analysis,Optimal DT (max_depth=5),0.8287,-0.0125
+Day 28 – Optimized ML Pipeline,Gradient Boosting (Tuned Pipeline),0.845440336872562,0.0042
