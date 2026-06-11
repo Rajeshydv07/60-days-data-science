@@ -323,7 +323,7 @@ summary_text = (
     "3. HIGH-VALUE LOYALISTS (22.0% of users)\\n"
     "   - Mean Tenure: 57.4 months | Monthly Charge: $98.1\\n"
     "   - Churn Rate: 7.7% | Strategy: Offer early renewals and priority care.\\n\\n"
-    "4. HIGH-SPEND / HIGH-RIS (18.3% of users)\\n"
+    "4. HIGH-SPEND / HIGH-RISK (18.3% of users)\\n"
     "   - Mean Tenure: 20.2 months | Monthly Charge: $80.8\\n"
     "   - Churn Rate: 43.1% (CRITICAL) | Strategy: Convert month-to-month contracts."
 )
