@@ -50,7 +50,7 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 26** | Hyperparameter Tuning | Tuning hyperparameter spaces using GridSearch and RandomizedSearchCV to optimize model architecture. | [day26/README.md](./day26/README.md) • [day26/day26_hyperparameter_tuning.ipynb](./day26/day26_hyperparameter_tuning.ipynb) |
 | **Day 27** | Bias-Variance Tradeoff | Understanding model generalization, learning curves, and diagnosing overfitting vs underfitting. | [day27/README.md](./day27/README.md) • [day27/day27_bias_variance_analysis.ipynb](./day27/day27_bias_variance_analysis.ipynb) |
 | **Day 28** | Optimized ML Pipeline | Combining preprocessing, cross-validation, hyperparameter tuning, and bias-variance analysis into a production pipeline. | [day28/README.md](./day28/README.md) • [day28/day28_optimized_ml_pipeline.ipynb](./day28/day28_optimized_ml_pipeline.ipynb) |
-| **Day 29** | Customer Segmentation | Applying K-Means clustering on customer behavior and analyzing WCSS and silhouette scores to define 4 cohorts. | [day29/README.md](./day29/README.md) • [day29/day29_customer_segmentation.ipynb](./day29/day29_customer_segmentation.ipynb) |
+| **Day 29** | Customer Segmentation | Applying K-Means clustering on the Mall Customers dataset to group customers by Annual Income and Spending Score. | [day29/README.md](./day29/README.md) • [day29/day29_customer_segmentation.ipynb](./day29/day29_customer_segmentation.ipynb) |
 | **Day 30+** | *In Progress* 🔄 | Upcoming days will cover advanced unsupervised learning, time series forecasting, and model deployment. | *Stay tuned!* |
 
 
