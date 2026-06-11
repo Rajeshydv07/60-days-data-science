@@ -19,15 +19,9 @@ def code(src):
 
 cells = []
 
-cells.append(md("""# Day 29: Customer Segmentation using K-Means Clustering
-Applying unsupervised learning to segment our customer base using behavioral metrics.
+cells.append(md("""# Day 29: Customer Segmentation with K-Means"""))
 
-By analyzing tenure, monthly spend, and total billing, we can group similar customers together to tailor marketing campaigns, reward loyalty, and intercept churn before it happens.
-"""))
-
-cells.append(md("""## 1. Imports
-Importing libraries for data loading, scaling, clustering, and visualization.
-"""))
+cells.append(md("""## 1. Imports"""))
 
 cells.append(code("""import numpy as np
 import pandas as pd
@@ -45,15 +39,9 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 """))
 
-cells.append(md("""## 2. Load and Preprocess the Churn Data
-Loading the Telco Customer Churn dataset and selecting our numerical features for clustering:
-- `tenure` (Loyalty duration)
-- `MonthlyCharges` (Monthly spend)
-- `TotalCharges` (Cumulative spend)
-"""))
+cells.append(md("""## 2. Load Data"""))
 
-cells.append(code("""# Find the dataset file
-dataset_path = None
+cells.append(code("""dataset_path = None
 for p in ['../day15/telco_customer_churn.csv', 'day15/telco_customer_churn.csv']:
     if os.path.exists(p):
         dataset_path = p
@@ -65,20 +53,15 @@ if not dataset_path:
 df_raw = pd.read_csv(dataset_path)
 df = df_raw.copy()
 
-# Fill empty values in TotalCharges with the median
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'].replace(' ', np.nan))
 df['TotalCharges'] = df['TotalCharges'].fillna(df['TotalCharges'].median())
 
 features = ['tenure', 'MonthlyCharges', 'TotalCharges']
 X = df[features]
-
-print("Descriptive statistics of the features:")
 print(X.describe())
 """))
 
-cells.append(md("""## 3. Scale Features
-Since K-Means is a distance-based algorithm, we must standard scale the features so that high-magnitude variables (like `TotalCharges`) don't dominate the distance calculations.
-"""))
+cells.append(md("""## 3. Scale Features"""))
 
 cells.append(code("""scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
@@ -87,9 +70,7 @@ X_scaled_df = pd.DataFrame(X_scaled, columns=features)
 print(X_scaled_df.head())
 """))
 
-cells.append(md("""## 4. Elbow Curve and Silhouette Scores
-We fit K-Means with cluster counts $K$ from 1 to 10. We evaluate both within-cluster inertia (Elbow method) and the average silhouette score to select the best cluster count.
-"""))
+cells.append(md("""## 4. Elbow Curve and Silhouette Analysis"""))
 
 cells.append(code("""wcss = []
 silhouette_scores = []
@@ -103,7 +84,6 @@ for k in K_range:
         score = silhouette_score(X_scaled, kmeans.labels_)
         silhouette_scores.append(score)
 
-# Print scores table
 print("K | Inertia (WCSS) | Silhouette Score")
 print("---------------------------------------")
 for i, k in enumerate(K_range):
@@ -113,13 +93,10 @@ for i, k in enumerate(K_range):
         print(f"{k:2d} | {wcss[i]:.2f} | {silhouette_scores[k-2]:.4f}")
 """))
 
-cells.append(md("""### Visualize Selection Curves
-Plotting Inertia and Silhouette scores side-by-side.
-"""))
+cells.append(md("""### Visualize Curves"""))
 
 cells.append(code("""fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
-# Elbow Curve
 axes[0].plot(K_range, wcss, 'o-', color='#3498db', lw=2)
 axes[0].axvline(4, color='#e74c3c', linestyle='--', label='Elbow Point (K=4)')
 axes[0].set_xlabel('Number of Clusters (K)')
@@ -128,7 +105,6 @@ axes[0].set_title('Elbow Curve')
 axes[0].legend()
 axes[0].grid(True, linestyle='--', alpha=0.5)
 
-# Silhouette Curve
 axes[1].plot(range(2, 11), silhouette_scores, 'o-', color='#2ecc71', lw=2)
 axes[1].axvline(4, color='#e74c3c', linestyle='--', label='Optimal K=4')
 axes[1].set_xlabel('Number of Clusters (K)')
@@ -141,9 +117,7 @@ plt.tight_layout()
 plt.show()
 """))
 
-cells.append(md("""## 5. Fit Final Clustering Model (K=4)
-$K=4$ splits the data cleanly into a $2 \\times 2$ grid representing Tenure (Loyalty) vs. Monthly Charges (Spend).
-"""))
+cells.append(md("""## 5. Train K-Means (K=4)"""))
 
 cells.append(code("""optimal_k = 4
 kmeans = KMeans(n_clusters=optimal_k, random_state=42, n_init=10)
@@ -153,12 +127,9 @@ print("Customer count per cluster:")
 print(df['Cluster'].value_counts().sort_index())
 """))
 
-cells.append(md("""## 6. Segment Visualizations
-Let's plot the segments to see how they lie across different dimensions.
-"""))
+cells.append(md("""## 6. Segment Visualization"""))
 
-cells.append(code("""# Mapping names to the numeric clusters
-colors = ['#3498db', '#2ecc71', '#9b59b6', '#e74c3c']
+cells.append(code("""colors = ['#3498db', '#2ecc71', '#9b59b6', '#e74c3c']
 labels_map = {
     0: 'New / Budget-Conscious',
     1: 'Loyal / Low-Spend (Basic)',
@@ -174,7 +145,6 @@ for i in range(optimal_k):
         color=colors[i], label=labels_map[i], alpha=0.5, s=20
     )
 
-# De-scale the centroids to plot them in the original units
 centroids_orig = scaler.inverse_transform(kmeans.cluster_centers_)
 plt.scatter(
     centroids_orig[:, 0], centroids_orig[:, 1],
@@ -189,9 +159,7 @@ plt.grid(True, alpha=0.3)
 plt.show()
 """))
 
-cells.append(md("""### 3D Volumetric Scatter Plot
-Plotting all three features in a 3D space to see the volumetric cluster spheres.
-"""))
+cells.append(md("""### 3D Scatter"""))
 
 cells.append(code("""fig = plt.figure(figsize=(12, 8))
 ax = fig.add_subplot(111, projection='3d')
@@ -221,9 +189,7 @@ ax.legend()
 plt.show()
 """))
 
-cells.append(md("""### Pairplot of Features
-Visualizing distributions and pairs color-coded by segments.
-"""))
+cells.append(md("""### Pairplot"""))
 
 cells.append(code("""pair_df = df[features + ['Cluster']].copy()
 pair_df['Cluster Name'] = pair_df['Cluster'].map(labels_map)
@@ -241,12 +207,9 @@ sns.pairplot(
 plt.show()
 """))
 
-cells.append(md("""## 7. Cluster Profiles & Business Outcome Analysis
-Aggregating average feature values and cross-referencing with customer churn rates and contract distributions.
-"""))
+cells.append(md("""## 7. Cluster Profiles & Insights"""))
 
-cells.append(code("""# Average feature values
-profile = df.groupby('Cluster')[features].mean().reset_index()
+cells.append(code("""profile = df.groupby('Cluster')[features].mean().reset_index()
 profile['Segment Name'] = profile['Cluster'].map(labels_map)
 
 counts = df['Cluster'].value_counts().sort_index().reset_index()
@@ -264,8 +227,7 @@ print("Segment Profile Averages:")
 print(profile_formatted.round(2).to_string(index=False))
 """))
 
-cells.append(code("""# Churn and contract type distributions per segment
-df['Churn_Numeric'] = df['Churn'].map({'Yes': 1, 'No': 0}).astype(int)
+cells.append(code("""df['Churn_Numeric'] = df['Churn'].map({'Yes': 1, 'No': 0}).astype(int)
 
 outcome_profile = df.groupby('Cluster').agg(
     Churn_Rate=('Churn_Numeric', 'mean'),
@@ -278,26 +240,21 @@ print("Business Metrics by Segment:")
 print(outcome_profile[['Cluster', 'Segment Name', 'Churn_Rate', 'Month_to_Month_Pct', 'Two_Year_Pct']].round(4))
 """))
 
-cells.append(md("""### Visualize Segment Differences
-Contrasting mean tenure, monthly charges, and churn rates in a series of bar plots.
-"""))
+cells.append(md("""### Segment Comparison Plots"""))
 
 cells.append(code("""fig, axes = plt.subplots(1, 3, figsize=(18, 5))
 fig.suptitle('Segment Characteristics & Churn Rates', fontsize=14, fontweight='bold')
 
 cluster_labels = [labels_map[i] for i in range(optimal_k)]
 
-# Tenure
 axes[0].bar(cluster_labels, profile_formatted['Mean Tenure (M)'], color=colors, width=0.5)
 axes[0].set_title('Mean Tenure (Months)')
 axes[0].set_xticklabels(cluster_labels, rotation=15, ha='right')
 
-# Monthly Charges
 axes[1].bar(cluster_labels, profile_formatted['Mean Monthly ($)'], color=colors, width=0.5)
 axes[1].set_title('Mean Monthly Charges ($)')
 axes[1].set_xticklabels(cluster_labels, rotation=15, ha='right')
 
-# Churn Rate
 axes[2].bar(cluster_labels, outcome_profile['Churn_Rate'] * 100, color=colors, width=0.5)
 axes[2].set_title('Churn Rate (%)')
 axes[2].set_xticklabels(cluster_labels, rotation=15, ha='right')
@@ -306,9 +263,7 @@ plt.tight_layout()
 plt.show()
 """))
 
-cells.append(md("""## 8. Customer Segmentation Dashboard
-Compiling all metrics, scatter coordinates, and business playbooks into a 4-panel dashboard.
-"""))
+cells.append(md("""## 8. Customer Segmentation Dashboard"""))
 
 cells.append(code("""fig = plt.figure(figsize=(15, 10))
 fig.suptitle('Customer Segmentation Summary Dashboard', fontsize=15, fontweight='bold', y=0.98)
@@ -353,7 +308,7 @@ ax_c.set_title('C. Segment Churn Risk Profile')
 ax_c.set_xticklabels(cluster_labels, rotation=15, ha='right')
 ax_c.grid(axis='y', alpha=0.3)
 
-# Summary table / playbook text box
+# Playbook Summary text box
 ax_d = fig.add_subplot(gs[1, 1])
 ax_d.axis('off')
 
@@ -368,7 +323,7 @@ summary_text = (
     "3. HIGH-VALUE LOYALISTS (22.0% of users)\\n"
     "   - Mean Tenure: 57.4 months | Monthly Charge: $98.1\\n"
     "   - Churn Rate: 7.7% | Strategy: Offer early renewals and priority care.\\n\\n"
-    "4. HIGH-SPEND / HIGH-RISK (18.3% of users)\\n"
+    "4. HIGH-SPEND / HIGH-RIS (18.3% of users)\\n"
     "   - Mean Tenure: 20.2 months | Monthly Charge: $80.8\\n"
     "   - Churn Rate: 43.1% (CRITICAL) | Strategy: Convert month-to-month contracts."
 )
@@ -382,13 +337,7 @@ plt.tight_layout()
 plt.show()
 """))
 
-cells.append(md("""## 9. Insights and Playbook
-The clustering results suggest concrete actions:
-1. **Cluster 3 (High-Spend / High-Risk)** represents the most critical opportunity. With a **43.1% churn rate**, this group has new high-value customers paying premium month-to-month charges. We should proactively incentivize them with contract discounts to transition them to 12-month or 24-month plans.
-2. **Cluster 2 (High-Value Loyalists)** are our top accounts. Keep them satisfied with exclusive rewards and priority tech support.
-3. **Cluster 0 (New / Budget-Conscious)** are low-value but stable. Upsell digital add-ons in small bundles.
-4. **Cluster 1 (Loyal / Low-Spend)** are low-margin but highly loyal. Recruit them for customer referral programs.
-"""))
+cells.append(md("""## 9. Playbook Summary"""))
 
 nb = new_notebook(cells=cells)
 nb.metadata['kernelspec'] = {
