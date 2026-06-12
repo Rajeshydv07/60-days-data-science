@@ -20,20 +20,10 @@ def code(src):
 cells = []
 
 # Introduction
-cells.append(md("""# Day 30 - Finding the Ideal Number of Customer Segments
-60 Days Data Science | Phase: Clustering Optimization
+cells.append(md("""# Day 30: Finding the Ideal Number of Customer Segments
 
-**Date:** 12 June 2026  
-**Name:** Rajesh Yadav
-
----
-
-so today is day 30, the final day of the clustering segment. 
-yesterday i built a basic k-means model with 5 clusters. today i am going to systematically find the optimal number of clusters using two standard validation methods:
-1. **the elbow method** (wcss/inertia)
-2. **silhouette score analysis** (checking how well-separated the clusters are)
-
-i will compare different K values, visualize the differences, and document why K=5 is indeed the best balance between math and business logic.
+## Objective
+Apply the Elbow Method and Silhouette Score to determine the optimal number of clusters for customer segmentation.
 """))
 
 # Step 1: Imports
