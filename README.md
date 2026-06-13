@@ -51,7 +51,9 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 27** | Bias-Variance Tradeoff | Understanding model generalization, learning curves, and diagnosing overfitting vs underfitting. | [day27/README.md](./day27/README.md) • [day27/day27_bias_variance_analysis.ipynb](./day27/day27_bias_variance_analysis.ipynb) |
 | **Day 28** | Optimized ML Pipeline | Combining preprocessing, cross-validation, hyperparameter tuning, and bias-variance analysis into a production pipeline. | [day28/README.md](./day28/README.md) • [day28/day28_optimized_ml_pipeline.ipynb](./day28/day28_optimized_ml_pipeline.ipynb) |
 | **Day 29** | Customer Segmentation | Applying K-Means clustering on the Mall Customers dataset to group customers by Annual Income and Spending Score. | [day29/README.md](./day29/README.md) • [day29/day29_customer_segmentation.ipynb](./day29/day29_customer_segmentation.ipynb) |
-| **Day 30+** | *In Progress* 🔄 | Upcoming days will cover advanced unsupervised learning, time series forecasting, and model deployment. | *Stay tuned!* |
+| **Day 30** | Cluster Optimization | Evaluating optimal cluster counts using the Elbow Method and Silhouette Scores to select K=5. | [day30/README.md](./day30/README.md) • [day30/day30_clustering_optimization.ipynb](./day30/day30_clustering_optimization.ipynb) |
+| **Day 31** | Customer Personas | Profiling demographic trends, assigning persona names, and creating business strategy recommendations for each cluster. | [day31/README.md](./day31/README.md) • [day31/day31_persona_analysis.ipynb](./day31/day31_persona_analysis.ipynb) |
+| **Day 32+** | *In Progress* 🔄 | Upcoming days will cover time series forecasting, neural networks, and model deployment. | *Stay tuned!* |
 
 
 ---
