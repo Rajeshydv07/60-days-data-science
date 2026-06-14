@@ -53,7 +53,8 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 29** | Customer Segmentation | Applying K-Means clustering on the Mall Customers dataset to group customers by Annual Income and Spending Score. | [day29/README.md](./day29/README.md) • [day29/day29_customer_segmentation.ipynb](./day29/day29_customer_segmentation.ipynb) |
 | **Day 30** | Cluster Optimization | Evaluating optimal cluster counts using the Elbow Method and Silhouette Scores to select K=5. | [day30/README.md](./day30/README.md) • [day30/day30_clustering_optimization.ipynb](./day30/day30_clustering_optimization.ipynb) |
 | **Day 31** | Customer Personas | Profiling demographic trends, assigning persona names, and creating business strategy recommendations for each cluster. | [day31/README.md](./day31/README.md) • [day31/day31_persona_analysis.ipynb](./day31/day31_persona_analysis.ipynb) |
-| **Day 32+** | *In Progress* 🔄 | Upcoming days will cover time series forecasting, neural networks, and model deployment. | *Stay tuned!* |
+| **Day 32** | Personalized Recommendations | Building a similarity-based product recommendation engine, computing customer similarity, generating top product recommendations, and evaluating via RMSE, MAE, Precision@K, and Recall@K. | [day32/README.md](./day32/README.md) • [day32/day32_recommendation_engine.ipynb](./day32/day32_recommendation_engine.ipynb) |
+| **Day 33+** | *In Progress* 🔄 | Upcoming days will cover time series forecasting, neural networks, and model deployment. | *Stay tuned!* |
 
 
 ---
