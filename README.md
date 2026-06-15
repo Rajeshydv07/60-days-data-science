@@ -54,7 +54,8 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 30** | Cluster Optimization | Evaluating optimal cluster counts using the Elbow Method and Silhouette Scores to select K=5. | [day30/README.md](./day30/README.md) • [day30/day30_clustering_optimization.ipynb](./day30/day30_clustering_optimization.ipynb) |
 | **Day 31** | Customer Personas | Profiling demographic trends, assigning persona names, and creating business strategy recommendations for each cluster. | [day31/README.md](./day31/README.md) • [day31/day31_persona_analysis.ipynb](./day31/day31_persona_analysis.ipynb) |
 | **Day 32** | Personalized Recommendations | Building a similarity-based product recommendation engine, computing customer similarity, generating top product recommendations, and evaluating via RMSE, MAE, Precision@K, and Recall@K. | [day32/README.md](./day32/README.md) • [day32/day32_recommendation_engine.ipynb](./day32/day32_recommendation_engine.ipynb) |
-| **Day 33+** | *In Progress* 🔄 | Upcoming days will cover time series forecasting, neural networks, and model deployment. | *Stay tuned!* |
+| **Day 33** | Anomaly Detection | Detecting unusual customer behaviors (ATO attempts, payment fraud, and card testing bots) using Isolation Forest and Local Outlier Factor models, evaluating models against ground truth, and detailing business risks. | [day33/README.md](./day33/README.md) • [day33/day33_anomaly_detection.ipynb](./day33/day33_anomaly_detection.ipynb) |
+| **Day 34+** | *In Progress* 🔄 | Upcoming days will cover time series forecasting, neural networks, and model deployment. | *Stay tuned!* |
 
 
 ---
