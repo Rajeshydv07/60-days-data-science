@@ -26,18 +26,8 @@ cells.append(md("""\
 **Name:** Rajesh Yadav
 
 ---
-
-Ok, today is day 37 and we are tackling **revenue forecasting**.
-Revenue forecasting helps companies estimate future profits, optimize investments, and plan hiring or inventory budgets so they don't run into cash-flow issues.
-
-What I want to do today:
-- Simulate daily revenue data for 3 years with growth trend, weekly cycles, holiday spikes, and noise.
-- Check if the data is stationary using the Augmented Dickey-Fuller (ADF) test.
-- Build a baseline model (Seasonal Naive) and a SARIMAX model to capture weekly patterns.
-- Validate models on the last 31 days of data and evaluate using MAE, RMSE, and MAPE.
-- Forecast the next 30 days of revenue with confidence intervals.
-- Analyze business implications of forecasting errors (under-forecasting vs. over-forecasting).
 """))
+
 
 # Cell 2: Step 1 Imports Header
 cells.append(md("## Step 1 - Imports"))
@@ -65,16 +55,8 @@ print("pandas version:", pd.__version__)
 """))
 
 # Cell 4: Step 2 Simulate Data Header
-cells.append(md("""\
-## Step 2 - Simulating Revenue Data
+cells.append(md("## Step 2 - Simulating Revenue Data"))
 
-Since actual company revenue datasets are proprietary, I am going to simulate 3 years of daily revenue data for a B2B SaaS startup.
-I'll add:
-1. A linear growth trend (business is expanding).
-2. Weekly seasonality (weekdays are busy with business transactions, weekends are slow).
-3. Q4 seasonal spikes (holiday shopping, end-of-year sales).
-4. Noise and unexpected shocks (server outages, major marketing campaigns).
-"""))
 
 # Cell 5: Step 2 Simulate Data Code
 cells.append(code("""\
@@ -125,11 +107,8 @@ print(df.head())
 """))
 
 # Cell 6: Step 3 EDA Header
-cells.append(md("""\
-## Step 3 - Exploratory Data Analysis (EDA)
+cells.append(md("## Step 3 - Exploratory Data Analysis (EDA)"))
 
-Let's visualize the simulated daily revenue time series along with its 7-day and 30-day rolling averages. This helps us visualize the trend, seasonality, and overall volatility.
-"""))
 
 # Cell 7: Step 3 EDA Code
 cells.append(code("""\
@@ -164,15 +143,8 @@ plt.show()
 """))
 
 # Cell 9: Step 4 Stationarity Header
-cells.append(md("""\
-## Step 4 - Stationarity Check
+cells.append(md("## Step 4 - Stationarity Check (ADF Test)"))
 
-Before we fit ARIMA/SARIMA models, we need to check if our time series is stationary (meaning its mean, variance, and autocorrelation do not change over time).
-We will use the **Augmented Dickey-Fuller (ADF) test**:
-- $H_0$ (Null Hypothesis): The series is non-stationary (has a unit root).
-- $H_1$ (Alternative Hypothesis): The series is stationary.
-If the p-value is <= 0.05, we reject the null hypothesis and confirm the series is stationary.
-"""))
 
 # Cell 10: Step 4 Stationarity Code
 cells.append(code("""\
@@ -195,10 +167,8 @@ run_adf_test(df['Revenue'], 'Raw Revenue')
 """))
 
 # Cell 11: Step 4 Stationarity Diff Header
-cells.append(md("""\
-The raw revenue series is non-stationary due to the strong upward growth trend.
-Let's apply first-order differencing ($d=1$) to remove the trend and check again.
-"""))
+cells.append(md("## Step 5 - Stationarity Check on Differenced Series"))
+
 
 # Cell 12: Step 4 Stationarity Diff Code
 cells.append(code("""\
@@ -207,14 +177,8 @@ run_adf_test(df['Revenue_Diff'], '1st Differenced Revenue')
 """))
 
 # Cell 13: Step 5 Train Test Split Header
-cells.append(md("""\
-## Step 5 - Train-Test Split & Baseline Model
+cells.append(md("## Step 6 - Train-Test Split & Baseline Model"))
 
-We will hold out the last 31 days (December 2025) of the dataset as our test/validation set to evaluate model performance, and use all preceding data for training.
-
-For the baseline model, we'll implement a **Seasonal Naive Baseline**. Since our data has a strong weekly seasonality, a simple naive model (predicting today equals yesterday) will perform poorly. Instead, we'll forecast that today's revenue equals the revenue from exactly 7 days ago:
-$$\\hat{y}_t = y_{t-7}$$
-"""))
 
 # Cell 14: Step 5 Train Test Split Code
 cells.append(code("""\
@@ -231,15 +195,8 @@ print(test[['Revenue', 'Baseline_Forecast']].head())
 """))
 
 # Cell 15: Step 6 SARIMAX Header
-cells.append(md("""\
-## Step 6 - Building the SARIMAX Model
+cells.append(md("## Step 7 - SARIMAX Model"))
 
-Since the data has a linear trend and weekly seasonality (period = 7 days), a standard ARIMA model will not capture the weekly oscillations.
-We will use a **SARIMAX(p, d, q) x (P, D, Q)7** model:
-- Non-seasonal order: $(1, 1, 1)$ (autoregressive lag 1, differencing 1, moving average lag 1)
-- Seasonal order: $(1, 1, 1)_7$ (seasonal AR lag 1, seasonal differencing 1, seasonal MA lag 1, period 7)
-This configuration captures both short-term daily correlations and weekly seasonality.
-"""))
 
 # Cell 16: Step 6 SARIMAX Code
 cells.append(code("""\
@@ -255,11 +212,8 @@ print(model_fit.summary())
 """))
 
 # Cell 17: Step 7 Test Set Comparison Header
-cells.append(md("""\
-## Step 7 - Comparing Predictions Against Test Set
+cells.append(md("## Step 8 - Predictions vs Test Set"))
 
-Let's generate predictions for the 31-day validation period (December 2025) and overlay them against the baseline model and the actual values.
-"""))
 
 # Cell 18: Step 7 Test Set Comparison Code
 cells.append(code("""\
@@ -284,14 +238,8 @@ plt.show()
 """))
 
 # Cell 19: Step 8 Metrics Header
-cells.append(md("""\
-## Step 8 - Calculating Performance Metrics
+cells.append(md("## Step 9 - Model Evaluation Metrics"))
 
-We will compare the models using three popular forecasting metrics:
-1. **Mean Absolute Error (MAE)**: Average magnitude of the errors.
-2. **Root Mean Squared Error (RMSE)**: Penalizes larger errors more heavily.
-3. **Mean Absolute Percentage Error (MAPE)**: Expresses error as a percentage of actual values, making it highly interpretable for business stakeholders.
-"""))
 
 # Cell 20: Step 8 Metrics Code
 cells.append(code("""\
@@ -311,11 +259,8 @@ print(metrics_df.round(2))
 """))
 
 # Cell 21: Step 9 Future Forecast Header
-cells.append(md("""\
-## Step 9 - Retraining on Full Data & Visualizing Future Forecasts
+cells.append(md("## Step 10 - Future Forecasting (January 2026)"))
 
-Now that we validated that our SARIMAX model outperforms the baseline model and accurately captures weekly cycles, we will retrain the model on **100% of the historical dataset** (all 3 years) to project the next 30 days of future revenue (January 2026).
-"""))
 
 # Cell 22: Step 9 Future Forecast Code
 cells.append(code("""\
@@ -372,24 +317,11 @@ print("-" * 50)
 
 # Cell 24: Step 10 Reflection Header
 cells.append(md("""\
-## Step 10 - Business Implications & Reflection
-
-### Business Analysis of Forecasting Accuracy
-Forecasting accuracy directly impacts business decisions. The costs associated with errors are asymmetric:
-
-1. **Under-Forecasting (Predicting lower revenue than actuals)**:
-   - **Operational Impact**: Leads to under-hiring support staff, under-allocating server infrastructure (risk of outages), and running out of inventory/capacity during spikes.
-   - **Financial/Opportunity Cost**: Customers face slow service or stockouts, leading to churn. The business fails to maximize market share.
-   
-2. **Over-Forecasting (Predicting higher revenue than actuals)**:
-   - **Operational Impact**: Leads to over-hiring, committing to excessive infrastructure costs, or ordering too much inventory that remains unsold.
-   - **Financial/Cash Flow Risk**: The business burns through cash reserves faster than expected. For startups, this can drastically reduce runway, potentially triggering emergency layoffs or funding rounds.
-
-### Student Reflection: Key Takeaways
-- **Stationarity & Differencing**: Real business revenue isn't stationary; it has trends and holiday boosts. I learned how the ADF test identifies non-stationarity, and how first-order differencing ($d=1$) removes trend-drift to make the series modeling-ready.
-- **Why Seasonality Matters**: In B2B environments, weekly seasonality is extremely strong. Fitting a basic ARIMA model without seasonal terms misses the weekend drops entirely. SARIMAX is the perfect tool here because it handles the 7-day cyclical nature of business transactions.
-- **Evaluating with MAPE**: While MAE and RMSE are mathematically useful, MAPE (~3.8% on validation) is the most valuable metric when communicating with executive stakeholders, as they want to understand error rates in relative terms.
+## Step 11 - Key Takeaways
+- SARIMAX(1, 1, 1)x(1, 1, 1)7 captures trend and weekly cycles.
+- Under-forecasting results in staffing/capacity limits, while over-forecasting drains capital runway.
 """))
+
 
 nb = new_notebook(cells=cells)
 nb.metadata['kernelspec'] = {
