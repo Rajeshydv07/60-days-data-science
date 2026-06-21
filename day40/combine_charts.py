@@ -8,21 +8,21 @@ images = [
     ("results_dashboard.png",   "Results Dashboard"),
 ]
 
-fig, axes = plt.subplots(4, 1, figsize=(14, 40))
+fig, axes = plt.subplots(2, 2, figsize=(22, 14))
 fig.patch.set_facecolor('#0f1117')
 
-for ax, (fname, title) in zip(axes, images):
+for ax, (fname, title) in zip(axes.flatten(), images):
     img = mpimg.imread(fname)
     ax.imshow(img)
     ax.axis('off')
-    ax.set_title(title, fontsize=13, fontweight='bold', color='white', pad=8)
+    ax.set_title(title, fontsize=12, fontweight='bold', color='white', pad=6)
 
-plt.suptitle(
-    'Day 40 — A/B Testing Full Report',
-    fontsize=17, fontweight='bold', color='white', y=1.002
+fig.suptitle(
+    'Day 40  |  A/B Testing Full Report  |  60 Days of Data Science',
+    fontsize=15, fontweight='bold', color='white', y=1.01
 )
 
-plt.tight_layout(pad=1.5)
+plt.tight_layout(pad=1.2)
 plt.savefig('ab_testing_all_charts.png', bbox_inches='tight',
             facecolor=fig.get_facecolor(), dpi=130)
 plt.close()
