@@ -16,3 +16,5 @@ MDE              = 0.02       # minimum detectable effect
 DATA_RAW     = "data/ab_test_raw.csv"
 DATA_CLEANED = "data/ab_test_cleaned.csv"
 IMAGES_DIR   = "images/"
+
+
