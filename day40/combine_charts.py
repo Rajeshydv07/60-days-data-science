@@ -23,7 +23,7 @@ fig.suptitle(
 )
 
 plt.tight_layout(pad=1.2)
-plt.savefig('ab_testing_all_charts.png', bbox_inches='tight',
+plt.savefig('images/ab_testing_all_charts.png', bbox_inches='tight',
             facecolor=fig.get_facecolor(), dpi=130)
 plt.close()
-print("Saved: ab_testing_all_charts.png")
+print("Saved: images/ab_testing_all_charts.png")
