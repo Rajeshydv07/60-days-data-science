@@ -13,3 +13,5 @@ def split_groups(df):
     ctrl = df[df["group"] == "control"].copy()
     exp  = df[df["group"] == "experiment"].copy()
     return ctrl, exp
+
+

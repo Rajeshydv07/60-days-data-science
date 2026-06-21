@@ -29,3 +29,5 @@ def hist_compare(ax, ctrl_vals, exp_vals, title, xlabel):
     ax.set_ylabel("Density")
     ax.legend()
     return ax
+
+

@@ -67,3 +67,5 @@ all countries (US, UK, CA, AU, IN). No harmful subgroup effects were detected.
 **Ship the new CTA design to 100% of users.**
 
 Estimated annual revenue impact: **~$500K – $1.3M** depending on traffic scale.
+
+

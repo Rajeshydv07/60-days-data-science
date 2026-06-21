@@ -38,3 +38,5 @@ def power_analysis(baseline, mde, alpha=config.ALPHA, power=config.POWER_TARGET)
     num = (z_a * np.sqrt(2 * baseline * (1 - baseline)) +
            z_b * np.sqrt(baseline * (1 - baseline) + p_alt * (1 - p_alt))) ** 2
     return int(np.ceil(num / mde**2))
+
+
