@@ -1,14 +1,23 @@
 # 📈 60-Day Data Science Challenge
 
-Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository documents my daily progress, learning notes, code implementations, and project milestones as I transition from foundational Python to advanced Data Science, Exploratory Data Analysis (EDA), and Machine Learning.
+Welcome to my **60-Day Data Science Challenge** portfolio.
+This repository presents a structured learning journey from Python fundamentals to applied machine learning, with daily deliverables that include notebooks, implementation files, and documented outcomes.
+
+---
+
+## 👤 Professional Profile
+- **Role Focus:** Aspiring Data Scientist with hands-on experience in analytics, machine learning, and customer intelligence projects.
+- **Core Strengths:** Data cleaning, exploratory analysis, feature engineering, model development, evaluation, and storytelling with data.
+- **Work Style:** Consistent, project-driven execution with reproducible notebooks and business-oriented insights.
+- **Current Goal:** Build production-ready data science solutions that combine strong modeling performance with clear business impact.
 
 ---
 
 ## 🎯 Challenge Goals
-- **Master Data Foundations:** Solidify core Python programming, dictionary structures, and file handling.
-- **Wrangle Real-World Data:** Gain proficiency in Pandas, NumPy, and handling messy, missing, and duplicate datasets.
-- **Extract Actionable Insights:** Run Exploratory Data Analysis (EDA) and create premium visualizations (Matplotlib, Seaborn) that drive business decisions.
-- **Build Predictive Models:** Understand machine learning concepts and apply regression, classification, and forecasting.
+- **Strengthen Data Foundations:** Build depth in core Python programming, structured data handling, and analytical problem-solving.
+- **Handle Real-World Data Reliably:** Develop practical expertise in Pandas and NumPy for cleaning incomplete and inconsistent datasets.
+- **Deliver Decision-Ready Insights:** Perform EDA and create clear visualizations with Matplotlib and Seaborn for business stakeholders.
+- **Develop Predictive Intelligence:** Apply machine learning methods across regression, classification, clustering, and forecasting use cases.
 
 ---
 
@@ -62,17 +71,17 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 ---
 
 ## 📈 Key Accomplishments (Sprint 1 Wrap-up)
-- **Interactive Notebooks:** Developed fully annotated notebooks explaining analytical decisions.
-- **Insight-Driven Analysis:** Documented retail insights like Q4 holiday seasonality, B2B wholesale customer outliers, and regional sales performance.
-- **Robust Cleaning Pipelines:** Cleaned and standardized dirty postal codes, currency strings, and resolved missing values.
+- **Interactive Notebooks:** Built well-structured notebooks that clearly communicate methods, assumptions, and outcomes.
+- **Insight-Driven Analysis:** Identified meaningful retail trends such as seasonality patterns, customer outliers, and regional sales dynamics.
+- **Robust Cleaning Pipelines:** Standardized noisy fields (postal codes, currencies, missing values) to improve data quality and model readiness.
 
 ---
 
 ## 🚀 How to Run the Projects
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Rajeshydv07/ABtalksDS.git
-   cd ABtalksDS
+   git clone https://github.com/Rajeshydv07/60-days-data-science.git
+   cd 60-days-data-science
    ```
 2. Install dependencies:
    ```bash
