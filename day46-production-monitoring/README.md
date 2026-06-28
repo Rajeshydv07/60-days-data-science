@@ -40,3 +40,22 @@ This phase focuses on improving production reliability for our Customer Intellig
 
 ## Screenshots
 ![Monitoring Dashboard](monitoring_dashboard_screenshot.png)
+
+## LinkedIn Post
+
+🚀 **Day 46 of #60DaysOfDataScience: Monitoring ML Systems in Production!** 📊
+
+Building a machine learning model is only half the battle. Ensuring it runs reliably, handles bad data gracefully, and can be monitored in real-time is what makes it production-ready. 
+
+For Day 46, I focused on bulletproofing my Customer Intelligence Model API by implementing comprehensive monitoring and reliability systems:
+
+🛡️ **What I implemented today:**
+*   **Strict Input Validation:** Integrated `Pydantic` to enforce data types, bounds (like ensuring non-negative charges and realistic age ranges), and required fields before they even reach the model.
+*   **Exception Handling:** Added robust `try/except` workflows to prevent the API from crashing on unseen data, returning clean `422` or `500` HTTP status codes instead.
+*   **Comprehensive Logging:** Added middleware to track API traffic and capture application-level events.
+*   **Prediction Tracking:** Assigned unique request IDs and logged all incoming features alongside their resulting predictions into a JSONL file for future auditing and drift detection.
+*   **Monitoring Dashboard:** Built a sleek Streamlit dashboard (pictured below!) that reads these logs in real-time to track API health, request volumes, and the distribution of churn risk predictions.
+
+It's incredibly satisfying to see a raw predictive model evolve into a stable, observable software application!
+
+#DataScience #MachineLearning #MLOps #FastAPI #Streamlit #ProductionML #Python #Analytics #DataScienceJourney
