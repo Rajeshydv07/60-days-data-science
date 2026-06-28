@@ -1,0 +1,1 @@
+{"timestamp": "2026-06-28T21:46:13.122780", "request_id": "12345", "input": {"age": 45, "tenure_months": 12, "monthly_charges": 50.5, "total_charges": 600.0, "contract_type": "Month-to-month", "support_tickets": 2, "days_since_last_login": 5, "satisfaction_score": 3}, "output": {"churn_probability": 0.65, "risk_category": "High", "prediction": 1}}
