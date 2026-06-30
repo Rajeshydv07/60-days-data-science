@@ -56,7 +56,8 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 32** | Personalized Recommendations | Building a similarity-based product recommendation engine, computing customer similarity, generating top product recommendations, and evaluating via RMSE, MAE, Precision@K, and Recall@K. | [day32/README.md](./day32/README.md) • [day32/day32_recommendation_engine.ipynb](./day32/day32_recommendation_engine.ipynb) |
 | **Day 33** | Anomaly Detection | Detecting unusual customer behaviors (ATO attempts, payment fraud, and card testing bots) using Isolation Forest and Local Outlier Factor models, evaluating models against ground truth, and detailing business risks. | [day33/README.md](./day33/README.md) • [day33/day33_anomaly_detection.ipynb](./day33/day33_anomaly_detection.ipynb) |
 | **Day 34** | Customer Dashboards | Designing executive-level interactive customer analytics dashboards, visualizing churn risks and customer segmentation matrix, and tracking core KPIs. | [day34/README.md](./day34/README.md) • [day34/day34_dashboard.ipynb](./day34/day34_dashboard.ipynb) |
-| **Day 35+** | *In Progress* 🔄 | Upcoming days will cover time series forecasting, neural networks, and model deployment. | *Stay tuned!* |
+| **Day 48** | Capstone Data Pipeline | Building preprocessing and data pipeline workflows for the Customer Intelligence Platform, using custom scikit-learn transformers and pipelines. | [day48-capstone-data-pipeline/README.md](./day48-capstone-data-pipeline/README.md) • [day48-capstone-data-pipeline/preprocessing_pipeline.ipynb](./day48-capstone-data-pipeline/preprocessing_pipeline.ipynb) |
+| **Day 49+** | *In Progress* 🔄 | Upcoming days will cover advanced ML capstone phases and deployment. | *Stay tuned!* |
 
 
 ---
