@@ -1,0 +1,10 @@
+{
+    "churn_model_accuracy": 0.975,
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.98      0.99      0.98       319\n           1       0.95      0.93      0.94        81\n\n    accuracy                           0.97       400\n   macro avg       0.97      0.96      0.96       400\nweighted avg       0.97      0.97      0.97       400\n",
+    "segmentation_clusters_distribution": {
+        "1": 524,
+        "0": 521,
+        "3": 480,
+        "2": 475
+    }
+}
