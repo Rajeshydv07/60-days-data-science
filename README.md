@@ -62,7 +62,8 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 51** | Capstone Explainable AI | Using SHAP and Feature Importance to explain model predictions to business stakeholders. | [day51-capstone-explainable-ai/business_interpretation_report.md](./day51-capstone-explainable-ai/business_interpretation_report.md) • [day51-capstone-explainable-ai/explainability.ipynb](./day51-capstone-explainable-ai/explainability.ipynb) |
 | **Day 52** | Capstone Frontend Integration | Designing a professional user interface and interactive dashboard using Streamlit with custom layout and visualizations. | [day52-capstone-frontend/ux_improvement_report.md](./day52-capstone-frontend/ux_improvement_report.md) • [day52-capstone-frontend/app.py](./day52-capstone-frontend/app.py) |
 | **Day 53** | Capstone Real-Time Analytics | Adding live customer prediction workflows and instantaneous UX feedback to the platform. | [day53-capstone-realtime-prediction/workflow_explanation_report.md](./day53-capstone-realtime-prediction/workflow_explanation_report.md) • [day53-capstone-realtime-prediction/app.py](./day53-capstone-realtime-prediction/app.py) |
-| **Day 54+** | *In Progress* 🔄 | Upcoming days will cover advanced ML capstone phases and deployment. | *Stay tuned!* |
+| **Day 54** | Capstone Business Storytelling | Translating ML predictions and XAI into executive-level insights, visualizations, and strategic business recommendations. | [day54-capstone-business-storytelling/executive_analytics_report.md](./day54-capstone-business-storytelling/executive_analytics_report.md) • [day54-capstone-business-storytelling/business_insight_presentation.html](./day54-capstone-business-storytelling/business_insight_presentation.html) |
+| **Day 55+** | *In Progress* 🔄 | Upcoming days will cover advanced ML capstone phases and deployment. | *Stay tuned!* |
 
 ---
 

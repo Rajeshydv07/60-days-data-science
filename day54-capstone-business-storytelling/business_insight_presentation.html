@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Retention Strategy: Executive Briefing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/simple.min.css" id="theme">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #2c3e50;
+            text-transform: none;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .metric-box {
+            background: #ecf0f1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            display: inline-block;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .metric-value {
+            font-size: 2.5em;
+            color: #2980b9;
+            font-weight: bold;
+            display: block;
+        }
+        .metric-label {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+        }
+        .recommendation {
+            text-align: left;
+            background: #fdfefe;
+            border-left: 5px solid #27ae60;
+            padding: 15px 25px;
+            margin: 20px auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-size: 0.8em;
+            max-width: 800px;
+        }
+        .recommendation h4 {
+            margin-top: 0;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: Title -->
+            <section>
+                <h2>Customer Retention Strategy</h2>
+                <h3>From Predictive Analytics to Actionable Insights</h3>
+                <p>
+                    <small>Prepared by: Data Science & Analytics Team | July 2026</small>
+                </p>
+            </section>
+
+            <!-- Slide 2: The Challenge -->
+            <section>
+                <h2>The Business Challenge</h2>
+                <p>We are losing customers at an unsustainable rate, primarily driven by factors <span class="highlight">within our control</span>.</p>
+                <div style="display: flex; justify-content: space-around; margin-top: 40px;">
+                    <div class="metric-box">
+                        <span class="metric-value">26%</span>
+                        <span class="metric-label">Avg. Churn Rate</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-value">$12M</span>
+                        <span class="metric-label">Annual Revenue at Risk</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-value">88%</span>
+                        <span class="metric-label">Churn from M2M Contracts</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Key Insights from ML -->
+            <section>
+                <h2>Key Drivers of Customer Churn</h2>
+                <ul>
+                    <li class="fragment"><strong>The Commitment Gap:</strong> Month-to-Month contracts represent our biggest vulnerability. Customers treat the service as a utility.</li>
+                    <li class="fragment"><strong>The Onboarding Danger Zone:</strong> The highest risk of cancellation occurs in the first 6 months (Tenure).</li>
+                    <li class="fragment"><strong>The Missing "Sticky" Services:</strong> Customers without Tech Support or Online Security are significantly more likely to leave.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 4: Recommendations -->
+            <section>
+                <h2>Strategic Action Plan</h2>
+                
+                <div class="recommendation fragment">
+                    <h4>1. Launch "Commit & Save" Initiative</h4>
+                    <p>Target the top 20% high-risk Month-to-Month users with a 15% discount to upgrade to an annual contract.</p>
+                </div>
+
+                <div class="recommendation fragment">
+                    <h4>2. The "First 90 Days" Program</h4>
+                    <p>Implement proactive, white-glove onboarding for new acquisitions to navigate the high-risk early tenure period.</p>
+                </div>
+
+                <div class="recommendation fragment">
+                    <h4>3. Value-Add Service Bundling</h4>
+                    <p>Redesign our pricing architecture to embed Tech Support and Security as standard, non-optional features.</p>
+                </div>
+            </section>
+
+            <!-- Slide 5: Next Steps -->
+            <section>
+                <h2>Immediate Next Steps</h2>
+                <p>We are requesting approval to launch a pilot of the <strong>"Commit & Save"</strong> campaign to a 5% holdout group next week.</p>
+                <p>This will allow us to measure conversion rates and validate the financial impact model before a full-scale Q4 rollout.</p>
+                <br>
+                <h3>Thank You</h3>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            controls: true,
+            progress: true,
+            center: true,
+        });
+    </script>
+</body>
+</html>
