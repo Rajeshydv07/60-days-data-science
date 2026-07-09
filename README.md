@@ -63,7 +63,10 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 52** | Capstone Frontend Integration | Designing a professional user interface and interactive dashboard using Streamlit with custom layout and visualizations. | [day52-capstone-frontend/ux_improvement_report.md](./day52-capstone-frontend/ux_improvement_report.md) • [day52-capstone-frontend/app.py](./day52-capstone-frontend/app.py) |
 | **Day 53** | Capstone Real-Time Analytics | Adding live customer prediction workflows and instantaneous UX feedback to the platform. | [day53-capstone-realtime-prediction/workflow_explanation_report.md](./day53-capstone-realtime-prediction/workflow_explanation_report.md) • [day53-capstone-realtime-prediction/app.py](./day53-capstone-realtime-prediction/app.py) |
 | **Day 54** | Capstone Business Storytelling | Translating ML predictions and XAI into executive-level insights, visualizations, and strategic business recommendations. | [day54-capstone-business-storytelling/executive_analytics_report.md](./day54-capstone-business-storytelling/executive_analytics_report.md) • [day54-capstone-business-storytelling/business_insight_presentation.html](./day54-capstone-business-storytelling/business_insight_presentation.html) |
-| **Day 55+** | *In Progress* 🔄 | Upcoming days will cover advanced ML capstone phases and deployment. | *Stay tuned!* |
+| **Day 55** | Capstone Scalability | Building a high-performance RESTful API using FastAPI to serve model predictions in real-time. | [day55-capstone-scalability-reliability/api.py](./day55-capstone-scalability-reliability/api.py) |
+| **Day 56** | Capstone Mid-Review | Code review, refactoring, and preparing for the final phase of the Capstone project. | [day56-capstone-mid-review/](./day56-capstone-mid-review/) |
+| **Day 57** | Capstone Documentation | Creating production-grade documentation, including architecture diagrams, API usage guides, and a professional README. | [day57-capstone-documentation/README.md](./day57-capstone-documentation/README.md) • [day57-capstone-documentation/ARCHITECTURE.md](./day57-capstone-documentation/ARCHITECTURE.md) • [day57-capstone-documentation/API_DOCS.md](./day57-capstone-documentation/API_DOCS.md) |
+| **Day 58+** | *In Progress* 🔄 | Upcoming days will cover final ML capstone phases and deployment. | *Stay tuned!* |
 
 ---
 
