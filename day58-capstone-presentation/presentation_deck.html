@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Intelligence Platform - Capstone Presentation</title>
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/dracula.min.css" id="theme">
+    
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+            font-weight: 600;
+        }
+        .highlight-text {
+            color: #ff79c6;
+            font-weight: bold;
+        }
+        .metric-box {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            border-left: 5px solid #bd93f9;
+        }
+        .metric-value {
+            font-size: 2em;
+            color: #50fa7b;
+            font-weight: bold;
+        }
+        .arch-diagram {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .insight-list li {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Title Slide -->
+            <section>
+                <h2>Customer Intelligence Platform (CIP)</h2>
+                <h3>Predictive Analytics for Customer Retention</h3>
+                <p>
+                    <small>Presented by: Data Science & Analytics Team</small>
+                </p>
+                <p>
+                    <small>Day 58: Capstone Demo & Presentation</small>
+                </p>
+            </section>
+
+            <!-- Business Problem -->
+            <section>
+                <section>
+                    <h2>The Business Problem</h2>
+                    <p>Customer acquisition costs (CAC) are rising, yet <span class="highlight-text">customer churn remains unchecked.</span></p>
+                    <ul class="insight-list">
+                        <li>We are losing valuable customers without warning.</li>
+                        <li>Customer Success teams are acting <em>reactively</em>, not <em>proactively</em>.</li>
+                        <li>No unified view of Customer Lifetime Value (CLV) and Churn Risk.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>The Solution: CIP</h2>
+                    <p>An end-to-end Machine Learning platform that predicts churn before it happens and provides actionable retention strategies in real-time.</p>
+                </section>
+            </section>
+
+            <!-- Analytics Workflow -->
+            <section>
+                <section>
+                    <h2>Analytics & Engineering Workflow</h2>
+                    <p>From Raw Data to Real-Time Insights.</p>
+                </section>
+                <section>
+                    <h3>The Pipeline</h3>
+                    <ul>
+                        <li><strong>Data Engineering:</strong> Scikit-Learn pipelines handling imputation, scaling, and one-hot encoding without data leakage.</li>
+                        <li><strong>Model Training:</strong> Optimized Random Forest and Logistic Regression models focusing on PR-AUC.</li>
+                        <li><strong>Service Layer:</strong> Asynchronous REST API powered by FastAPI.</li>
+                        <li><strong>Presentation:</strong> Interactive Streamlit Dashboard for stakeholders.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Segmentation & Forecasting -->
+            <section>
+                <h2>Forecasting & Segmentation</h2>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+                    <div style="flex: 1;">
+                        <ul class="insight-list">
+                            <li><strong>Survival Analysis:</strong> Identifying the "First 90 Days Vulnerability".</li>
+                            <li><strong>Value Segmentation:</strong> Grouping customers into High, Medium, and Low MRR tiers.</li>
+                            <li><strong>Contract Risk:</strong> Pinpointing the high volatility in Month-to-Month contracts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prediction Module -->
+            <section>
+                <section>
+                    <h2>Real-Time Prediction Module</h2>
+                    <p>Empowering Customer Success Agents.</p>
+                </section>
+                <section>
+                    <h3>How it Works</h3>
+                    <ol>
+                        <li>Agent inputs customer details into the Streamlit UI.</li>
+                        <li>FastAPI processes the data through the pickled ML pipeline.</li>
+                        <li>Model returns a <span class="highlight-text">Churn Probability Score</span> and Risk Tier.</li>
+                        <li><strong>Explainable AI (SHAP):</strong> Shows exactly <em>why</em> the model made its prediction (e.g., "Lack of Tech Support").</li>
+                    </ol>
+                </section>
+            </section>
+
+            <!-- Business Insights & Outcomes -->
+            <section>
+                <section>
+                    <h2>Business Insights & Outcomes</h2>
+                </section>
+                <section>
+                    <h3>Key Insights</h3>
+                    <ul class="insight-list">
+                        <li>Month-to-month contracts are the #1 driver of churn.</li>
+                        <li>Customers using bundled "sticky" services (Tech Support, Online Security) churn 40% less.</li>
+                        <li>Early intervention (Days 0-90) is critical for long-term retention.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Impact</h3>
+                    <div class="metric-box">
+                        <div class="metric-value">$2.4M</div>
+                        <div>Revenue at Risk Identified</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">15%</div>
+                        <div>Projected Churn Reduction</div>
+                    </div>
+                    <br>
+                    <p>Transitioned from reactive firefighting to <strong>predictive retention</strong>.</p>
+                </section>
+            </section>
+
+            <!-- Q&A Slide -->
+            <section>
+                <h2>Thank You</h2>
+                <p>Questions & Live Demo</p>
+                <p><small>View the code on GitHub</small></p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'fade', // none/fade/slide/convex/concave/zoom
+        });
+    </script>
+</body>
+</html>
