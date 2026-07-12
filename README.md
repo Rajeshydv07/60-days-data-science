@@ -66,7 +66,9 @@ Welcome to my **60-Day Data Science Challenge** journey! 🚀 This repository do
 | **Day 55** | Capstone Scalability | Building a high-performance RESTful API using FastAPI to serve model predictions in real-time. | [day55-capstone-scalability-reliability/api.py](./day55-capstone-scalability-reliability/api.py) |
 | **Day 56** | Capstone Mid-Review | Code review, refactoring, and preparing for the final phase of the Capstone project. | [day56-capstone-mid-review/](./day56-capstone-mid-review/) |
 | **Day 57** | Capstone Documentation | Creating production-grade documentation, including architecture diagrams, API usage guides, and a professional README. | [day57-capstone-documentation/README.md](./day57-capstone-documentation/README.md) • [day57-capstone-documentation/ARCHITECTURE.md](./day57-capstone-documentation/ARCHITECTURE.md) • [day57-capstone-documentation/API_DOCS.md](./day57-capstone-documentation/API_DOCS.md) |
-| **Day 58+** | *In Progress* 🔄 | Upcoming days will cover final ML capstone phases and deployment. | *Stay tuned!* |
+| **Day 58** | Capstone Presentation | Preparing project showcase presentation, demo scripts, and summary for stakeholders. | [day58-capstone-presentation/presentation_deck.html](./day58-capstone-presentation/presentation_deck.html) • [day58-capstone-presentation/project_showcase_summary.md](./day58-capstone-presentation/project_showcase_summary.md) |
+| **Day 59** | Capstone Final Optimization | Final bug fixing, performance optimization, and finalizing the application for production launch. | [day59-capstone-final-optimization/app.py](./day59-capstone-final-optimization/app.py) • [day59-capstone-final-optimization/bug_fix_and_optimization_report.md](./day59-capstone-final-optimization/bug_fix_and_optimization_report.md) |
+| **Day 60** | Capstone Launch | Public showcase of the finalized product, deployment documentation, and end-to-end 60-day reflection. | [day60-capstone-launch/README.md](./day60-capstone-launch/README.md) • [day60-capstone-launch/final_reflection_report.md](./day60-capstone-launch/final_reflection_report.md) |
 
 ---
 
